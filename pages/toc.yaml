@@ -6,3 +6,8 @@ chapitre_exemple:
     qcm:
       title: "Exemple de QCM"
   chapter_intro_file: "chapter_description.rst"
+contribuer:
+  title: Contribuer
+  content:
+    contribuer:
+      title: Contribuer au contenu du syllabus
