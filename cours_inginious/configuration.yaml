@@ -1,0 +1,20 @@
+backend: local
+backup_directory: .
+batch_containers: []
+local-config: {}
+mongo_opt:
+    database: INGInious
+    host: localhost
+plugins:
+-   name: test
+    plugin_module: inginious.frontend.webapp.plugins.auth.demo_auth
+    users:
+        test: test
+-   plugin_module: inginious.frontend.webapp.plugins.simple_grader
+    courseid: "tutorial"
+    page_pattern: "/tutorial"
+    return_fields: "^(result|text|problems)$"
+superadmins:
+- test
+tasks_directory: .
+use_minified_js: false
