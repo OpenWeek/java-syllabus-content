@@ -1,0 +1,8 @@
+chapitre_exemple:
+  title: "Chapitre d'exemple"
+  content:
+    theorie:
+      title: "Exemple de théorie"
+    qcm:
+      title: "Exemple de QCM"
+  chapter_intro_file: "chapter_description.rst"
