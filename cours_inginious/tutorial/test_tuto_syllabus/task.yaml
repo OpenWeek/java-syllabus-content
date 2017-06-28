@@ -1,0 +1,23 @@
+accessible: true
+author: ''
+context: ''
+environment: default
+evaluate: best
+groups: false
+limits:
+    output: '2'
+    time: '30'
+    memory: '100'
+name: Tuto syllabus Yaml
+network_grading: false
+problems:
+    q1:
+        type: code
+        header: ''
+        name: Écrivez le yaml
+        language: yaml
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+weight: 1.0

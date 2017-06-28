@@ -1,0 +1,49 @@
+#!/bin/python3
+# -*- coding: utf-8 -*-
+
+# This file is part of INGInious
+import os
+import subprocess
+import shlex
+import yaml
+from inginious import feedback
+from inginious import input
+
+correct_answer = yaml.load("""
+chapitre_exemple:
+  title: "Chapitre d'exemple"
+  content:
+    theorie:
+      title: "Exemple de théorie"
+    qcm:
+      title: "Exemple de QCM"
+  chapter_intro_file: "chapter_description.rst"
+contribuer:
+  title: Contribuer
+  content:
+    contribuer:
+      title: Contribuer au contenu du syllabus
+boucles:  # chapitre ajouté (nom du dossier)
+  title: Les boucles   # titre du chapitre
+  content:
+    while:                      # page ajoutée (nom du fichier sans le ".rst")
+      title: La boucle while   # titre de la page
+""")
+
+
+
+if __name__ == "__main__":
+    os.chdir("student")
+    input.parse_template("file.yaml")
+    try:
+        with open("file.yaml", 'r') as f:
+            toc = yaml.load(f)
+            if correct_answer == toc:
+                feedback.set_global_result("success")
+                feedback.set_global_feedback("Vous avez résolu l'exercice.")
+            else:
+                feedback.set_global_result("failed")
+                feedback.set_global_feedback("Le YAML parse, mais la table des matières n'est pas correcte.")
+    except Exception as e:
+        feedback.set_global_result("failed")
+        feedback.set_global_feedback("La compilation de votre code a échoué. Voici l'erreur:" + make_output)
