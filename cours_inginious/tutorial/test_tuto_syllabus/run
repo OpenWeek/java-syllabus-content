@@ -46,4 +46,4 @@ if __name__ == "__main__":
                 feedback.set_global_feedback("Le YAML parse, mais la table des matières n'est pas correcte.")
     except Exception as e:
         feedback.set_global_result("failed")
-        feedback.set_global_feedback("La compilation de votre code a échoué. Voici l'erreur:" + make_output)
+        feedback.set_global_feedback("La compilation de votre code a échoué. Voici l'erreur:" + str(e))
