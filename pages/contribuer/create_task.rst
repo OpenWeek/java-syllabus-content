@@ -33,14 +33,14 @@ qu'à ce qui se trouve dans ``student/``.
 Une fois que vôtre tâche est créée, vous devez l'insérer dans votre page écrite en rST. Pour cela, il suffit simplement d'utiliser la directive
 rST **inginious**. Supposons que nous avons une tâche nommée ``test``. Nous pouvons alors l'inclure dans la page de théorie via le bout de code suivant:
 
-.. code-block::
+.. code-block:: rst
 
     .. inginious:: test
 
 
 Si en plus, vous désirez pré-remplir un bout de code dans l'encadré de la tâche, vous pouvez rajouter bout de code de la manière suivante:
 
-.. code-block::
+.. code-block:: rst
 
     .. inginious:: test
         // exemple de bout de code
