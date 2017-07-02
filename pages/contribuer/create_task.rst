@@ -8,7 +8,7 @@ se fait en deux étapes.
 Étape 1. Créer l'exercice INGInious
 ===================================
 
-La première étape consiste à créer l'exercic INGInious. Un exercice INGInious est un dossier dont la structure minimale est la suivante:
+La première étape consiste à créer l'exercice INGInious. Un exercice INGInious est un dossier dont la structure minimale est la suivante:
 
 .. code-block::
 
@@ -18,33 +18,33 @@ La première étape consiste à créer l'exercic INGInious. Un exercice INGIniou
     ├── student # Dossier dans lequel sera exécuté la soumission de l'étudiant.
         ├── ...
 
-**Attention** les tâches que vous créer doivent se trouver dans le dossiers ``INGInious_storage/tutorial``, où ``INGInious_storage``
-est le chemin jusqu'à l'endroit dans lequel vous stocker vos cours (voir installation d'INGInious).
+**Attention** les tâches que vous créez doivent se trouver dans le dossiers ``[inginious_path]/tutorial``, où ``[inginious_path]``
+est le chemin jusqu'à l'endroit dans lequel vous stockez vos cours (voir installation d'INGInious).
 
-Vous pouvez créer les tâches via une interface graphique en lançant votre instance d'inginious via la commande
-``inginious-webapp`` et en allant à l'addresse http://127.0.0.1:8080/.
+Vous pouvez créer les tâches facilement via l'interface graphique d'INGInious.
 
-Dans le dossiers ``student/``, vous devez au moins fournir les tests pour votre tâches ainsi qu'un fichier qui servira de
-réceptacle pour le code de l'étudiant. De plus, il est important de noter que lors de l'exécution des tests, vous n'aurez accès
+Dans le dossier ``student/`` se trouveront les tests unitaires de la tâche ainsi qu'un fichier qui servira de
+réceptacle pour le code de l'étudiant. De plus, il est important de noter que lors de l'exécution des tests, le programme n'aura accès
 qu'à ce qui se trouve dans ``student/``.
 
 Étape 2. Insérer la tâche dans le fichier .rst
 ==============================================
 
-Une fois que vôtre tâche est créée, vous devez l'insérer dans votre fichier. Pour cela, vous aurez besoin d'utiliser la directive
-rST **inginious**. Supposons que nous avons une tâche nomée ``Test``. Nous pouvons alors l'ajoutée via le bout de code suivant:
+Une fois que vôtre tâche est créée, vous devez l'insérer dans votre page écrite en rST. Pour cela, il suffit simplement d'utiliser la directive
+rST **inginious**. Supposons que nous avons une tâche nommée ``test``. Nous pouvons alors l'inclure dans la page de théorie via le bout de code suivant:
 
 .. code-block::
 
-    .. inginious:: Test
+    .. inginious:: test
 
 
-Si en plus, vous désirez mettre un début de bout de code dans l'encadré pour le code, vous pouvez rajouter ce contenu de la manière suivante:
+Si en plus, vous désirez pré-remplir un bout de code dans l'encadré de la tâche, vous pouvez rajouter bout de code de la manière suivante:
 
 .. code-block::
 
-    .. inginious:: Test
-
+    .. inginious:: test
+        // exemple de bout de code
         public static void main(String [] args) {
-            /* à compléter */
+            int i = 1;
+            /* à compléter par l'étudiant */
         }
