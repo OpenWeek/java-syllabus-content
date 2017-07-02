@@ -1,3 +1,5 @@
+.. Cette page est publiée sous la license Creative Commons BY-SA (https://creativecommons.org/licenses/by-sa/3.0/fr/)
+
 .. name: Viens faire un qcm!
 
 .. This file is an example of MCQ.
