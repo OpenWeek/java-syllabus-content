@@ -13,3 +13,8 @@ contribuer:
       title: Contribuer au contenu du syllabus
     create_task:
       title: "Créer une tâche"
+expressions_conditionnelles:
+  title: "Expressions conditionnelles"
+  content:
+    theorie:
+      title : "Théorie"
