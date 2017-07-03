@@ -1,3 +1,8 @@
+chap_boucle_while :
+  title : Boucle while
+  content : 
+    theorie :
+      title : La boucle while
 chapitre_exemple:
   title: "Chapitre d'exemple"
   content:
