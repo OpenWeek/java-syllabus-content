@@ -18,3 +18,7 @@ chapitre_tableaux:
   content:
     initialisation:
       title: Initialiser un tableau
+    initialisation_qcm:
+      title: QCM
+    initialisation_exo:
+      title: Exercices
