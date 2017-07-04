@@ -17,8 +17,8 @@ chapitre_tableaux:
   title: Les Tableaux
   content:
     initialisation:
-      title: Initialiser un tableau
+      title: Théorie et QCM
     initialisation_qcm:
-      title: QCM
-    initialisation_exo:
+      title: "Initialiser un tableau QCM"
+    exercices:
       title: Exercices

@@ -38,16 +38,21 @@ Un tableau ``Java`` est :
 
     .. class:: comment-feedback
 
-        Good job!
+        *Good job!*
 
 .. class:: negative-multiple
 
     - Un tableau blanc sur lequel on dessine des cases au feutre
+
+    .. class:: comment-feedback
+
+        *Donner une définition plus précise.*
+
     - Un tableau noir sur lequel on dessine des cases à la craie
 
     .. class:: comment-feedback
 
-        Donner une définition plus précise.
+        *Donner une définition plus précise.*
 
 
 Question 2 - Initialiser un tableau Java
@@ -64,7 +69,7 @@ Cocher les cases correctes :
 
         .. class:: comment-feedback
 
-            Good job!
+            *Good job!*
 
     -
         .. code-block:: Java
@@ -73,7 +78,7 @@ Cocher les cases correctes :
 
         .. class:: comment-feedback
 
-            Good job!
+            *Good job!*
 
 .. class:: negative-multiple
 
@@ -84,7 +89,7 @@ Cocher les cases correctes :
 
         .. class:: comment-feedback
 
-            il manque un ``;``
+            *il manque un ``;``*
 
     -
         .. code-block:: Java
@@ -93,7 +98,7 @@ Cocher les cases correctes :
 
         .. class:: comment-feedback
 
-            il manque le mot-clef ``new``
+            *il manque le mot-clef ``new``*
 
     -
         .. code-block:: Java
@@ -102,7 +107,7 @@ Cocher les cases correctes :
 
         .. class:: comment-feedback
 
-            il manque des crochets
+            *il manque des crochets*
 
     -
         .. code-block:: Java
@@ -111,7 +116,7 @@ Cocher les cases correctes :
 
         .. class:: comment-feedback
 
-            Les crochets sont mal placés
+            *Les crochets sont mal placés*
 
     -
         .. code-block:: Java
@@ -120,7 +125,7 @@ Cocher les cases correctes :
 
         .. class:: comment-feedback
 
-            il manque un ``;``
+            *il manque un ``;``*
 
     -
         .. code-block:: Java
@@ -129,16 +134,8 @@ Cocher les cases correctes :
 
         .. class:: comment-feedback
 
-            il manque le mot-clef ``new``
+            *il manque le mot-clef ``new``*
 
-    -
-        .. code-block:: Java
-
-            int tab = int[100];
-
-        .. class:: comment-feedback
-
-            il manque des crochets
 
 Question 3 - Index dans un tableau Java
 ---------------------------------------
@@ -153,11 +150,11 @@ Quelle elle la valeur de ``tab[0]``?
 
 .. class:: positive
 
-    - 0
+    - 1
 
 .. class:: negative
 
-    - 1
+    - 0
     - 2
     - 3
     - Aucune des autres valeurs proposées
