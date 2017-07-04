@@ -149,3 +149,12 @@ Exercice
 =========
 Exercices
 =========
+
+.. inginious:: syllabus-test
+
+  /*
+   * Test
+   */
+   public static void main(string[] args) {
+       /*test*/
+   }
