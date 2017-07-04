@@ -1,0 +1,29 @@
+accessible: true
+author: toast
+context: |
+    Hello World!
+
+    .. code-block:: java
+
+        int n; /* */
+        int sum = 0;
+environment: java7
+evaluate: best
+groups: false
+limits:
+    memory: '100'
+    time: '30'
+    output: '2'
+name: 'Mission toast '
+network_grading: false
+problems:
+    q1:
+        name: Test
+        header: Autre chose, pour voir la différence
+        language: java
+        type: code
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+weight: 1.0
