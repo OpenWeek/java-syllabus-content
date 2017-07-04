@@ -18,7 +18,7 @@ chapitre_tableaux:
   content:
     initialisation:
       title: Théorie et QCM
-    initialisation_qcm:
-      title: "Initialiser un tableau QCM"
     exercices:
       title: Exercices
+    erreurs_frequentes:
+        title: Erreurs fréquentes
