@@ -68,7 +68,9 @@ Dans les 3 exemples suivant, les conditions sont toutes vraies, et les phrases s
 Exercice
 --------
 
+.. inginious:: syllabus-Cond01
 
+    /* Insert your code here */
 
 ====
 else
