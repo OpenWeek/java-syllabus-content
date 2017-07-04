@@ -4,12 +4,10 @@
 
     Marie-Marie van der Beek, Pablo Gonzalez Alvarez
 
-=============
-Tableaux Java
-=============
--------------------------
+======================
 Initialiser un tableau
--------------------------
+======================
+
 Un tableau est une structure de données que l'on peut representer par un nombre
 de cases. Chaque case peut contenir des données de types primitifs
 (``boolean``, ``int``, ...) ou des objets. Par exemple on peut
