@@ -163,7 +163,7 @@ A vous ! Pour votre première boucle ``for``, vous allez écrire un petit progra
 
 .. inginious:: syllabus-boucles-for-Q1-nbrepft
 
-        int n = 34;
+        // int n = 34; Le nombre naturel à vérifier
         int nbreDiviseurs = 0;
         for (/*à compléter*/) {
                 if (n % /*une variable*/ == 0)
