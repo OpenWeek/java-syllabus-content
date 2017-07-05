@@ -220,7 +220,7 @@ Lorsqu'on utilise plusieurs boucles imbriquées, il est important de faire atten
 Exercice : les erreurs classiques des boucles ``for``
 '''''''''''''''''''''''''''''''''''''''''''''''''''''
 
-Le programme ci-dessous contient un certain nombre d'erreurs classiques lors de l'utilisation de boucles imbriquées. Pouvez-vous les identifier et les afficher ? Faites bien attention au rôle de chacune des variables (notamment ``n``, ``m``, ``i`` et ``j``).
+Le programme ci-dessous contient un certain nombre d'erreurs classiques lors de l'utilisation de boucles imbriquées. Pouvez-vous les identifier et les afficher ? Indice : il y en a 5.
 
 .. inginious:: syllabus-boucles-for-Q2-forforerror
 
@@ -228,12 +228,12 @@ Le programme ci-dessous contient un certain nombre d'erreurs classiques lors de 
          * Effectue la somme sur chaque ligne des n premiers nombres multiples de 1, 2, 3, ..., m
          */
          //*
-         int n = 17;
-         int m = 6;
+         // int n = 17;
+         // int m = 6;
          for (int i = 0; i <= n; i++) {
                  int sum = 0;
                  for (int j = 0; i <= m; j++) {
-                         sum = sum + j * m;
+                         sum = sum + j * i;
                  }
                  System.out.println("Somme des " + n + " premiers nombres multiples de " + j + " : " + sum);
          }
