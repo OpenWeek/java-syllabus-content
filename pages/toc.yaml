@@ -2,7 +2,9 @@ chap_boucle_while :
   title : Boucle
   content : 
     theorie :
-      title : La boucle while
+      title : "La boucle while"
+    boucle_for:
+      title: "La boucle for"
 chapitre_exemple:
   title: "Chapitre d'exemple"
   content:
