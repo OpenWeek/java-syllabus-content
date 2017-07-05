@@ -109,6 +109,14 @@ Par défaut, si aucune valeur n'est assignée au cases d'un tableau, Java initia
 
 Pour plus de détails, se référer à la Javadoc [1]_.
 
+Tableaux multidimensionnels
+---------------------------
+
+Un tableau multidimensionnel est un tableau avec au moins un autre tableau dedans. Par exemple, un tableau vide à 2 dimensions s'initialise comme ceci :
+
+.. code-block:: Java
+
+  TYPE[][] nom = new TYPE[HAUTEUR][LARGEUR];  // (1)
 
 
 .. [1] https://docs.oracle.com/javase/specs/jls/se7/html/jls-4.html#jls-4.12.5
