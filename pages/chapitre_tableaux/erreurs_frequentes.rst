@@ -22,8 +22,8 @@ et ``while`` avec des listes et de tableaux :
 
 * Les conditions limites
 
-QCM
----
+.. QCM
+    ---
 
 
 .. Misconceptions, unfamiliarity, and difficulties with lists and arrays are magnified in a loop environment. Common errors are related to indexing and include
