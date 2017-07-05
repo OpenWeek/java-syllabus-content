@@ -1,5 +1,22 @@
 .. Cette page est publiée sous la license Creative Commons BY-SA (https://creativecommons.org/licenses/by-sa/3.0/fr/)
 
+.. name: Viens faire un qcm!
+
+.. This file is an example of MCQ.
+
+.. These scripts are needed for executing the mcq
+
+.. raw:: html
+
+  <script type="text/javascript" src="static/js/jquery-3.1.1.min.js"></script>
+  <script type="text/javascript" src="static/js/jquery-shuffle.js"></script>
+  <script type="text/javascript" src="static/js/rst-form.js"></script>
+  <script type="text/javascript" src="static/js/prettify.js"></script>
+.. This variable hold the number of proposition shown to the student
+
+  <script type="text/javascript">$nmbr_prop = 3</script>
+
+
 .. author::
 
     Marie-Marie van der Beek, Pablo Gonzalez Alvarez
@@ -116,8 +133,10 @@ Un tableau multidimensionnel est un tableau avec au moins un autre tableau dedan
 
 .. code-block:: Java
 
-  TYPE[][] nom = new TYPE[HAUTEUR][LARGEUR];  // (1)
+  TYPE[][] nom = new TYPE[HAUTEUR][LARGEUR];
 
+Tableaux et boucles
+-------------------
 
 .. [1] https://docs.oracle.com/javase/specs/jls/se7/html/jls-4.html#jls-4.12.5
 
