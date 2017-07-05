@@ -44,6 +44,11 @@ les instructions situées à l'intérieur du **if** ne seront tout simplement **
         print("42"); //n'est pas affiché
     }
 
+// TODO : multiple if statement
+Il est possible
+
+// TODO : QCM
+
 Conditions
 ----------
 
@@ -73,13 +78,18 @@ Exercice
     /* Insert your code here */
 
 
-Opérateurs logiques
--------------------
-Les opérateurs logiques permettent de comparer deux variables booléennes. Il y en a trois :
-- **&&**, l'opérateur AND
-- **||**, l'opérateur OR
-- **!**, l'opérateur NOT
- 
+Conditions complexes
+--------------------
+
+Les opérateurs booléens permettent de comparer deux variables booléennes. Il y en a trois :
+
+  -  l'opérateur AND, noté **&&** en java
+  -  l'opérateur OR, noté **||** en java
+  -  l'opérateur NOT, noté **!** en java
+
+Ces opérateurs permettent de construire des conditions de if complexes,
+en combinant plusieurs expressions booléennes.
+
 .. code-block:: java
 
     boolean chauve = true;
@@ -87,6 +97,9 @@ Les opérateurs logiques permettent de comparer deux variables booléennes. Il y
     if( chauve && age == 20 ) {
         print("Vous êtes un chauve de 20 ans !"); //est affiché
     }
+
+La condition du bloc ci-dessus est composée de deux expressions logiques : chauve d'un côté et age == 20 de l'autre.
+Si chauve vaut true et que age == 20 vaut true, alors la condition du if est équivalente à true && true.
 
 
 ====
