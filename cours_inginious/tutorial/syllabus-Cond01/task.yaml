@@ -13,15 +13,15 @@ name: Expressions conditionnelles 1 - if
 network_grading: false
 problems:
     q1:
+        type: code
+        name: ''
+        language: Java
         header: |-
             .. code-block:: java
 
                 if(age < 13){
                     majeur = true;
                 }
-        type: code
-        language: Java
-        name: ''
 stored_submissions: 0
 submission_limit:
     amount: -1

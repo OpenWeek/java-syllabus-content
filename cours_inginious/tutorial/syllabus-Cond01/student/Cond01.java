@@ -10,17 +10,17 @@ import java.io.PrintStream;
 import org.junit.runner.notification.Failure;
 
 public class Cond01 {
-	
+
 	private static String str = "Le code semble comporter des erreurs : ";
-	
+
 	@Test
 	public void test(){
 		try{
-			
+
             for (int i=0; i<50; i++) {
 				int[] a = Cond01Stu.cond(i);
 				assertEquals("Il ne faut pas modifier l age !",i , a[0]);
-				
+
 				boolean maj;
 				if (i < 18) {
 					maj = false;
@@ -28,19 +28,20 @@ public class Cond01 {
 				else {
 					maj = true;
 				}
-                
+
                boolean majRep;
+
 				if (a[1] == 0) {
 					majRep = false;
 				}
 				else {
 					majRep = true;
 				}
-                
+
 				assertEquals("Vous avez indiqué majeur = " + majRep + " pour l'âge suivant : " + i, maj, majRep) ;
 			}
-            
-			
+
+
 		}catch (ArithmeticException e){
 			fail(str + "Le code est incorrect : il est interdit de diviser par zéro.");
 			e.printStackTrace();
@@ -63,7 +64,7 @@ public class Cond01 {
 			e.printStackTrace();
 		}
 	}
-	
+
 	// Code verificateur
 	public static void main(String[] args) {
 		Result result = JUnitCore.runClasses(Cond01.class);
