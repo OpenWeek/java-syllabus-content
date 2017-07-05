@@ -16,7 +16,7 @@ contribuer:
 chapitre_tableaux:
   title: Les Tableaux
   content:
-    initialisation:
+    theorie_qcm:
       title: Théorie et QCM
     exercices:
       title: Exercices
