@@ -15,8 +15,8 @@ Initialiser un tableau
 ----------------------
 
 Un tableau est une structure de données que l'on peut représenter par un nombre
-de cases. Chaque case peut contenir des données de types primitifs
-(``boolean``, ``int``, ...) ou des objets. Par exemple on peut
+de cases. Chaque case peut contenir une donnée de type primitif
+(``boolean``, ``int``, ...) ou un objet (vous verrez plus en détails les objets dans une section ultérieure). Par exemple on peut
 stocker des entiers dans un tableau de ``int`` :
 
 
