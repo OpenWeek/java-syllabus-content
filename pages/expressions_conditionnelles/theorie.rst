@@ -13,6 +13,8 @@ qui vont exécuter un bloc de code si une certaine condition booléenne est remp
 ==
 if
 ==
+Introduction
+------------
 
 L'instruction **if** est la structure de contrôle conditionnelle la plus basique,
 qui va exécuter un bloc de code si une condition est vérifiée.
@@ -42,10 +44,13 @@ les instructions situées à l'intérieur du **if** ne seront tout simplement **
         print("42"); //n'est pas affiché
     }
 
-La condition "fournie" à l'instruction **if** peut être n'importe quelle expression booléenne,
-comme par exemple les comparaisons et égalités arithmétiques, des opérations logiques entre booléens, ...
+Conditions
+----------
 
-Dans les 3 exemples suivant, les conditions sont toutes vraies, et les phrases sont affichées par le "print" :
+La condition "fournie" à l'instruction **if** peut être n'importe quelle expression booléenne,
+comme par exemple les comparaisons et égalités arithmétiques.
+
+Dans les exemples suivants, les conditions sont toutes vraies, et les phrases sont affichées par le "print" :
 
 .. code-block:: java
 
@@ -59,11 +64,6 @@ Dans les 3 exemples suivant, les conditions sont toutes vraies, et les phrases s
         print("Vous avez 20 ans !"); //est affiché
     }
 
-    boolean chauve = true;
-    int age = 20;
-    if( chauve && age == 20 ) {
-        print("Vous êtes un chauve de 20 ans !"); //est affiché
-    }
 
 Exercice
 --------
@@ -71,6 +71,23 @@ Exercice
 .. inginious:: syllabus-Cond01
 
     /* Insert your code here */
+
+
+Opérateurs logiques
+-------------------
+Les opérateurs logiques permettent de comparer deux variables booléennes. Il y en a trois :
+- **&&**, l'opérateur AND
+- **||**, l'opérateur OR
+- **!**, l'opérateur NOT
+ 
+.. code-block:: java
+
+    boolean chauve = true;
+    int age = 20;
+    if( chauve && age == 20 ) {
+        print("Vous êtes un chauve de 20 ans !"); //est affiché
+    }
+
 
 ====
 else
