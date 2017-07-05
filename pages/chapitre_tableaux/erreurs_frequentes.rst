@@ -4,12 +4,13 @@
 
     Marie-Marie van der Beek, Pablo Gonzalez Alvarez
 
-==================
+============
+Les Tableaux
+============
+------------------
 Erreurs fréquentes
-==================
+------------------
 
-Erreurs
--------
 
 Les erreurs suivantes sont récurrentes lors de l'utilisation de boucles ``for``
 et ``while`` avec des listes et de tableaux :
