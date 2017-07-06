@@ -32,6 +32,24 @@ Le type **int** est suffisant pour la plupart des utilisations avec les entiers 
 Il existe d'autres types de données en Java dont le plus utilisé est le **String** qui est un séquence de caractères (**char**)
 et est délimité par des guillemets (exemple : String s = "Hello World !").
 
+Exercice
+********
+
+Dans cette question nous allons vous demander de déclarer et d,initialiser plusieurs variables. Nous ne vous donnons pas leur type, c'est à vous de le déterminer grâce aux informations fournies.
+
+1) Déclarez et initialisez une variable nommée "piVal" contenant la valeur de pi avec deux chiffres significatifs après la virgule. (utilisez le moins de mémoire possible)
+
+2) Déclarez une variable nommée "popWorld" pouvant contenir le nombre d'êtres humains vivants sur terre et initialisez la à 0.
+
+3) Déclarez et initialisez une variable nommée "c" contenant la 17 ième lettre de l'alphabet en miniscule.
+
+.. inginious:: affectation
+
+        /*
+        your code here
+        */
+
+
 QCM : types de variables
 ------------------------
 

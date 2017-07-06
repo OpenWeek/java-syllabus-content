@@ -63,8 +63,10 @@ Voici une illustration des différents concepts évoqués :
 
         str = "Hello girls"; // modification d'une variable de type String
 
-Exercices
-*********
+
+QCM : déclaration et affectation
+--------------------------------
+
 Question 1 : Syntaxe correcte
 -----------------------------
 
