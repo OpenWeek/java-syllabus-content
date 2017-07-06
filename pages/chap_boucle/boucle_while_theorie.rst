@@ -18,7 +18,7 @@ La boucle while : théorie
 
 Utilitée de la boucle while
 ===========================
-Il vous est à présent possible avec votre background en java de réaliser des calcules ainsi que des comparaisons élémentaire. Néanmoins, il vous est impossible de réaliser ce pourquoi les ordinateurs ont été créés, répeter la même opérations simples en boucle.
+Il vous est à présent possible avec votre background en java de réaliser des calcules ainsi que des comparaisons élémentaires. Néanmoins, il vous est impossible de réaliser ce pourquoi les ordinateurs ont été créés, répeter la même opérations simples en boucle.
 
 
 Ceci nous amène donc à l'utilisation de la boucle la plus simple en java, **la boucle while**. 
@@ -41,7 +41,7 @@ Sémantique de la boucle while et do...while
 		/*code a executer en boucle.*/
 	}while(<condition>);//faire attention a ce point virgule !!!
 
-Ces deux instructions permettrons d'exécuter le code contenu dans le block tant que la condition est vrai. Mais pour comprendre la différence entre les deux utilisations de la boucle while, il nous faut comprendre comment un ordinateur exécutera ces deux types de boucle.
+Ces deux instructions permettent d'exécuter le code contenu dans le block tant que la condition est vrai. Mais pour comprendre la différence entre les deux utilisations de la boucle while, il nous faut comprendre comment un ordinateur exécutera ces deux types de boucle.
 
 
 .. raw:: html
@@ -317,13 +317,13 @@ Ces deux instructions permettrons d'exécuter le code contenu dans le block tant
 	AAAAAAAAAAAAAAAAAAAAAAAAAAAAAICe+f+22Os7HEpP/wAAAABJRU5ErkJggg==" alt="boucle" title="boucle"/>
 	</p>
  
-Dans se shéma, les flèches correspondent à l'ordre d'exécution du processus.Alors que, les couleurs des flèches indique l'ordre d'éxécution du processus suivant la valeur de retour de la condition (vert si vrai, rouge si faux). Maintenant il est facile de voir la différence entre les deux boucles, elle se situe au niveau du teste de la condition. C'est pourquoi il est important de remarquer que dans une boucle **do...while**, le code serra exécuté au moins une fois avant de tester la condition alors que pas forcément dans une boucle **while**.
+Dans se shéma, les flèches correspondent à l'ordre d'exécution du processus. Alors que, les couleurs des flèches indiquent l'ordre d'éxécution du processus suivant la valeur de retour de la condition (vert si vrai, rouge si faux). Maintenant il est facile de voir la différence entre les deux boucles, elle se situe au niveau du teste de la condition. C'est pourquoi il est important de remarquer que dans une boucle **do...while**, le code serra exécuté au moins une fois avant de tester la condition alors que pas forcément dans une boucle **while**.
 
 
 Question 1. Analyse de code.
 ----------------------------
 
-Quelles boucle while sont valide sémantiquement si les variable a et b sont correctement initialisées?
+Quelles boucle while sont valide sémantiquement si les variables a et b sont correctement initialisées?
 
 .. code-block:: console
 
@@ -404,7 +404,7 @@ Pour comprendre quelles sont les avantages et désavantages entres les deux bouc
 		/*tasse se vide*/
 	}while(/*tasse pas vide*/);
 
-Nous pouvons remarquer que dans la boucle **do...while** un problème se pose. En effet, un informaticien pourrais boire dans la tasse de café alors qu'elle est vide. Pour remedier à cela, nous pourrions protéger notre boucle avec une condition comme cela :
+Nous pouvons remarquer que dans la boucle **do...while** un problème se pose. En effet, un informaticien pourrait boire dans la tasse de café alors qu'elle est vide. Pour remedier à cela, nous pourrions protéger notre boucle avec une condition comme cela :
 
 .. code-block:: console
 	
@@ -534,23 +534,22 @@ Dans ce code le programmeur a oublié d'incrémenter *i*, et donc la condition s
 Question 3. Stop me.
 --------------------
 
-Modifier le code à l'interieur de la boucle while afin de ne pas crée une boucle infinie.
+Modifier le code à l'interieur de la boucle while a k'aide d'une incrémentation afin de ne pas crée une boucle infinie.
 
 .. code-block:: console
 	
 	int i = 0;
 	while(i < 10)
 	{
+		//a remplir
+	}
 
 
 .. inginious:: syllabus-while-infinite
 
 	//a remplir
 
-.. code-block:: console
-	
 
-	}
 
 
 

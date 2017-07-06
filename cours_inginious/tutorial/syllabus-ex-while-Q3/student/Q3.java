@@ -9,40 +9,25 @@ import java.io.FileReader;
 import java.io.PrintStream;
 import org.junit.runner.notification.Failure;
 
-public class Q1 {
+public class Q3 {
 	
 	private static String str = "Le code semble comporter des erreurs : ";
 	
 	@Test
 	public void testPos(){
 		try{
-			PrintStream ps = new PrintStream("fichier.out");
-			System.setOut(ps);
-			Q1Stu.decompte(10);
-			BufferedReader br = new BufferedReader(new FileReader("fichier.out"));
-			int i = 10;
-			int count = 0;
-			String s;
-			while((s = br.readLine()) != null)
-			{
-				assertTrue("Votre code nous renvoie "+s+", il devrait renvoyer "+i,i == Integer.parseInt(s));
-				i-=2;
-				count ++;
-			}
-			assertTrue("Votre code nous renvoie "+count+" nombres, il devrait nous en renvoyer 6",count == 6);
-			Q1Stu.decompte(100);
-			ps.close();
-			i = 100;
-		 	count = 0;
-			while((s = br.readLine()) != null)
-			{
-				assertTrue("Votre code ne renvoit pas la bonne réponse, se test a été effectuer pour prevenir du hard coding",i == Integer.parseInt(s));
-				i-=2;
-				count ++;
-			}
-			assertTrue("Votre code ne renvoit pas la bonne réponse, se test a été effectuer pour prevenir du hard coding",count ==  51);
-			br.close();
-
+			Q3Stu one = new Q3Stu(10);
+			assertTrue("Votre code ne fonctionne pas pour chercher la porte 10 dans un set de 40 portes. Porte renvoyée : "+one.jeux(40),one.jeux(40) == 10);
+			Q3Stu two = new Q3Stu(0);
+			assertTrue("Votre code ne fonctionne pas pour chercher la porte 0 dans un set de 40 portes. Porte renvoyée : "+two.jeux(40),two.jeux(40) == 0);
+			Q3Stu three = new Q3Stu(39);
+			assertTrue("Votre code ne fonctionne pas pour chercher la porte 39 dans un set de 40 portes Porte renvoyée : "+three.jeux(40),three.jeux(40) == 39);
+			Q3Stu four = new Q3Stu(10);
+			int err = four.jeux(20);
+			assertTrue("Votre code n'utilise pas une recher par bissection",four.turn == 1);
+			Q3Stu five = new Q3Stu(30);
+			err = five.jeux(40);
+			assertTrue("Votre code n'utilise pas une recher par bissection",five.turn == 2);
 		}catch (ArithmeticException e){
 			fail(str + "Le code est incorrect : il est interdit de diviser par zéro.");
 			e.printStackTrace();
@@ -71,7 +56,7 @@ public class Q1 {
 	
 	// Code verificateur
 	public static void main(String[] args) {
-		Result result = JUnitCore.runClasses(Q1.class);
+		Result result = JUnitCore.runClasses(Q3.class);
 		for (Failure failure: result.getFailures()) {
 			System.err.println(failure.toString());
 		}
