@@ -138,8 +138,31 @@ Un tableau multidimensionnel est un tableau avec au moins un autre tableau dedan
 
   TYPE[][] nom = new TYPE[HAUTEUR][LARGEUR];
 
+Un tableau à 2 dimensions est en fait un tableau dans lequel chaque case est un tableau. Autrement dit, c'est une matrice.
+
+
 Tableaux et boucles
 -------------------
+
+Afin d'effectuer des opérations sur un tableau, on utilise généralement des boucles.
+
+Par exemple, pour imprimer le contenu d'un tableau ``tab``, il suffit d'utiliser une boucle *for* :
+
+.. code-block:: Java
+
+    for (int i = 0; i < tab.length; i++) {
+        System.out.println( tab[i] );
+    }
+
+Une autre manière est d'utiliser une boucle *for-each* :
+
+.. code-block:: Java
+
+    for (int i : tab) {          // (3)
+        System.out.println( i );
+    }
+
+La ligne (3) peut-être lue comme : «pour chaque entier i dans le tableau tab faire ceci».
 
 .. [1] https://docs.oracle.com/javase/specs/jls/se7/html/jls-4.html#jls-4.12.5
 
