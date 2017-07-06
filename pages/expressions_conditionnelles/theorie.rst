@@ -55,6 +55,41 @@ Pour résumer, lorsque l'ordinateur exécute une instruction **if**, il évalue 
 Si elle est vraie, il exécute le bloc de code séquentiellement, puis quitte le bloc pour exécuter la suite du programme.
 Si la condition est fausse, l'ordinateur ignore le bloc de code et passe directement à la suite du programme.
 
+Conditions
+----------
+
+La condition "fournie" à l'instruction **if** peut être n'importe quelle expression booléenne,
+comme par exemple les comparaisons et égalités arithmétiques.
+
+Dans les exemples suivants, les conditions sont toutes vraies, eet les phrases sont affichées par le "**afficher**" :
+
+.. code-block:: java
+
+    int age = 20;
+    if( age >= 18 ) {
+        afficher("Vous êtes majeur !"); //est affiché
+    }
+
+    int age = 20;
+    if( 20 == age ) {
+        afficher("Vous avez 20 ans !"); //est affiché
+    }
+
+
+Exercice
+--------
+
+Modifiez la condition du code suivant pour que la variable booléenne **majeur** soit mise à la valeur **true**
+uniquement si la variable int **age** est plus grande ou égale à 18.
+
+.. inginious:: syllabus-Cond01
+
+    if( age < 13 ) {
+        majeur = true;
+    }
+
+If multiples
+------------
 Il est possible d'avoir plusieurs **if** qui se suivent. Pour illustrer cela,
 calculons le nombre de tickets d'entrée achetés par une cliente, selon le prix du ticket.
 Si le prix est inférieur à 10, la cliente achète deux tickets. Par contre,
@@ -73,40 +108,24 @@ si le prix du ticket est supérieur ou égal à 10, la cliente n'en achète qu'u
     }
     afficher(tickets);
 
-Dans cet exemple, la cliente achète 1 ticket.
-
-Conditions
-----------
-
-La condition "fournie" à l'instruction **if** peut être n'importe quelle expression booléenne,
-comme par exemple les comparaisons et égalités arithmétiques.
-
-Dans les exemples suivants, les conditions sont toutes vraies, eet les phrases sont affichées par le "**afficher**" :
+Dans cet exemple, la cliente achète 1 ticket. Lorsque plusieurs **if** sont utilisés, il faut veiller
+à ce que toutes les conditions possibles soient testées. Prenons par exemple le code suivant :
 
 .. code-block:: java
 
-    int age = 20;
-    if( age >= 18 ) {
-        afficher("Vous êtes majeur !"); //est affiché
-    }
+    int age = /* un entier entre 0 et 100 */
+    boolean majeur;
 
-    int age = 20;
-    if( age == 20 ) {
-        afficher("Vous avez 20 ans !"); //est affiché
-    }
-
-
-Exercice
---------
-
-Modifiez la condition du code suivant pour que la variable booléenne **majeur** soit mise à la valeur **true**
-uniquement si la variable int **age** est plus grande ou égale à 18.
-
-.. inginious:: syllabus-Cond01
-
-    if( age < 13 ) {
+    if (age < 18) {
         majeur = true;
     }
+    if (age > 18) {
+        majeur = false;
+    }
+
+Ce code comporte une erreur. En effet, il y a une valeur pour la variable **age** qui n'est pas testée, laquelle ?
+
+.. inginious:: syllabus-Cond03
 
 
 Conditions complexes
@@ -125,12 +144,12 @@ en combinant plusieurs expressions booléennes.
 
     boolean chauve = true;
     int age = 20;
-    if( chauve && age == 20 ) {
+    if( chauve && 20 == age ) {
         print("Vous êtes un chauve de 20 ans !"); //est affiché
     }
 
-La condition du bloc ci-dessus est composée de deux expressions logiques : **chauve** d'un côté et **age == 20** de l'autre.
-Si **chauve** vaut true et que **age == 20** vaut true, alors la condition du **if** est équivalente à **true && true**.
+La condition du bloc ci-dessus est composée de deux expressions logiques : **chauve** d'un côté et **20 == age** de l'autre.
+Si **chauve** vaut true et que **20 == age** vaut true, alors la condition du **if** est équivalente à **true && true**.
 
 
 ====

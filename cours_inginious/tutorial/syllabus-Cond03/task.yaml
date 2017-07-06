@@ -1,0 +1,35 @@
+accessible: true
+author: Antoine Lambot & Maxime Mulamba
+context: 'Ce code comporte une erreur. En effet, il y a une valeur pour la variable
+    **age** qui n''est pas testée, laquelle ? '
+environment: java7
+evaluate: best
+groups: false
+limits:
+    time: '30'
+    memory: '100'
+    output: '2'
+name: Expressions conditionnelles - if multiples
+network_grading: false
+problems:
+    q1:
+        name: ''
+        header: |-
+            .. code-block:: java
+
+                int age = /* un entier entre 0 et 100 */
+                boolean majeur;
+
+                if (age < 18) {
+                    majeur = true;
+                }
+                if (age > 18) {
+                    majeur = false;
+                }
+        language: java
+        type: code-single-line
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+weight: 1.0
