@@ -13,6 +13,11 @@ contribuer:
       title: Contribuer au contenu du syllabus
     create_task:
       title: "Créer une tâche"
+expressions:
+  title: "Expressions"
+  content:
+    arithmetic_operator:
+      title : "Théorie"
 expressions_conditionnelles:
   title: "Expressions conditionnelles"
   content:
