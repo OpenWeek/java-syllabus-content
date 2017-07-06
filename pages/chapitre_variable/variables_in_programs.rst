@@ -44,6 +44,21 @@ Ces variables sont appelées **variables locales**. Elles existent seulement à 
 dans laquelle elles sont déclarées et sont inaccessibles depuis l'extérieur. Une variable peut être déclarée n'importe où dans
 une fonction tant qu'elle est déclarée avant d'être utilisée.
 
+Exercices
+*********
+
+Ecrivez un code pour que la variable 'a' prennne la valeur 'b+1' et que la variable 'b' garde sa valeur.
+Les variables a et b ont déjà été déclarées. (la réponse est courte).
+
+.. code-block :: java
+
+  int a = ... ; // la variable a est initialisée avec une valeur aléatoire
+  int b = ... ; // la variable b est initialisée avec une valeur aléatoire
+
+.. inginious:: Misconceptions_variables
+
+        // your code here
+
 QCM : Fin de chapitre
 ---------------------
 
