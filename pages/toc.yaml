@@ -1,11 +1,11 @@
 chap_boucle :
   title : Boucle
   content : 
-    theorie :
+    boucle_while_theorie:
       title : La boucle while
-    qcm:
+    boucle_while_qcm:
       title: QCM boucle while
-    inginious:
+    boucle_while_inginious:
       title: Exercice Inginious boucle while
     boucle_for:
       title: "La boucle for"
