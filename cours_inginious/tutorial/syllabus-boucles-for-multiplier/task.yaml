@@ -1,0 +1,31 @@
+accessible: true
+author: Jean-Martin Vlaeminck
+context: |-
+    On vous propose de coder un petit programme qui multiplie entre eux les nombres entiers entrés par l'utilisateur sur l'entrée standard, jusqu'à ce que celui-ci rentre le nombre ``0`` ; dans ce cas, le programme affiche sur la sortie standard (avec ``System.out.println``) le produit de tous les nombres (sauf 0) et s'arrête. Pour vous aider, vous pouvez récupérer le nombre entier suivant rentré par l'utilisateur dans la variable ``int i`` comme suit :
+
+    .. code-block:: Java
+
+        int i = nextInt();
+
+    Plusieurs réponses étant possibles (une par type de boucle), tentez de résoudre l'exercice avec les 3 types de boucles vues : ``while``, ``do...while`` et ``for``.
+environment: java7
+evaluate: best
+groups: false
+limits:
+    output: '1'
+    memory: '200'
+    time: '30'
+name: 'Boucles : multiplicateur'
+network_grading: false
+problems:
+    q1:
+        type: code
+        language: Java
+        header: |
+            Écrivez ici le code du multiplicateur.
+        name: Multiplicateur
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+weight: 1.0
