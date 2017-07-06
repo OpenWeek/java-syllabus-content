@@ -1,8 +1,12 @@
-chap_boucle_while :
+chap_boucle :
   title : Boucle
   content : 
     theorie :
       title : La boucle while
+    qcm:
+      title: QCM boucle while
+    inginious:
+      title: Exercice Inginious boucle while
 chapitre_exemple:
   title: "Chapitre d'exemple"
   content:
