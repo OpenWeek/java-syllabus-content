@@ -43,3 +43,54 @@ Pour le moment, nous n'utilisons que des variables déclarées à l'intérieur d
 Ces variables sont appelées **variables locales**. Elles existent seulement à l'intérieur de la fonction
 dans laquelle elles sont déclarées et sont inaccessibles depuis l'extérieur. Une variable peut être déclarée n'importe où dans
 une fonction tant qu'elle est déclarée avant d'être utilisée.
+
+QCM : Fin de chapitre
+---------------------
+
+Ce QCM vérifie votre compréhension globale du chapitre sur les variables.
+
+
+Question 1
+----------
+
+.. code-block:: java
+
+    int a = 2;
+    int b = 3;
+    a = b;
+    // Quelles sont les valeurs de a et b  en ce point ?
+
+.. class:: positive
+
+    - a = 3 et b = 3
+
+.. class:: negative
+
+    - a = 2 et b = 2
+
+
+Question 2
+----------
+
+.. code-block :: java
+
+  int a = 5;
+  int b = a+2;
+  a = 3;
+  // Quelles sont les valeurs de a et b  en ce point ?
+
+.. class :: positive
+
+  - a = 3 et b = 7
+
+.. class :: negative
+
+  - a = 3 et b = 5
+  - a = 5 et b = 7
+  - a = 5 et b = 5
+
+.. This line include the "check your answer" button that gives a note to the student and mark questions with the correct marker if the answer is to good one, or the incorrect marker if not.
+
+.. raw:: html
+
+  <div id="checker" class="checker"><h1>Vérifiez vos réponses</h1><input type="submit" value="Vérifier" id="verifier"></div>
