@@ -62,17 +62,17 @@ On peut aussi écrire l'initialisation comme :
 
   TYPE nom[] = new TYPE[TAILLE]; // (2)
 
-Par simplicité, nous utiliserons que la syntaxe en (1).
+Par simplicité, on utilisera par la suite la syntaxe en (1).
 
-Pour remplir ce tableau de données, nous utilisons l'indice de la case que l'on veut remplir.
+Pour remplir ce tableau de données, on utilise l'indice de la case que l'on veut remplir.
 L'indice d'une donnée est le numéro de la case du tableau qui contient cette donnée.
-L'indice commence à 0 et va jusqu'à ``TAILLE``-1, c'est-à-dire que la première case est à l'indice 0, la deuxième à l'indice 1, ..., et la dernière à l'indice TAILLE-1.
+L'indice commence à 0 et va jusqu'à ``TAILLE-1``, c'est-à-dire que la première case est à l'indice 0, la deuxième à l'indice 1, ..., et la dernière à l'indice ``TAILLE-1``.
 
 .. code-block:: Java
 
   nom[INDICE] = VALEUR;
 
-Il est également possible d'initialiser un tableau non-vide de taille ``n,`` contenant un ensemble d'éléments de type ``TYPE`` E0, E1, ..., En :
+Il est également possible d'initialiser un tableau non-vide de taille ``n`` contenant un ensemble d'éléments de type ``TYPE`` E0, E1, ..., En :
 
 
 .. code-block:: Java
@@ -95,6 +95,8 @@ Les deux exemples suivants sont donc équivalents :
   tab[3] = 13; // le troisième élément du tableau tab devient 13
 
 
+Modifie le code suivant pour créer un tableau vide de taille 10 :
+
 .. code-block:: Java
 
         /*
@@ -107,7 +109,7 @@ Les deux exemples suivants sont donc équivalents :
              } // fin de main
          } // fin de la classe Tableau
 
-Par défaut, si aucune valeur n'est assignée au cases d'un tableau, Java initialise les valeurs du tableau en fonction du type de données. Voici un tableau des valeurs par défaut en fonction de quelques type de données :
+Par défaut, si aucune valeur n'est assignée au cases d'un tableau, Java initialise les valeurs du tableau en fonction du type de données. On dira que le tableau est vide. Voici un tableau des valeurs par défaut en fonction de quelques type de données :
 
 .. class:: center
 
