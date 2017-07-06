@@ -7,9 +7,9 @@
 ============
 Les Tableaux
 ============
---------------
-Théorie et QCM
---------------
+-------
+Théorie
+-------
 
 Initialiser un tableau
 ----------------------

@@ -16,8 +16,10 @@ contribuer:
 chapitre_tableaux:
   title: Les Tableaux
   content:
-    theorie_qcm:
-      title: Théorie et QCM
+    theorie:
+      title: Théorie
+    qcm:
+      title: QCM
     exercices:
       title: Exercices
     erreurs_frequentes:
