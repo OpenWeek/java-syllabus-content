@@ -7,6 +7,8 @@ chap_boucle :
       title: QCM boucle while
     inginious:
       title: Exercice Inginious boucle while
+    boucle_for:
+      title: "La boucle for"
 chapitre_exemple:
   title: "Chapitre d'exemple"
   content:
