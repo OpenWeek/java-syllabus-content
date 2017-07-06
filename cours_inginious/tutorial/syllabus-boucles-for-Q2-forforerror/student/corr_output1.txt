@@ -1,0 +1,7 @@
+Somme des 17 premiers nombres multiples de 0 : 0
+Somme des 17 premiers nombres multiples de 1 : 153
+Somme des 17 premiers nombres multiples de 2 : 306
+Somme des 17 premiers nombres multiples de 3 : 459
+Somme des 17 premiers nombres multiples de 4 : 612
+Somme des 17 premiers nombres multiples de 5 : 765
+Somme des 17 premiers nombres multiples de 6 : 918
