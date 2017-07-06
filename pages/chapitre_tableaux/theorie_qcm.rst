@@ -19,7 +19,7 @@
 
 .. author::
 
-    Marie-Marie van der Beek, Pablo Gonzalez Alvarez
+    Marie-Marie van der Beek, Pablo Gonzalez Alvarez, Antoine Habran
 
 ============
 Les Tableaux
@@ -181,4 +181,4 @@ La ligne (4) peut-être lue comme : «pour chaque entier i dans le tableau tab f
 
 .. author::
 
-    Marie-Marie van der Beek, Pablo Gonzalez Alvarez
+    Marie-Marie van der Beek, Pablo Gonzalez Alvarez, Antoine Habran
