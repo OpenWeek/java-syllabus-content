@@ -21,7 +21,7 @@ public class Q2 {
 			while(i++ < 20)
 			{
 				sum = sum +i;
-				assertEquals("Factoriel "+i+" ne renvoit pas "+sum+".",Q2Stu.fact(i), sum);
+				assertTrue("Factoriel "+i+" devrais renvoyer"+sum+", mais votre code renvoit "+Q2Stu.fact(i),Q2Stu.fact(i) == sum);
 			}
 
 		}catch (ArithmeticException e){

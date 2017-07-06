@@ -16,37 +16,32 @@ public class Q1 {
 	@Test
 	public void testPos(){
 		try{
-			PrintStream ps1 = new PrintStream("fichier1.out");
-			System.setOut(ps1);
+			PrintStream ps = new PrintStream("fichier.out");
+			System.setOut(ps);
 			Q1Stu.decompte(10);
-			ps1.close();
-			BufferedReader br1 = new BufferedReader(new FileReader("fichier1.out"));
+			BufferedReader br = new BufferedReader(new FileReader("fichier.out"));
 			int i = 10;
 			int count = 0;
 			String s;
-			while((s = br1.readLine()) != null)
+			while((s = br.readLine()) != null)
 			{
-				assertEquals("Votre code nous renvoie "+s+", il devrait renvoyer "+i,i , Integer.parseInt(s));
+				assertTrue("Votre code nous renvoie "+s+", il devrait renvoyer "+i,i == Integer.parseInt(s));
 				i-=2;
 				count ++;
 			}
-			assertEquals("Votre code nous renvoie "+count+" nombres, il devrait nous en renvoyer 6",count, 6);
-			br1.close();
-			PrintStream ps2 = new PrintStream("fichier2.out");
-			System.setOut(ps2);
+			assertTrue("Votre code nous renvoie "+count+" nombres, il devrait nous en renvoyer 6",count == 6);
 			Q1Stu.decompte(100);
-			ps2.close();
-			BufferedReader br2 = new BufferedReader(new FileReader("fichier2.out"));
+			ps.close();
 			i = 100;
 		 	count = 0;
-			while((s = br2.readLine()) != null)
+			while((s = br.readLine()) != null)
 			{
-				assertEquals("Votre code ne renvoit pas la bonne réponse, se test a été effectuer pour prevenir du hard coding",i , Integer.parseInt(s));
+				assertTrue("Votre code ne renvoit pas la bonne réponse, se test a été effectuer pour prevenir du hard coding",i == Integer.parseInt(s));
 				i-=2;
 				count ++;
 			}
-			assertEquals("Votre code ne renvoit pas la bonne réponse, se test a été effectuer pour prevenir du hard coding",count, 51);
-			br2.close();
+			assertTrue("Votre code ne renvoit pas la bonne réponse, se test a été effectuer pour prevenir du hard coding",count ==  51);
+			br.close();
 
 		}catch (ArithmeticException e){
 			fail(str + "Le code est incorrect : il est interdit de diviser par zéro.");

@@ -16,7 +16,10 @@ public class Q3 {
 	@Test
 	public void testPos(){
 		try{
-			assertEquals(0,Q3Stu.whileLoop());
+			if(10 != Q3Stu.whileLoop())
+			{
+				fail("Vous n'itérez pas le bon nombre de fois dans la boucle.");
+			}
 		}catch (ArithmeticException e){
 			fail(str + "Le code est incorrect : il est interdit de diviser par zéro.");
 			e.printStackTrace();

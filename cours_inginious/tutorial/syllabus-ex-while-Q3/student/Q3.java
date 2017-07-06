@@ -17,17 +17,17 @@ public class Q3 {
 	public void testPos(){
 		try{
 			Q3Stu one = new Q3Stu(10);
-			assertEquals("votre code ne fonctionne pas pour chercher la porte 10 dans un set de 40 portes",one.jeux(40),10);
+			assertTrue("Votre code ne fonctionne pas pour chercher la porte 10 dans un set de 40 portes. Porte renvoyée : "+one.jeux(40),one.jeux(40) == 10);
 			Q3Stu two = new Q3Stu(0);
-			assertEquals("votre code ne fonctionne pas pour chercher la porte 0 dans un set de 40 portes",two.jeux(40),0);
+			assertTrue("Votre code ne fonctionne pas pour chercher la porte 0 dans un set de 40 portes. Porte renvoyée : "+two.jeux(40),two.jeux(40) == 0);
 			Q3Stu three = new Q3Stu(39);
-			assertEquals("votre code ne fonctionne pas pour chercher la porte 40 dans un set de 40 portes",three.jeux(40),39);
+			assertTrue("Votre code ne fonctionne pas pour chercher la porte 39 dans un set de 40 portes Porte renvoyée : "+three.jeux(40),three.jeux(40) == 39);
 			Q3Stu four = new Q3Stu(10);
 			int err = four.jeux(20);
-			assertEquals("votre code n'utilise pas une recher par bissection",four.turn,1);
+			assertTrue("Votre code n'utilise pas une recher par bissection",four.turn == 1);
 			Q3Stu five = new Q3Stu(30);
 			err = five.jeux(40);
-			assertEquals("votre code n'utilise pas une recher par bissection",five.turn,2);
+			assertTrue("Votre code n'utilise pas une recher par bissection",five.turn == 2);
 		}catch (ArithmeticException e){
 			fail(str + "Le code est incorrect : il est interdit de diviser par zéro.");
 			e.printStackTrace();
