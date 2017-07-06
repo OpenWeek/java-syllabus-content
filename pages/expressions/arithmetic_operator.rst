@@ -56,7 +56,7 @@ Par exemple, en combinant un entier et un réel, l'entier sera  automatiquement 
 
 Il est néanmoins possible de convertir une variable d'un type compatible à l'autre, cette opération porte le nom de **"type casting"**.
 En pratique, cela consiste à mettre le type désiré de la variable entre parenthèses avant l'expression que l'on souhaite convertir.
-Il est important de préciser que "caster" une expression ne modifie pas le type des variables qui la composent, mais uniquement son résultat.
+Il est important de préciser que "caster" une expression ne modifie pas le type ou la valeur des variables qui la composent, mais uniquement son résultat.
 
 Le code ci-dessous illustre quelques exemples de **cast** :
 
@@ -64,12 +64,24 @@ Le code ci-dessous illustre quelques exemples de **cast** :
 
     double a = 1.9;
     int b = (int) a; // b vaut 1, a vaut toujours 1.9
-    // Caster un double en int revient à "enlever" les chiffres après la virgule
+    // Caster un double en int revient à "enlever" les chiffres après la virgule, la variable a n'a pas été modifiée
 
     double c = 4.2;
     double d = (int) c; // d vaut 4.0
     // Ici, la valeur de c est castée en int et devient 4, puis est de nouveau castée automatiquement en double et devient 4.0
 
+    double e = 2.5;
+    int f = 4;
+    int g = (int) ( e * f ); // g vaut 10, puisque le cast va arrondir le résultat de e * f, qui est déjà 10
+    int h = ( (int) e ) * f; // h vaut 8, parce que e a été arrondi par le cast avant la multiplication avec f
+    // Il est important de vérifier sur quelle partie de l'expression le cast est effectué
+
 ===================
 Opérateurs logiques
 ===================
+
+
+
+======================
+Opérateurs d'itération
+======================
