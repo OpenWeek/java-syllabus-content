@@ -150,19 +150,26 @@ Par exemple, pour imprimer le contenu d'un tableau ``tab``, il suffit d'utiliser
 
 .. code-block:: Java
 
-    for (int i = 0; i < tab.length; i++) {
+    for (int i = 0; i < tab.length; i++) {  (3)
         System.out.println( tab[i] );
     }
+
+À la ligne (3), on remarque deux choses :
+
+* on commencer l'index ``i`` à 0 ;
+* la condition sur ``i`` est bien ``< tab.length`` et pas ``<= tab.length``.
+
+Ceci est du au fait que l'index d'un tableau commence toujours à 0 et se termine à ``tab.length - 1``.
 
 Une autre manière est d'utiliser une boucle *for-each* :
 
 .. code-block:: Java
 
-    for (int i : tab) {          // (3)
+    for (int i : tab) {          // (4)
         System.out.println( i );
     }
 
-La ligne (3) peut-être lue comme : «pour chaque entier i dans le tableau tab faire ceci».
+La ligne (4) peut-être lue comme : «pour chaque entier i dans le tableau tab faire ceci».
 
 .. [1] https://docs.oracle.com/javase/specs/jls/se7/html/jls-4.html#jls-4.12.5
 
