@@ -163,200 +163,194 @@ Quelle elle la valeur de ``tab[0]``?
 Question XX - Déclaration de tableaux
 -------------------------------------
 
-Parmi les déclarations suivantes, quelle est celle qui permet de déclarer correctement un tableau dont la référence est dénommée ``tab`` et qui peut contenir 5 nombres entiers ?
+            Parmi les déclarations suivantes, quelle est celle qui permet de déclarer correctement un tableau dont la référence est dénommée ``tab`` et qui peut contenir 5 nombres entiers ?
 
 .. class:: positive-multiple
 
-    -
-        .. code-block:: java
+        -
+            .. code-block:: java
 
-           int[] tab=new int[5];
+                   int[] tab=new int[5];
 
-        .. class:: comment-feedback
+            .. class:: comment-feedback
 
                 C'est la déclaration la plus courante pour un tableau d'entiers. Notez que cette ligne combine une déclaration (``int[] tab`` et la création du tableau correspondant permettant de stocker 5 éléments de type ``int``.
 
-    -
-        .. code-block:: java
+        -
+            .. code-block:: java
 
-               int[] tab;
-               tab=new int[5];
+                   int[] tab;
+                   tab=new int[5];
 
-        .. class:: comment-feedback
+            .. class:: comment-feedback
 
-            La première ligne déclare que ``tab`` est une référence vers un tableau d'entiers. La deuxième ligne associe cette référence à un tableau permettant de stocker 5 entiers.
+                La première ligne déclare que ``tab`` est une référence vers un tableau d'entiers. La deuxième ligne associe cette référence à un tableau permettant de stocker 5 entiers.
 
 .. class:: negative-multiple
+        -
+            .. code-block:: java
 
-    -
-        .. code-block:: java
+                    tab=int [5];
 
-                tab=int [5];
+            .. class:: comment-feedback
 
-        .. class:: comment-feedback
+                Cette ligne est incorrecte. ``tab`` n'a pas été déclaré préalablement et il faut utiliser le mot clé ``new`` pour initialiser un tableau.
+        -
+            .. code-block:: java
 
-            Cette ligne est incorrecte. ``tab`` n'a pas été déclaré préalablement et il faut utiliser le mot clé ``new`` pour initialiser un tableau.
-    -
-        .. code-block:: java
+                    tab=new int[5];
 
-                tab=new int[5];
+            .. class:: comment-feedback
 
-        .. class:: comment-feedback
+                Cette ligne est incorrecte. ``tab`` n'a pas été déclaré préalablement. Il faut faire précéder cette ligne d'une déclaration de ``tab``.
 
-            Cette ligne est incorrecte. ``tab`` n'a pas été déclaré préalablement. Il faut faire précéder cette ligne d'une déclaration de ``tab``.
+        -
+            .. code-block:: java
 
-    -
-        .. code-block:: java
+                    int[] tab=new int[];
 
-                int[] tab=new int[];
+            .. class:: comment-feedback
 
-        .. class:: comment-feedback
+                Cette ligne est incorrecte. Lorsque l'on initialise un tableau, il faut spécifier le nombre d'éléments du tableau entre [] dans le membre de droite. En Java, les tableaux ont une taille fixe qui est définie à leur création.
 
-            Cette ligne est incorrecte. Lorsque l'on initialise un tableau, il faut spécifier le nombre d'éléments du tableau entre [] dans le membre de droite. En Java, les tableaux ont une taille fixe qui est définie à leur création.
+        -
+            .. code-block:: java
 
-    -
-        .. code-block:: java
+                    int[5] tab=new int[];
 
-                int[5] tab=new int[];
+            .. class:: comment-feedback
 
-        .. class:: comment-feedback
+                Cette ligne est incorrecte. Lorsque l'on initialise un tableau, il faut spécifier le nombre d'éléments du tableau entre [] dans le membre de droite. En Java, les tableaux ont une taille fixe qui est définie à leur création.
 
-            Cette ligne est incorrecte. Lorsque l'on initialise un tableau, il faut spécifier le nombre d'éléments du tableau entre [] dans le membre de droite. En Java, les tableaux ont une taille fixe qui est définie à leur création.
+        -
+            .. code-block:: java
 
-    -
-        .. code-block:: java
+                    int tab[5]=new int[];
 
-                int tab[5]=new int[];
+            .. class:: comment-feedback
 
-        .. class:: comment-feedback
-
-            Cette ligne est incorrecte. Lorsque l'on initialise un tableau, il faut spécifier le nombre d'éléments du tableau entre [] dans le membre de droite.
+                Cette ligne est incorrecte. Lorsque l'on initialise un tableau, il faut spécifier le nombre d'éléments du tableau entre [] dans le membre de droite.
 
 Question XX - Initialisation de tableaux
 ----------------------------------------
 
-Laquelle des lignes ci-dessous déclare un tableau contenant trois nombres réels et l'initialise avec les valeurs ``-1.0``, ``0.0`` et ``1.0``.
+            Laquelle des lignes ci-dessous déclare un tableau contenant trois nombres réels et l'initialise avec les valeurs ``-1.0``, ``0.0`` et ``1.0``.
 
 .. class:: positive-multiple
+        -
+            .. code-block:: java
 
-    -
-        .. code-block:: java
+                    double[] t=new double[] { -1.0, 0.0, 1.0};
 
-                double[] t=new double[] { -1.0, 0.0, 1.0};
+            .. class:: comment-feedback
 
-        .. class:: comment-feedback
+                Cette ligne est correcte. Le livre la préfère à la ligne ``double[] t= { -1.0, 0.0, 1.0};`` même si les deux sont équivalentes pour Java.
 
-            Cette ligne est correcte. Le livre la préfère à la ligne ``double[] t= { -1.0, 0.0, 1.0};`` même si les deux sont équivalentes pour Java.
+        -
+            .. code-block:: java
 
-    -
-        .. code-block:: java
+                    double[] t= { -1.0, 0.0, 1.0};
 
-                double[] t= { -1.0, 0.0, 1.0};
+            .. class:: comment-feedback
 
-        .. class:: comment-feedback
+                Cette ligne est correcte. Le livre préfère la ligne ``double[] t=new double[] { -1.0, 0.0, 1.0};`` qui est plus explicite même si les deux sont équivalentes pour Java.
 
-            Cette ligne est correcte. Le livre préfère la ligne ``double[] t=new double[] { -1.0, 0.0, 1.0};`` qui est plus explicite même si les deux sont équivalentes pour Java.
+        -
+            .. code-block:: java
 
-.. class:: negative-multiple
+                   double[3] t= {-1.0, 0.0, 1.0};
 
-    -
-        .. code-block:: java
+            .. class:: comment-feedback
 
-           double[3] t = {-1.0, 0.0, 1.0};
+                En Java, il n'existe pas de type ``double[3]`` pouvant être mis dans une déclaration.
 
-        .. class:: comment-feedback
+        -
+            .. code-block:: java
 
-            En Java, il n'existe pas de type ``double[3]`` pouvant être mis dans une déclaration.
+                   double t= {-1.0, 0.0, 1.0};
 
-    -
-        .. code-block:: java
+            .. class:: comment-feedback
 
-           double t = {-1.0, 0.0, 1.0};
+                En Java, ``double t`` déclare un réel et non un tableau de réels.
 
-        .. class:: comment-feedback
+        -
+            .. code-block:: java
 
-            En Java, ``double t`` déclare un réel et non un tableau de réels.
+                   double[] t= new double[-1.0, 0.0,1.0];
 
-    -
-        .. code-block:: java
-
-           double[] t = new double[-1.0, 0.0,1.0];
-
-        .. class:: comment-feedback
+            .. class:: comment-feedback
 
 
-            Cette ligne n'est pas syntaxiquement correct.
+                Cette ligne n'est pas syntaxiquement correct.
 
-    -
-        .. code-block:: java
+        -
+            .. code-block:: java
 
-           double[] t = new double{-1.0,0.0,1.0};
+                   double[] t= new double{-1.0,0.0,1.0};
 
-        .. class:: comment-feedback
-
-
-            Cette ligne n'est pas syntaxiquement correcte.
-
-    -
-        .. code-block:: java
-
-           double[] t = [-1.0, 0.0, 1.0];
-
-        .. class:: comment-feedback
+            .. class:: comment-feedback
 
 
-            Cette ligne n'est pas syntaxiquement correcte. Ne confondez pas ``{`` et ``[``.
+                Cette ligne n'est pas syntaxiquement correcte.
 
- ..
- .. Question 01 - Initialisation de tableaux
- .. ----------------------------------------
+        -
+            .. code-block:: java
 
-Une fois qu'un tableau a été déclaré et initialisé, il faut parfois pouvoir connaître le nombre d'éléments se trouvant dans le tableau. Lequel des codes ci-dessous affiche-t-il le nombre d'entiers dans le tableau ``tab`` déclaré via ``int[] tab=new int[]{1,2,7,9,3,99,-12,78,119}`` ?
+                   double[] t= [-1.0, 0.0, 1.0];
+
+            .. class:: comment-feedback
+
+
+                Cette ligne n'est pas syntaxiquement correcte. Ne confondez pas ``{`` et ``[``.
+
+ Question XX - Initialisation de tableaux
+ ----------------------------------------------------------
+
+            Une fois qu'un tableau a été déclaré et initialisé, il faut parfois pouvoir connaître le nombre d'éléments se trouvant dans le tableau. Lequel des codes ci-dessous affiche-t-il le nombre d'entiers dans le tableau ``tab`` déclaré via ``int[] tab=new int[]{1,2,7,9,3,99,-12,78,119}`` ?
 
 .. class:: positive-multiple
+        -
 
-    -
-        .. code-block:: java
+                .. code-block:: java
 
-           System.out.println(tab.length);
+                   System.out.println(tab.length);
 
 .. class:: negative-multiple
+        -
+            .. code-block:: java
 
-    -
-        .. code-block:: java
+                   System.out.println(tab.length());
 
-               System.out.println(tab.length());
+            .. class:: comment-feedback
 
-        .. class:: comment-feedback
+                En Java, la syntaxe ``tab.length()`` correspond à l'exécution de la méthode ``length()`` sur l'objet dont la référence est ``tab``. Les tableaux Java ne sont pas des objets ayant des méthodes que l'on peut appeler.
 
-            En Java, la syntaxe ``tab.length()`` correspond à l'exécution de la méthode ``length()`` sur l'objet dont la référence est ``tab``. Les tableaux Java ne sont pas des objets ayant des méthodes que l'on peut appeler.
+        -
+            .. code-block:: java
 
-    -
-        .. code-block:: java
+                   System.out.println(tab.size);
 
-               System.out.println(tab.size);
+            .. class:: comment-feedback
 
-        .. class:: comment-feedback
+                ``tab.size`` n'existe pas.
 
-            ``tab.size`` n'existe pas.
+        -
+            .. code-block:: java
 
-    -
-        .. code-block:: java
+                   System.out.println(tab[0]);
 
-               System.out.println(tab[0]);
+            .. class:: comment-feedback
 
-        .. class:: comment-feedback
+                ``tab[0]`` est le premier élément du tableau ``tab`` et non le nombre d'éléments présents dans le tableau.
 
-            ``tab[0]`` est le premier élément du tableau ``tab`` et non le nombre d'éléments présents dans le tableau.
+        -
+            .. code-block:: java
 
-    -
-        .. code-block:: java
+                   System.out.println(tab.[length]);
 
-               System.out.println(tab.[length]);
+            .. class:: comment-feedback
 
-        .. class:: comment-feedback
-
-            Cette ligne est syntaxiquement incorrecte.
+                Cette ligne est syntaxiquement incorrecte.
 
 Question XX - Tableaux à plusieurs dimensions
 ---------------------------------------------
@@ -366,119 +360,118 @@ Question XX - Tableaux à plusieurs dimensions
 
 .. class:: positive-multiple
 
-    -
-        .. code-block:: java
+        -
 
-               int[][] t=new int[4][6];
+            .. code-block:: java
 
-        .. class:: comment-feedback
+                   int[][] t=new int[4][6];
 
-            Ce tableau à deux dimensions comprend 4 lignes et 6 colonnes.
+            .. class:: comment-feedback
 
-    -
-        .. code-block:: java
+                Ce tableau à deux dimensions comprend 4 lignes et 6 colonnes.
 
-               int[][] t=new int[3][8];
+        -
+            .. code-block:: java
 
-        .. class:: comment-feedback
+                   int[][] t=new int[3][8];
 
-            Ce tableau à deux dimensions comprend 3 lignes et 8 colonnes.
+            .. class:: comment-feedback
+
+                Ce tableau à deux dimensions comprend 3 lignes et 8 colonnes.
 
 .. class:: negative-multiple
+        -
+            .. code-block:: java
 
-    -
-        .. code-block:: java
+                   int[][] t=new int[2][4];
 
-               int[][] t=new int[2][4];
+            .. class:: comment-feedback
 
-        .. class:: comment-feedback
+                Ce tableau à deux dimensions comprend 2 lignes et 4 colonnes.
+        -
+            .. code-block:: java
 
-            Ce tableau à deux dimensions comprend 2 lignes et 4 colonnes.
-    -
-        .. code-block:: java
+                   int[][] t=new int[24];
+            .. class:: comment-feedback
 
-               int[][] t=new int[24];
+                Cette ligne est erronée. La référence déclarée à gauche est vers un tableau de tableaux alors que seul un tableau d'entiers est créé dans le membre de droite.
+        -
+            .. code-block:: java
 
-        .. class:: comment-feedback
+                   int[] t=new int[3][8];
 
-            Cette ligne est erronée. La référence déclarée à gauche est vers un tableau de tableaux alors que seul un tableau d'entiers est créé dans le membre de droite.
-    -
-        .. code-block:: java
-
-               int[] t=new int[3][8];
-
-        .. class:: comment-feedback
+            .. class:: comment-feedback
 
 
-            Cette ligne est erronée. La référence déclarée à gauche est vers un tableau alors qu'un tableau de tableaux d'entiers est créé dans le membre de droite.
-    -
-        .. code-block:: java
+                Cette ligne est erronée. La référence déclarée à gauche est vers un tableau alors qu'un tableau de tableaux d'entiers est créé dans le membre de droite.
+        -
+            .. code-block:: java
 
-               int[][] t=new int[2][4];
+                   int[][] t=new int[2][4];
 
-        .. class:: comment-feedback
+            .. class:: comment-feedback
 
-            Le tableau créé a deux lignes et 4 colonnes. Il ne permet donc pas de stocker 24 nombres entiers.
+                Le tableau créé a deux lignes et 4 colonnes. Il ne permet donc pas de stocker 24 nombres entiers.
 
  Question XX - Tableaux ordonnés
  -------------------------------
 
-Laquelle des suites d'instructions ci-dessous est une implémentation correcte de la spécification suivante :
+            Laquelle des suites d'instructions ci-dessous est une implémentation correcte de la spécification suivante :
 
-.. code-block:: java
+            .. code-block:: java
 
- /**
-  * @pre  t est un tableau contenant au moins un élément
-  * @post retourne true si les données du tableau t sont en ordre
-  *       décroissant, false sinon
-  */
-  public static boolean decroissant(double[] t)
-  {
-    // corps à inclure
-  }
-.. class:: positive-multiple
+             /**
+              * @pre  t est un tableau contenant au moins un élément
+              * @post retourne true si les données du tableau t sont en ordre
+              *       décroissant, false sinon
+              */
+              public static boolean decroissant(double[] t)
+              {
+                // corps à inclure
+              }
+        .. class:: positive-multiple
+        -   valid: true
 
-    -
-        .. code-block:: java
+                .. code-block:: java
 
-           if(t.length==1) {
-               return true;
-           }
-           for(int i=1;i<t.length;i++) {
-             if (t[i-1] <= t[i]) {
-                   return false;
-             }
-           }
-           return true;
+                   if(t.length==1) {
+                       return true;
+                   }
+                   for(int i=1;i<t.length;i++) {
+                     if (t[i-1] <= t[i]) {
+                           return false;
+                     }
+                   }
+                   return true;
+        -   valid: true
 
-    -
-        .. code-block:: java
+                .. code-block:: java
 
-           if(t.length==1) {
-               return true;
-           }
-           for(int i=t.length-1;i>=1;i=i-1) {
-             if (t[i-1] <= t[i]) {
-                   return false;
-             }
-           }
-           return true;
+                   if(t.length==1) {
+                       return true;
+                   }
+                   for(int i=t.length-1;i>=1;i=i-1) {
+                     if (t[i-1] <= t[i]) {
+                           return false;
+                     }
+                   }
+                   return true;
+        -
+                .. code-block:: java
 
-    -
-        .. code-block:: java
+                   if(t.length==1) {
+                       return true;
+                   }
+                   for(int i=0;i<t.length;i++) {
+                     if (t[i-1] <= t[i]) {
+                           return false;
+                     }
+                   }
+                   return true;
+            .. class:: comment-feedback
 
-           if(t.length==1) {
-               return true;
-           }
-           for(int i=0;i<t.length;i++) {
-             if (t[i-1] <= t[i]) {
-                   return false;
-             }
-           }
-           return true;
-       .. class:: comment-feedback
-           Que se passe-t-il lors du premier passage dans la boucle ``for`` avec un tableau ``t`` contenant ``{ 1.0, 2.0 }`` ? ``i`` vaut ``0``, quel est la valeur de ``t[0-1]`` ?
 
+                Que se passe-t-il lors du premier passage dans la boucle ``for`` avec un tableau ``t`` contenant ``{ 1.0, 2.0 }`` ? ``i`` vaut ``0``, quel est la valeur de ``t[0-1]`` ?
         -
                 .. code-block:: java
 
@@ -492,6 +485,7 @@ Laquelle des suites d'instructions ci-dessous est une implémentation correcte d
                    }
                    return true;
             .. class:: comment-feedback
+
 
                 Que se passe-t-il lors du premier passage dans la boucle ``for`` avec un tableau ``t`` contenant ``{ 1.0, 2.0 }`` ? ``i`` vaut ``t.length``, quel est la valeur de ``t[i]`` ?
         -
@@ -536,126 +530,125 @@ Laquelle des suites d'instructions ci-dessous est une implémentation correcte d
 Question XX - Initialisation de tableaux à deux dimensions
 ----------------------------------------------------------
 
-Considérons un tableau à deux dimensions initialisé comme suit :
+            Considérons un tableau à deux dimensions initialisé comme suit :
 
-.. code-block:: java
+            .. code-block:: java
 
- int[][] tab= {  { 1,2,3} ,
-                 { 4,5}
-          } ;
+             int[][] tab= {  { 1,2,3} ,
+                             { 4,5}
+                      } ;
 
-Laquelle des expressions booléennes ci-dessous est-elle vraie ?
+            Laquelle des expressions booléennes ci-dessous est-elle vraie ?
+        .. class:: positive-multiple
+        -   valid: true
 
-.. class:: positive-multiple
+                .. code-block:: java
 
-    -
-        .. code-block:: java
+                    (tab[0].length==3) && (tab[1][1]==5)
+        -   valid: true
 
-            (tab[0].length==3) && (tab[1][1]==5)
-    -
+                .. code-block:: java
 
-        .. code-block:: java
+                    (tab.length==2) && (tab[0][2]==3)
+        -
+                .. code-block:: java
 
-            (tab.length==2) && (tab[0][2]==3)
-
-.. class:: negative-multiple
-
-    -
-        .. code-block:: java
-
-           (tab.length==1) && (tab[1][1]==4)
-
-        .. class:: comment-feedback
+                   (tab.length==1) && (tab[1][1]==4)
+            .. class:: comment-feedback
 
 
-            ``tab.length`` est le nombre de lignes du tableau ``tab``, c'est-à-dire ``2``.
-    -
-        .. code-block:: java
+                ``tab.length`` est le nombre de lignes du tableau ``tab``, c'est-à-dire ``2``.  Relisez |jn7.5.1|_ et |jn7.5.2|_
 
-               (tab[1].length==3) && (tab[0][1]==2)
-        .. class:: comment-feedback
+                 .. _jn7.5.1 : http://math.hws.edu/javanotes/c7/s5.html#arrays.5.1
+                 .. |jn7.5.1| replace:: `7.5.1 : Creating Two-dimensional Arrays`
 
+                 .. _jn7.5.2 : http://math.hws.edu/javanotes/c7/s5.html#arrays.5.2
+                 .. |jn7.5.2| replace:: `7.5.2 : Using Two-dimensional Arrays`
+        -
+                .. code-block:: java
 
-            ``tab[1].length`` est le nombre de colonnes de la ligne ``1`` du tableau, c'est-à-dire ``2``.
-    -
-        .. code-block:: java
-
-               (tab[0][2]==2) && (tab[1][0]==4)
-        .. class:: comment-feedback
+                   (tab[1].length==3) && (tab[0][1]==2)
+            .. class:: comment-feedback
 
 
-            L'élément ``tab[0][2]`` a comme valeur ``3`` et non ``2``.
+                ``tab[1].length`` est le nombre de colonnes de la ligne ``1`` du tableau, c'est-à-dire ``2``.  Relisez |jn7.5.1|_ et |jn7.5.2|_
+
+
+                 .. _jn7.5.1 : http://math.hws.edu/javanotes/c7/s5.html#arrays.5.1
+                 .. |jn7.5.1| replace:: `7.5.1 : Creating Two-dimensional Arrays`
+
+                 .. _jn7.5.2 : http://math.hws.edu/javanotes/c7/s5.html#arrays.5.2
+                 .. |jn7.5.2| replace:: `7.5.2 : Using Two-dimensional Arrays`
+        -
+                .. code-block:: java
+
+                   (tab[0][2]==2) && (tab[1][0]==4)
+            .. class:: comment-feedback
+
+
+                L'élément ``tab[0][2]`` a comme valeur ``3`` et non ``2``.
 
 Question XX - Manipulation de tableau à deux dimensions
 ---------------------------------------------
 
-Considérons la matrice ``m`` de ``li`` lignes et ``c`` colonnes qui a été initialisée par les instructions ci-dessous :
+            Considérons la matrice ``m`` de ``li`` lignes et ``c`` colonnes qui a été initialisée par les instructions ci-dessous :
 
-.. code-block:: java
-
-
-   double m[][]=new double[li][c];
-   int count=1;
-   for(int i=0;i<li;i++) {
-     for(int j=0; j<c; j++) {
-         m[i][j]=count;
-     count++;
-     }
-   }
-
-Laquelle des expressions booléennes ci-dessous est-elle vraie ?
-
-.. class:: positive-multiple
-
-    -
-        .. code-block:: java
-
-            ( m[li-1][0]==((li-1)*c)+1) && (m[0][c-1]==c)
-
-    -
-        .. code-block:: java
-
-            ( m[0][0]==1) && (m[li-1][c-1]==1+li*ci)
-
-.. class:: negative-multiple
-
-    -
-        .. code-block:: java
-
-            ( m[0][c-1]==c-1)
-
-        .. class:: comment-feedback
-
-            Cet élément de la matrice vaut ``c`` et car ``count`` est incrémentée à chaque passage dans la boucle ``for j<c``.
-
-    -
-        .. code-block:: java
-
-            ( m[li][c]==li*ci)
-
-        .. class:: comment-feedback
-
-            Il n'existe pas d'élément ``m[li][c]`` dans la matrice ``m``.
-
-    -
-        .. code-block:: java
-
-            (m[0][0]==0) && (m[0][c-1]==c)
-
-        .. class:: comment-feedback
+            .. code-block:: java
 
 
-            ``count`` étant initialisé à ``1``, l'élément ``m[0][0]`` est initialisé à la valeur ``1``.
+               double m[][]=new double[li][c];
+               int count=1;
+               for(int i=0;i<li;i++) {
+                 for(int j=0; j<c; j++) {
+                     m[i][j]=count;
+                 count++;
+                 }
+               }
 
-    -
-        .. code-block:: java
+            Laquelle des expressions booléennes ci-dessous est-elle vraie ?
+        .. class:: positive-multiple
+        -   valid: true
 
-             ( m[0][1]==1) && (m[0][c-1]==c)
+                .. code-block:: java
 
-        .. class:: comment-feedback
+                    ( m[li-1][0]==((li-1)*c)+1) && (m[0][c-1]==c)
+        -   valid: true
+
+                .. code-block:: java
+
+                    ( m[0][0]==1) && (m[li-1][c-1]==1+li*ci)
+        -
+                .. code-block:: java
+
+                    ( m[0][c-1]==c-1)
+            .. class:: comment-feedback
 
 
-            ``m[0][1]`` vaut ``2``
+                Cet élément de la matrice vaut ``c`` et car ``count`` est incrémentée à chaque passage dans la boucle ``for j<c``.
+        -
+                .. code-block:: java
+
+                    ( m[li][c]==li*ci)
+            .. class:: comment-feedback
+
+
+                Il n'existe pas d'élément ``m[li][c]`` dans la matrice ``m``.
+        -
+                .. code-block:: java
+
+                    (m[0][0]==0) && (m[0][c-1]==c)
+            .. class:: comment-feedback
+
+
+                ``count`` étant initialisé à ``1``, l'élément ``m[0][0]`` est initialisé à la valeur ``1``.
+        -
+                .. code-block:: java
+
+                     ( m[0][1]==1) && (m[0][c-1]==c)
+            .. class:: comment-feedback
+
+
+                ``m[0][1]`` vaut ``2``
 
 Question XX - Somme des éléments d'un tableau
 ---------------------------------------------
