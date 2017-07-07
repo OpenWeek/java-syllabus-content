@@ -13,3 +13,14 @@ contribuer:
       title: Contribuer au contenu du syllabus
     create_task:
       title: "Créer une tâche"
+CH1_variables:
+  title: "Les variables"
+  content:
+    syntax:
+      title: "Syntaxe des noms de variable"
+    affect_decla:
+      title: "Déclaration et affectation de variable"
+    types:
+      title: "Types de variable"
+    variables_in_programs:
+      title: "Variables dans les programmes"
