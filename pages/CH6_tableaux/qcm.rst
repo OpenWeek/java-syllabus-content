@@ -18,7 +18,7 @@
 
 .. author::
 
-    Marie-Marie van der Beek, Pablo Gonzalez Alvarez
+    Pablo Gonzalez Alvarez
 
 ============
 Les Tableaux
@@ -1021,10 +1021,7 @@ Laquelle des séquences ci-dessous est une implémentation correcte de cette mé
     -
         .. code-block:: java
 
-           char[] r= new
-
-        -
-        - char[s.length()];
+           char[] r = new char[s.length()];
            for(int i=0;i<s.length();i++) {
               r[i]=s.charAt(i);
            }
@@ -1037,10 +1034,7 @@ Laquelle des séquences ci-dessous est une implémentation correcte de cette mé
     -
         .. code-block:: java
 
-            char[] r= new
-
-        -
-        - char[s.length()];
+            char[] r = new char[s.length()];
             for(int i=s.length()-1;i>=0;i=i-1) {
               r[i]=s.charAt(i);
             }
@@ -1049,7 +1043,6 @@ Laquelle des séquences ci-dessous est une implémentation correcte de cette mé
         .. class:: comment-feedback
 
             Notez que la longueur d'une chaîne de caractères s'obtient en appliquant la méthode ``length()`` à une référence vers cette chaîne. La longueur du tableau de caractères ``r`` est ``r.length``.
-
 
 .. class:: negative-multiple
 
@@ -1061,6 +1054,7 @@ Laquelle des séquences ci-dessous est une implémentation correcte de cette mé
               r[i]=s.charAt(i);
           }
           return r[];
+
         .. class:: comment-feedback
 
             Cette réponse contient deux erreurs. Tout d'abord, avant de pouvoir utiliser un tableau, il faut fixer sa longueur lors de son initialisation. Ensuite, pour retourner un tableau, il faut retourner une référence vers ce tableau. Si ``r`` est une référence de type ``char[]``, il suffit de
@@ -1068,7 +1062,7 @@ Laquelle des séquences ci-dessous est une implémentation correcte de cette mé
     -
         .. code-block:: java
 
-          char[] r=s;
+          char[] r = s;
           return r;
 
         .. class:: comment-feedback
@@ -1078,10 +1072,7 @@ Laquelle des séquences ci-dessous est une implémentation correcte de cette mé
     -
         .. code-block:: java
 
-          char[] r= new
-
-        -
-        - char[s.length];
+          char[] r = new char[s.length];
           for(int i=0;i<s.length;i++) {
               r[i]=s.charAt(i);
           }
@@ -1091,10 +1082,14 @@ Laquelle des séquences ci-dessous est une implémentation correcte de cette mé
 
             En Java, la longueur d'une chaîne de caractères s'obtient via ``s.length()`` et non ``s.length``.
 
-
 .. This line include the "check your answer" button that gives a note to the student and mark questions with the
     correct marker if the answer is to good one, or the incorrect marker if not.
 
 .. raw:: html
 
     <div id="checker" class="checker"><h1>Vérifiez vos réponses</h1><input type="submit" value="Vérifier" id="verifier"></div>
+
+
+.. author::
+
+    Pablo Gonzalez Alvarez
