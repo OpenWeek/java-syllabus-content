@@ -24,11 +24,11 @@ La NASA a besoin de vous pour créer un compte à rebour décomptant par 2 de 10
 Rempliser le code si dessous pour réaliser cela.
 
 .. code-block:: console
-	
+
 	int i = 10;
 	//utilisez System.out.println(i) pour afficher le contenu de la variable i.
 
-.. inginious:: syllabus-while-ex-Q1
+.. inginious:: CH4Q1_while_infinite
 
 	//a remplir
 
@@ -36,16 +36,16 @@ Rempliser le code si dessous pour réaliser cela.
 Question 2. Factoriel.
 ----------------------
 
-Il vous est demandé de réaliser une fonction qui retourne n!. Pour rappel n! = n+(n-1)+...+2+1. 
+Il vous est demandé de réaliser une fonction qui retourne n!. Pour rappel n! = n+(n-1)+...+2+1.
 
 .. code-block:: console
-	
+
 	public int fact(int n)
 	{
 	//utilisez return n pour retourner la valeur de n.
 	//a remplir
 	}
-.. inginious:: syllabus-while-ex-Q2
+.. inginious:: CH4Q2_nbrepft
 
 	//a remplir
 
@@ -74,13 +74,11 @@ Règle :
 Pour vous aider vous pouvez vous documenter sur la recherche par bissection.(https://www.youtube.com/watch?v=HfFbNcIp25s)
 
 .. code-block:: console
-	
+
 	public int jeux(int n)
 	{
 	//a remplir.
 	}
-.. inginious:: syllabus-ex-while-Q3
+.. inginious:: CH4Q3_forerror
 
 	//remplissez votre code ici
-
-

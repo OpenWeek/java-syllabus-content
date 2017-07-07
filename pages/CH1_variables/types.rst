@@ -43,7 +43,7 @@ Dans cette question nous allons vous demander de déclarer et d,initialiser plus
 
 3) Déclarez et initialisez une variable nommée "c" contenant la 17 ième lettre de l'alphabet en miniscule.
 
-.. inginious:: affectation
+.. inginious:: CH1Q1_affectation
 
         /*
         your code here

@@ -1,5 +1,9 @@
 .. Cette page est publiée sous la license Creative Commons BY-SA (https://creativecommons.org/licenses/by-sa/3.0/fr/)
 
+.. author::
+
+    Maxime Mulamba
+    Antoine Lambot
 
 ============
 Introduction
@@ -236,34 +240,3 @@ Seul un bloc est exécuté, ce qui veut dire que si les conditions 1 et 2 sont v
     else {
         afficher("Vous êtes trop grand !"); //n'est pas affiché
     }
-
-Exercice
---------
-
-
-=========
-Exercices
-=========
-
-.. inginious:: syllabus-test
-
-  /*
-   * Test
-   */
-   public static void main(string[] args) {
-       /*test*/
-   }
-
-
-.. raw:: html
-
- <script type="text/javascript" src="static/js/jquery-3.1.1.min.js"></script>
- <script type="text/javascript" src="static/js/jquery-shuffle.js"></script>
- <script type="text/javascript" src="static/js/rst-form.js"></script>
- <script type="text/javascript" src="static/js/prettify.js"></script>
-.. This variable hold the number of proposition shown to the student
-
- <script type="text/javascript">$nmbr_prop = 3</script>
-
-Structures de contrôle : QCM
-----------------------------
