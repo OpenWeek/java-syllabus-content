@@ -15,8 +15,8 @@ Une déclaration de variable suit la forme suivante :
 
 Lorsque l'ordinateur exécute une déclaration de variable, il réserve un espace mémoire pour cette variable et
 associe le nom de la variable avec cet espace mémoire. *<variables-name-or-names>* est soit un nom de variable
-unique soit une liste de noms de variable séparés par des virgules. Il est d'usage de déclarer les variables une par une
-à part si elles ont un lien fort entre elles.
+unique soit une liste de noms de variable ayant le même type séparés par des virgules.
+Il est d'usage de déclarer les variables ensemble si elles ont un lien fort entre elles.
 
 Par exemple :
 
@@ -39,10 +39,10 @@ Par exemple :
   double principal; // Amount of money invested.
   double interestRate; // Rate as a decimal, not percentage.
 
-Pour le moment, nous n'utilisons que des variables déclarées à l'intérieur des fonctions du programme.
-Ces variables sont appelées **variables locales**. Elles existent seulement à l'intérieur de la fonction
-dans laquelle elles sont déclarées et sont inaccessibles depuis l'extérieur. Une variable peut être déclarée n'importe où dans
-une fonction tant qu'elle est déclarée avant d'être utilisée.
+Pour le moment, nous n'utilisons que des variables **variables locales**.
+Elles existent uniquement à l'intérieur du bloc (délimité par des {} )
+dans laquelle elles sont déclarées et sont inaccessibles depuis l'extérieur de ce bloc.
+Une **variable locale** peut être utilisée, après sa déclaration, n'importe où dans ce même bloc.
 
 Exercices
 *********
@@ -109,3 +109,7 @@ Question 2
 .. raw:: html
 
   <div id="checker" class="checker"><h1>Vérifiez vos réponses</h1><input type="submit" value="Vérifier" id="verifier"></div>
+
+.. author::
+
+    Fitvoye Florian, Mottet Sébastien, Charlier Gilles
