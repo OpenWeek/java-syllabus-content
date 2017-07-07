@@ -4,9 +4,9 @@
 
     Marie-Marie van der Beek, Pablo Gonzalez Alvarez
 
-============
-Les Tableaux
-============
+======================
+Initialiser un tableau
+======================
 ---------
 Exercices
 ---------
