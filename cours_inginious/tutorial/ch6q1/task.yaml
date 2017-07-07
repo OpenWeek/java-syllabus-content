@@ -1,13 +1,12 @@
 accessible: true
 author: Antoine Habran, François Michel
 context: |
-    On vous donne le tableau tab en argument, et on vous demande de compléter la fonction Sum(int[]tab) qui a pour but de retourner un nouveau tableau contenant à l'indice i la somme des éléments 1 à i. **Vous ne pouvez utiliser qu'une seule boucle iterative pour mener a bien cette question**
+    On vous donne le tableau tab en argument, et on vous demande de compléter la fonction ``Sum(int[]tab)`` qui a pour but de retourner un nouveau tableau contenant à l'indice ``i`` la somme des éléments ``1`` à ``i``. **Vous ne pouvez utiliser qu'une seule boucle itérative pour mener a bien cette question**
 
-    exemple :
+    Exemple :
 
-        -Sum([1,2,3,4,5]) retourne [1,3,6,10,15]
-
-        -Sum([6,2,8,3]) retourne [6,8,16,19]
+    * ``Sum([1,2,3,4,5])`` retourne ``[1,3,6,10,15]``
+    * ``Sum([6,2,8,3])`` retourne ``[6,8,16,19]``
 environment: java7
 evaluate: best
 groups: false
@@ -22,18 +21,18 @@ problems:
         type: code
         name: 'Question 1 : Sommes des éléments d''un tableau'
         header: |-
-            Ecrivez le corps de la fonction SumTab(int[] tab)
-            (pensez aux cas limites) :
+            Écrivez le corps de la fonction ``SumTab(int[] tab)`` (pensez aux cas limites) :
 
             .. code-block:: java
 
-                /* pre : tab un tableau d'entier
-                 * post: renvoie un nouveau tableau d'entier tel qu'a
-                 * l'indice i, il y ait la somme des éléments 1 a i de tab.
-                 * si tab est null, renvoie null,
-                 * si tab est vide, renvoie un tableau vide
+                /**
+                 * @pre : tab un tableau d'entier
+                 * @post: renvoie un nouveau tableau d'entier tel qu'a l'indice i, il y ait
+                 *        la somme des éléments 1 a i de tab.
+                 *        Si tab est null, renvoie null,
+                 *        si tab est vide, renvoie un tableau vide
                  */
-                public static int[] Sum(int[] tab){
+                public static int[] Sum(int[] tab) {
                     /* code a completer */
                 }
         language: java
