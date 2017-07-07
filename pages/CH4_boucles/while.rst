@@ -547,7 +547,7 @@ Modifier le code à l'interieur de la boucle while a k'aide d'une incrémentatio
 	}
 
 
-.. inginious:: syllabus-while-infinite
+.. inginious:: CH4Q1_while_infinite
 
 	//a remplir
 
