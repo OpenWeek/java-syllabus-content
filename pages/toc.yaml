@@ -1,3 +1,14 @@
+CH4_boucles :
+  title : Les boucle
+  content : 
+    while:
+      title : La boucle while
+    for:
+      title: "La boucle for"
+    exercices_qcm:
+      title: QCM 
+    exercices_inginious:
+      title: Exercice Inginious 
 chapitre_exemple:
   title: "Chapitre d'exemple"
   content:
@@ -24,3 +35,14 @@ ch6_tableaux:
       title: Exercices
     erreurs_frequentes:
         title: Erreurs fréquentes
+chapitre_variable:
+  title: "Les variables"
+  content:
+    syntax:
+      title: "Syntaxe des noms de variable"
+    variables_affect_decla:
+      title: "Affectation et déclaration de variable"
+    variables_type:
+      title: "Types de variable"
+    variables_in_programs:
+      title: "Variables dans les programmes"
