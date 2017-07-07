@@ -162,19 +162,14 @@ Quelle elle la valeur de ``tab[0]``?
 Question 04 - Déclaration de tableaux
 -------------------------------------
 
-            Parmi les déclarations suivantes, quelle est celle qui permet de déclarer correctement un tableau dont la référence est dénommée ``tab`` et qui peut contenir 5 nombres entiers ?
+Parmi les déclarations suivantes, quelle est celle qui permet de déclarer correctement un tableau dont la référence est dénommée ``tab`` et qui peut contenir 5 nombres entiers ?
 
 .. class:: positive-multiple
 
         -
             .. code-block:: java
 
-                   int[] tab =
-        -
-        - new
-
-        -
-        - int[5];
+                   int[] tab = new int[5];
 
             .. class:: comment-feedback
 
@@ -184,12 +179,7 @@ Question 04 - Déclaration de tableaux
             .. code-block:: java
 
                    int[] tab;
-                   tab =
-        -
-        - new
-
-        -
-        - int[5];
+                   tab = new int[5];
 
             .. class:: comment-feedback
 
