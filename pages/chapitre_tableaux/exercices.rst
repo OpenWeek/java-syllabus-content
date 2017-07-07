@@ -89,6 +89,7 @@ Question 4 : Mélange d''un tableau
 ----------------------------------
 
 Dans cette question, on s'intéresse à l'écriture d'une méthode dont le but est de mélanger les éléments de manière aléatoire d'un tableau passé en paramètre.
+
 Par exemple ``[1 2 3 4]`` peut devenir ``[2 3 4 1]``.
 
 En programmation défensive, écrivez ici le corps de la méthode ``shuffle`` permettant d'inverser un tableau d'entier.
@@ -107,9 +108,30 @@ En programmation défensive, écrivez ici le corps de la méthode ``shuffle`` pe
 
     /* code a completer */
 
-Question 5 :
+Question 5 : Question de Bilan Final
 ---------------------------------------
 
+Dans cette question de bilan final, on va s'intéresser à l'écriture de méthodes dont le but est de modifier les éléments d'un tableau passé en paramètre. Le but de ces méthodes est de déplacer tous les éléments du tableau d'un certain nombre de cases vers la droite.
+
+Commençons par la méthode ``shiftRightOne``. Elle va décaler tous les éléments du tableau passé en paramètre, d'une case vers la droite.
+
+Ensuite, vous devez écrire une méthode ``shiftRight`` qui déplace tous les éléments d'un tableau, vers la droite, d'un certain nombre *n* de positions.
+
+N'oubliez pas d'éviter la duplication de code, et d'éventuellement réutiliser l'une des deux méthodes dans l'autre.
+
+Complétez ici le corps de la méthode ``shiftRightOne``.
+
+.. code-block:: java
+
+    /**
+     * @pre tab != null
+     * @post Le tableau tab a été modifié et tous ses éléments sont décalés
+     *       d'une position vers la droite (le dernier élément revenant
+     *       en première position)
+     */
+    public static void shiftRightOne (int[] tab) {
+        /* Code a complèter */
+    }
 
 .. inginious:: ch6q5
 
