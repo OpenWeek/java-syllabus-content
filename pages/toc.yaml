@@ -13,3 +13,12 @@ contribuer:
       title: Contribuer au contenu du syllabus
     create_task:
       title: "Créer une tâche"
+chapitre_methodes:
+  title: Chapitre - Les Méthodes
+  content:
+    introduction:
+      title: "Introduction"
+    definitions:
+      title: "Définitions de fonctions"
+    portee:
+      title: "Portée de variables"
