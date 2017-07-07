@@ -1,0 +1,25 @@
+accessible: true
+author: Jean-Martin Vlaeminck
+context: |-
+    Écrivez une boucle ``for`` qui extrait et affiche la première lettre de chaque mot contenu dans une chaine de caractère (``String``) nommée ``input``. Par exemple, pour la chaine de caractères "Jean Didier Legat", le programme affichera "JDL" ; pour la chaine de caractères "J'aime la programmation", il affichera "Jlp". Pour vous aider, vous aurez besoin d'une variable permettant de savoir si vous êtes au début d'un mot (par exemple après avoir rencontré un espace juste avant...).
+    Pour rappel, étant donné une chaine de caractère ``String s = "Bonjour"``, si vous souhaitez accéder à la 3ième lettre de la chaine (ici, 'n') et la mettre dans la variable ``char c``, vous devez écrire ``c = s.charAt(3)``. Pour récupérer la longueur d'une chaine de caractères, vous pouvez utiliser ``int longueur = s.length()``. Utilisez ``System.out.print(c)`` pour afficher un unique caratère ``c`` sans retour à la ligne.
+environment: java7
+evaluate: best
+groups: false
+limits:
+    output: '1'
+    memory: '200'
+    time: '30'
+name: 'Boucles for : initiales de mots'
+network_grading: false
+problems:
+    q1:
+        type: code
+        language: Java
+        header: Écrivez le code qui répond à la question ici.
+        name: 'Boucles for : initiales'
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+weight: 1.0

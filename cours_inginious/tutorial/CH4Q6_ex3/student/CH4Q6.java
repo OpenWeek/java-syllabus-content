@@ -673,21 +673,25 @@ import java.io.FileReader;
 import java.io.PrintStream;
 import org.junit.runner.notification.Failure;
 
-public class M1Q7 {
+public class CH4Q6 {
 	
 	private static String str = "Le code semble comporter des erreurs : ";
 	
 	@Test
 	public void testPos(){
 		try{
-			PrintStream ps = new PrintStream("hello.out");
-			System.setOut(ps);
-			Hello.main(null);
-			ps.close();
-			BufferedReader br = new BufferedReader(new FileReader("hello.out"));
-			String s = br.readLine();
-			assertEquals(str + "Vous devez écrire \"Bonjour !\" mais vous avez écrit \""+s+"\"", "Bonjour !", s);
-			br.close();
+			CH4Q6Stu one = new CH4Q6Stu(10);
+			assertTrue("Votre code ne fonctionne pas pour chercher la porte 10 dans un set de 40 portes. Porte renvoyée : "+one.jeux(40),one.jeux(40) == 10);
+			CH4Q6Stu two = new CH4Q6Stu(0);
+			assertTrue("Votre code ne fonctionne pas pour chercher la porte 0 dans un set de 40 portes. Porte renvoyée : "+two.jeux(40),two.jeux(40) == 0);
+			CH4Q6Stu three = new CH4Q6Stu(39);
+			assertTrue("Votre code ne fonctionne pas pour chercher la porte 39 dans un set de 40 portes Porte renvoyée : "+three.jeux(40),three.jeux(40) == 39);
+			CH4Q6Stu four = new CH4Q6Stu(10);
+			int err = four.jeux(20);
+			assertTrue("Votre code n'utilise pas une recher par bissection",four.turn == 1);
+			CH4Q6Stu five = new CH4Q6Stu(30);
+			err = five.jeux(40);
+			assertTrue("Votre code n'utilise pas une recher par bissection",five.turn == 2);
 		}catch (ArithmeticException e){
 			fail(str + "Le code est incorrect : il est interdit de diviser par zéro.");
 			e.printStackTrace();
@@ -705,6 +709,9 @@ public class M1Q7 {
 		}catch(NullPointerException e){
 			fail(str + "Attention, vous faites une opération sur un objet qui vaut null ! Veillez à bien gérer ce cas.");
 			e.printStackTrace();
+		}catch(NumberFormatException e){
+			fail(str + "Il fallait renvoyer un entier !");
+			e.printStackTrace();
 		}catch(Exception e){
 			fail(str + "\n" + e.getMessage());
 			e.printStackTrace();
@@ -713,7 +720,7 @@ public class M1Q7 {
 	
 	// Code verificateur
 	public static void main(String[] args) {
-		Result result = JUnitCore.runClasses(M1Q7.class);
+		Result result = JUnitCore.runClasses(CH4Q6.class);
 		for (Failure failure: result.getFailures()) {
 			System.err.println(failure.toString());
 		}

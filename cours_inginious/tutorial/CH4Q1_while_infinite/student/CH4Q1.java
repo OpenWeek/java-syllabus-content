@@ -673,21 +673,17 @@ import java.io.FileReader;
 import java.io.PrintStream;
 import org.junit.runner.notification.Failure;
 
-public class M1Q7 {
+public class CH4Q1 {
 	
 	private static String str = "Le code semble comporter des erreurs : ";
 	
 	@Test
 	public void testPos(){
 		try{
-			PrintStream ps = new PrintStream("hello.out");
-			System.setOut(ps);
-			Hello.main(null);
-			ps.close();
-			BufferedReader br = new BufferedReader(new FileReader("hello.out"));
-			String s = br.readLine();
-			assertEquals(str + "Vous devez écrire \"Bonjour !\" mais vous avez écrit \""+s+"\"", "Bonjour !", s);
-			br.close();
+			if(10 != CH4Q1Stu.whileLoop())
+			{
+				fail("Vous n'itérez pas le bon nombre de fois dans la boucle.");
+			}
 		}catch (ArithmeticException e){
 			fail(str + "Le code est incorrect : il est interdit de diviser par zéro.");
 			e.printStackTrace();
@@ -713,7 +709,7 @@ public class M1Q7 {
 	
 	// Code verificateur
 	public static void main(String[] args) {
-		Result result = JUnitCore.runClasses(M1Q7.class);
+		Result result = JUnitCore.runClasses(CH4Q1.class);
 		for (Failure failure: result.getFailures()) {
 			System.err.println(failure.toString());
 		}
