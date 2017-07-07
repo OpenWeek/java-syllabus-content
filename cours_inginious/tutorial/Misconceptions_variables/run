@@ -141,7 +141,7 @@ def run(exercice, customscript, corr, execcustom, nexercices, javac_args, java_a
 
     if erreur_enseignant != 0:
         feedback.set_global_result('failed')
-        feedback.set_global_feedback("Le programme ne compile pas: \n " + code_litteral + message_enseignant + "\n")
+        feedback.set_global_feedback("Le programme ne compile pas: \n"+code_litteral + message_enseignant +" Veuillez verifier les noms de vos variables\n")
         sys.exit(0)
 
     error = 0
