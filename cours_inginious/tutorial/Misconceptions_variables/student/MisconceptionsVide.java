@@ -14,20 +14,19 @@
 #   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 package student;
-import java.lang.Long;
 
-public class AffectationStu{
+public class MisconceptionsStu{
     
-    public static Object[] getAns(){
+    public static int[] aAndB(int aVal, int bVal){
         
-		@@q1@@
+        int a = aVal;
+        int b = bVal;
         
-        Object[] obj = new Object[3];
-        obj[0] = piVal;
-        obj[1] = popWorld;
-        obj[2] = c;
-        return obj;
-    }
-    
+        @@q1@@
         
+        int tab[] = new int[2];
+        tab[0] = a;
+        tab[1] = b;
+        return tab;
+	}
 }

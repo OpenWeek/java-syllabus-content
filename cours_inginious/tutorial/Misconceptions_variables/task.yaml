@@ -1,5 +1,5 @@
 accessible: true
-author: ''
+author: Mottet Sébastien & Fitvoye Florian
 context: ''
 environment: java7
 evaluate: best
@@ -13,10 +13,10 @@ network_grading: false
 problems:
     q1:
         type: code
-        header: Ecrivez un code pour que la variable a prennne la valeur b+1 et que
-            la variable b garde sa valeur.
+        header: Ecrivez un code pour que la variable 'a' prennne la valeur 'b+1' et
+            que la variable 'b' garde sa valeur.
         name: Changement de valeur
-        language: ''
+        language: Java
 stored_submissions: 0
 submission_limit:
     amount: -1
