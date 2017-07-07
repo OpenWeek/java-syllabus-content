@@ -1,4 +1,5 @@
 package student;
+
 import static org.junit.Assert.*;
 import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;
@@ -7,29 +8,24 @@ import java.util.Random;
 import org.junit.runner.notification.Failure;
 import java.util.*;
 import java.io.PrintStream;
-import java.io.InputStream;
-import java.io.FileInputStream;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.FileReader;
 import java.io.IOException;
 
-public class Boucle {
+public class CH4Q7 {
     private static String str = "Le code semble comporter des erreurs :\n";
 
-    public void testMultiplier(int testNumber, String expectedResult) {
+    public void testInitials(String s1, String s2) {
         try {
-            PrintStream ps = new PrintStream("student/output" + testNumber + ".txt");
+            PrintStream ps = new PrintStream("student/output.txt");
             System.setOut(ps);
-            InputStream is = new FileInputStream("student/input" + testNumber + ".txt");
-            System.setIn(is);
-            BoucleStu.runMultiplier();
+            CH4Q7Stu.printInitials(s1);
             ps.close();
-            is.close();
-            BufferedReader bf = new BufferedReader(new FileReader("student/output" + testNumber + ".txt"));
-            String actualResult = bf.readLine();
+            BufferedReader bf = new BufferedReader(new FileReader("student/output.txt"));
+            String s = bf.readLine();
+            assertEquals(str + "Vous deviez afficher <" + s2 + "> mais vous avez affiché <" + s + ">\n", s2, s);
             bf.close();
-            assertEquals(str + "Votre programme n'a pas calculé le bonne produit : il devait afficher <" + expectedResult + "> mais a affiché <" + actualResult + ">\n", expectedResult.equals(actualResult), true);
         } catch (ArithmeticException e) {
             fail(str + "Il est interdit de diviser par zéro !");
             e.printStackTrace();
@@ -45,9 +41,6 @@ public class Boucle {
         } catch (NullPointerException e) {
             fail(str + "Vous faites une opération sur un objet qui est null. Veuillez à bien gérer ce cas.");
             e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-            fail(str + "Problème d'entrées-sorties. Prévenez les administrateurs, il y a un bug.");
         } catch (Exception e) {
            	 fail(str + "Vous avez fait l'erreur suivante : " + e.getMessage());
             e.printStackTrace();
@@ -55,28 +48,39 @@ public class Boucle {
     }
 
     @Test
-    public void testMultiplier1() {
-        testMultiplier(1, "42");
+    public void testInitials1() {
+        testInitials("Jean Didier Legat", "JDL");
     }
     @Test
-    public void testMultiplier2() {
-        testMultiplier(2, "1");
+    public void testInitials2() {
+        testInitials("Jean-Didier Legat", "JL");
     }
     @Test
-    public void testMultiplier3() {
-        testMultiplier(3, "1");
+    public void testInitials3() {
+        testInitials("Abracadabra", "A");
     }
     @Test
-    public void testMultiplier4() {
-        testMultiplier(4, "-36");
+    public void testInitials4() {
+        testInitials("J'aime la programmation", "Jlp");
     }
-
+    @Test
+    public void testInitials5() {
+        testInitials(" ", " ");
+    }
+    @Test
+    public void testInitials6() {
+        testInitials("", "");
+    }
+    @Test
+    public void testInitials7() {
+        testInitials("Salut    à tous !", "S   àt!");
+    }
     public static void main(String[] args) {
-        Result result = JUnitCore.runClasses(Boucle.class);
-        for (Failure failure : result.getFailures())
-            System.err.println(failure.toString());
+        Result result = JUnitCore.runClasses(CH4Q7.class);
+        for (Failure f : result.getFailures())
+            System.err.println(f.toString());
         if (result.wasSuccessful()) {
-            System.out.println("Tous les tests se sont passés sans concombre ;-).");
+            System.out.println("Tous les tests se sont déroulés sans encombre.");
             System.exit(127);
         }
     }

@@ -1,5 +1,5 @@
 package student;
-public class BouclesQ6Stu {
+public class CH4Q7Stu {
     public static void printInitials(String input) {
         boolean startOfWord = true;
         for (char c : s.toCharArray()) {

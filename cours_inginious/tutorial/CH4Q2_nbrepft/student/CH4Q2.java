@@ -9,7 +9,7 @@ import java.io.FileReader;
 import java.io.PrintStream;
 import org.junit.runner.notification.Failure;
 
-public class BouclesQ3 {
+public class CH4Q2 {
 
 	private static String str = "Le code comporte des erreurs :\n";
 
@@ -21,7 +21,7 @@ public class BouclesQ3 {
 		try {
 			int[] perfects = {6, 28, 496, 8128, 33550336};
             for (int n : perfects) {
-                boolean res = BouclesQ3Stu.isPerfect(n);
+                boolean res = CH4Q2Stu.isPerfect(n);
                 assertEquals(str + "Le nombre " + n + " est parfait, mais votre programme l'affirme comme ne l'étant pas.", res, true);
             }
 		} catch (ArithmeticException e) {
@@ -55,7 +55,7 @@ public class BouclesQ3 {
 		try {
 			int[] perfects = {0, 1, 2, 5, 8, 12, 20, 30, 37, 42, 2048};
             for (int n : perfects) {
-                boolean res = BouclesQ3Stu.isPerfect(n);
+                boolean res = CH4Q2Stu.isPerfect(n);
                 assertEquals(str + "Le nombre " + n + " n'est pas parfait, mais votre programme l'affirme comme l'étant.", res, false);
             }
 		} catch (ArithmeticException e) {
@@ -82,7 +82,7 @@ public class BouclesQ3 {
 	}
 
 	public static void main(String[] args) {
-		Result result = JUnitCore.runClasses(BouclesQ3.class);
+		Result result = JUnitCore.runClasses(CH4Q2.class);
 		for (Failure failure : result.getFailures()) {
 			System.err.println(failure.toString());
 		}

@@ -14,22 +14,22 @@ import java.io.InputStreamReader;
 import java.io.FileReader;
 import java.io.IOException;
 
-public class Boucle {
+public class CH4Q9 {
     private static String str = "Le code semble comporter des erreurs :\n";
 
-    public void testAdder(int testNumber, String expectedResult) {
+    public void testMultiplier(int testNumber, String expectedResult) {
         try {
             PrintStream ps = new PrintStream("student/output" + testNumber + ".txt");
             System.setOut(ps);
             InputStream is = new FileInputStream("student/input" + testNumber + ".txt");
             System.setIn(is);
-            BoucleStu.runAdder();
+            CH4Q9Stu.runMultiplier();
             ps.close();
             is.close();
             BufferedReader bf = new BufferedReader(new FileReader("student/output" + testNumber + ".txt"));
             String actualResult = bf.readLine();
             bf.close();
-            assertEquals(str + "Votre programme n'a pas calculé la bonne somme : il devait afficher <" + expectedResult + "> mais a affiché <" + actualResult + ">\n", expectedResult.equals(actualResult), true);
+            assertEquals(str + "Votre programme n'a pas calculé le bonne produit : il devait afficher <" + expectedResult + "> mais a affiché <" + actualResult + ">\n", expectedResult.equals(actualResult), true);
         } catch (ArithmeticException e) {
             fail(str + "Il est interdit de diviser par zéro !");
             e.printStackTrace();
@@ -55,24 +55,24 @@ public class Boucle {
     }
 
     @Test
-    public void testAdder1() {
-        testAdder(1, "14");
+    public void testMultiplier1() {
+        testMultiplier(1, "42");
     }
     @Test
-    public void testAdder2() {
-        testAdder(2, "0");
+    public void testMultiplier2() {
+        testMultiplier(2, "1");
     }
     @Test
-    public void testAdder3() {
-        testAdder(3, "0");
+    public void testMultiplier3() {
+        testMultiplier(3, "1");
     }
     @Test
-    public void testAdder4() {
-        testAdder(4, "-7");
+    public void testMultiplier4() {
+        testMultiplier(4, "-36");
     }
 
     public static void main(String[] args) {
-        Result result = JUnitCore.runClasses(Boucle.class);
+        Result result = JUnitCore.runClasses(CH4Q9.class);
         for (Failure failure : result.getFailures())
             System.err.println(failure.toString());
         if (result.wasSuccessful()) {

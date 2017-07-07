@@ -1,7 +1,7 @@
 package student;
 import java.util.Scanner;
 import java.io.*;
-public class BoucleStu {
+public class CH4Q8Stu {
     private Scanner sc;
     /**
      * Exécute un petit programme qui calcule le produit des nombres entrés au terminal par l'utilisateur. Le programme se termine quand l'utilisateur rentre 0, et le produit est affiché sur la sortie standard.

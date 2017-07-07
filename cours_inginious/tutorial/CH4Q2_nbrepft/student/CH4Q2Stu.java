@@ -1,6 +1,6 @@
 package student;
 
-public class BouclesQ3Stu {
+public class CH4Q2Stu {
 
     /*
      * Fonction à tester
