@@ -27,8 +27,8 @@ Les Tableaux
 QCM
 ---
 
-Question 1 - Définition d'un tableau Java
------------------------------------------
+Question 01 - Définition d'un tableau Java
+------------------------------------------
 
 Un tableau ``Java`` est :
 
@@ -55,8 +55,8 @@ Un tableau ``Java`` est :
         *Donner une définition plus précise.*
 
 
-Question 2 - Initialiser un tableau Java
-----------------------------------------
+Question 02 - Initialiser un tableau Java
+-----------------------------------------
 
 Cocher les cases correctes :
 
@@ -137,8 +137,8 @@ Cocher les cases correctes :
             *il manque le mot-clef ``new``*
 
 
-Question 3 - Index dans un tableau Java
----------------------------------------
+Question 03 - Index dans un tableau Java
+----------------------------------------
 
 On initialise le tableau suivant :
 
@@ -159,8 +159,7 @@ Quelle elle la valeur de ``tab[0]``?
     - 3
     - Aucune des autres valeurs proposées
 
-
-Question XX - Déclaration de tableaux
+Question 04 - Déclaration de tableaux
 -------------------------------------
 
             Parmi les déclarations suivantes, quelle est celle qui permet de déclarer correctement un tableau dont la référence est dénommée ``tab`` et qui peut contenir 5 nombres entiers ?
@@ -170,7 +169,12 @@ Question XX - Déclaration de tableaux
         -
             .. code-block:: java
 
-                   int[] tab=new int[5];
+                   int[] tab =
+        -
+        - new
+
+        -
+        - int[5];
 
             .. class:: comment-feedback
 
@@ -180,17 +184,23 @@ Question XX - Déclaration de tableaux
             .. code-block:: java
 
                    int[] tab;
-                   tab=new int[5];
+                   tab =
+        -
+        - new
+
+        -
+        - int[5];
 
             .. class:: comment-feedback
 
                 La première ligne déclare que ``tab`` est une référence vers un tableau d'entiers. La deuxième ligne associe cette référence à un tableau permettant de stocker 5 entiers.
 
 .. class:: negative-multiple
+
         -
             .. code-block:: java
 
-                    tab=int [5];
+                    tab = int [5];
 
             .. class:: comment-feedback
 
@@ -198,7 +208,7 @@ Question XX - Déclaration de tableaux
         -
             .. code-block:: java
 
-                    tab=new int[5];
+                    tab = new int[5];
 
             .. class:: comment-feedback
 
@@ -207,7 +217,7 @@ Question XX - Déclaration de tableaux
         -
             .. code-block:: java
 
-                    int[] tab=new int[];
+                    int[] tab = new int[];
 
             .. class:: comment-feedback
 
@@ -216,7 +226,7 @@ Question XX - Déclaration de tableaux
         -
             .. code-block:: java
 
-                    int[5] tab=new int[];
+                    int[5] tab = new int[];
 
             .. class:: comment-feedback
 
@@ -225,40 +235,43 @@ Question XX - Déclaration de tableaux
         -
             .. code-block:: java
 
-                    int tab[5]=new int[];
+                    int tab[5] = new int[];
 
             .. class:: comment-feedback
 
                 Cette ligne est incorrecte. Lorsque l'on initialise un tableau, il faut spécifier le nombre d'éléments du tableau entre [] dans le membre de droite.
 
-Question XX - Initialisation de tableaux
+Question 05 - Initialisation de tableaux
 ----------------------------------------
 
-            Laquelle des lignes ci-dessous déclare un tableau contenant trois nombres réels et l'initialise avec les valeurs ``-1.0``, ``0.0`` et ``1.0``.
+Laquelle des lignes ci-dessous déclare un tableau contenant trois nombres réels et l'initialise avec les valeurs ``-1.0``, ``0.0`` et ``1.0``.
 
 .. class:: positive-multiple
+
         -
             .. code-block:: java
 
-                    double[] t=new double[] { -1.0, 0.0, 1.0};
+                    double[] t = new double[] {-1.0, 0.0, 1.0};
 
             .. class:: comment-feedback
 
-                Cette ligne est correcte. Le livre la préfère à la ligne ``double[] t= { -1.0, 0.0, 1.0};`` même si les deux sont équivalentes pour Java.
+                Cette ligne est correcte. Le livre la préfère à la ligne ``double[] t = { -1.0, 0.0, 1.0};`` même si les deux sont équivalentes pour Java.
 
         -
             .. code-block:: java
 
-                    double[] t= { -1.0, 0.0, 1.0};
+                    double[] t = {-1.0, 0.0, 1.0};
 
             .. class:: comment-feedback
 
-                Cette ligne est correcte. Le livre préfère la ligne ``double[] t=new double[] { -1.0, 0.0, 1.0};`` qui est plus explicite même si les deux sont équivalentes pour Java.
+                Cette ligne est correcte. Le livre préfère la ligne ``double[] t = new double[] { -1.0, 0.0, 1.0};`` qui est plus explicite même si les deux sont équivalentes pour Java.
+
+.. class:: negative-multiple
 
         -
             .. code-block:: java
 
-                   double[3] t= {-1.0, 0.0, 1.0};
+                   double[3] t = {-1.0, 0.0, 1.0};
 
             .. class:: comment-feedback
 
@@ -267,7 +280,7 @@ Question XX - Initialisation de tableaux
         -
             .. code-block:: java
 
-                   double t= {-1.0, 0.0, 1.0};
+                   double t = {-1.0, 0.0, 1.0};
 
             .. class:: comment-feedback
 
@@ -276,7 +289,7 @@ Question XX - Initialisation de tableaux
         -
             .. code-block:: java
 
-                   double[] t= new double[-1.0, 0.0,1.0];
+                   double[] t = new double[-1.0, 0.0,1.0];
 
             .. class:: comment-feedback
 
@@ -286,7 +299,7 @@ Question XX - Initialisation de tableaux
         -
             .. code-block:: java
 
-                   double[] t= new double{-1.0,0.0,1.0};
+                   double[] t = new double{-1.0,0.0,1.0};
 
             .. class:: comment-feedback
 
@@ -296,19 +309,21 @@ Question XX - Initialisation de tableaux
         -
             .. code-block:: java
 
-                   double[] t= [-1.0, 0.0, 1.0];
+                   double[] t = [-1.0, 0.0, 1.0];
 
             .. class:: comment-feedback
 
 
                 Cette ligne n'est pas syntaxiquement correcte. Ne confondez pas ``{`` et ``[``.
 
- Question XX - Initialisation de tableaux
- ----------------------------------------------------------
 
-            Une fois qu'un tableau a été déclaré et initialisé, il faut parfois pouvoir connaître le nombre d'éléments se trouvant dans le tableau. Lequel des codes ci-dessous affiche-t-il le nombre d'entiers dans le tableau ``tab`` déclaré via ``int[] tab=new int[]{1,2,7,9,3,99,-12,78,119}`` ?
+Question 06 - Initialisation de tableaux
+----------------------------------------
+
+Une fois qu'un tableau a été déclaré et initialisé, il faut parfois pouvoir connaître le nombre d'éléments se trouvant dans le tableau. Lequel des codes ci-dessous affiche-t-il le nombre d'entiers dans le tableau ``tab`` déclaré via ``int[] tab = new int[]{1,2,7,9,3,99,-12,78,119}`` ?
 
 .. class:: positive-multiple
+
         -
 
                 .. code-block:: java
@@ -316,6 +331,7 @@ Question XX - Initialisation de tableaux
                    System.out.println(tab.length);
 
 .. class:: negative-multiple
+
         -
             .. code-block:: java
 
@@ -352,530 +368,558 @@ Question XX - Initialisation de tableaux
 
                 Cette ligne est syntaxiquement incorrecte.
 
-Question XX - Tableaux à plusieurs dimensions
+Question 07 - Tableaux à plusieurs dimensions
 ---------------------------------------------
 
-            Outre les tableaux à une dimension décrit dans |jn7.1|, Java supporte également des tableaux à plusieurs dimensions. Laquelle des déclarations ci-dessous est-elle un tableau à plusieurs dimensions qui permet de stocker exactement 24 nombres entiers ?
+Outre les tableaux à une dimension, Java supporte également des tableaux à plusieurs dimensions. Laquelle des déclarations ci-dessous est-elle un tableau à plusieurs dimensions qui permet de stocker exactement 24 nombres entiers ?
 
 
 .. class:: positive-multiple
 
-        -
+    -
 
-            .. code-block:: java
+        .. code-block:: java
 
-                   int[][] t=new int[4][6];
+           int[][] t = new int[4][6];
 
-            .. class:: comment-feedback
+        .. class:: comment-feedback
 
-                Ce tableau à deux dimensions comprend 4 lignes et 6 colonnes.
+            Ce tableau à deux dimensions comprend 4 lignes et 6 colonnes.
 
-        -
-            .. code-block:: java
+    -
+        .. code-block:: java
 
-                   int[][] t=new int[3][8];
+               int[][] t = new int[3][8];
 
-            .. class:: comment-feedback
+        .. class:: comment-feedback
 
-                Ce tableau à deux dimensions comprend 3 lignes et 8 colonnes.
+            Ce tableau à deux dimensions comprend 3 lignes et 8 colonnes.
 
 .. class:: negative-multiple
-        -
+
+    -
+        .. code-block:: java
+
+               int[][] t = new int[2][4];
+
+        .. class:: comment-feedback
+
+            Ce tableau à deux dimensions comprend 2 lignes et 4 colonnes.
+    -
+        .. code-block:: java
+
+               int[][] t = new int[24];
+
+        .. class:: comment-feedback
+
+            Cette ligne est erronée. La référence déclarée à gauche est vers un tableau de tableaux alors que seul un tableau d'entiers est créé dans le membre de droite.
+    -
+        .. code-block:: java
+
+               int[] t = new int[3][8];
+
+        .. class:: comment-feedback
+
+
+            Cette ligne est erronée. La référence déclarée à gauche est vers un tableau alors qu'un tableau de tableaux d'entiers est créé dans le membre de droite.
+
+    -
+        .. code-block:: java
+
+               int[][] t = new int[2][4];
+
+        .. class:: comment-feedback
+
+            Le tableau créé a deux lignes et 4 colonnes. Il ne permet donc pas de stocker 24 nombres entiers.
+
+Question 08 - Tableaux ordonnés
+-------------------------------
+
+Laquelle des suites d'instructions ci-dessous est une implémentation correcte de la spécification suivante :
+
+.. code-block:: java
+
+ /**
+  * @pre  t est un tableau contenant au moins un élément
+  * @post retourne true si les données du tableau t sont en ordre
+  *       décroissant, false sinon
+  */
+  public static boolean decroissant(double[] t)
+  {
+    // corps à inclure
+  }
+
+.. class:: positive-multiple
+
+    -
             .. code-block:: java
 
-                   int[][] t=new int[2][4];
+               if(t.length==1) {
+                   return true;
+               }
+               for(int i=1;i<t.length;i++) {
+                 if (t[i-1] <= t[i]) {
+                       return false;
+                 }
+               }
+               return true;
 
-            .. class:: comment-feedback
-
-                Ce tableau à deux dimensions comprend 2 lignes et 4 colonnes.
-        -
+    -
             .. code-block:: java
 
-                   int[][] t=new int[24];
-            .. class:: comment-feedback
-
-                Cette ligne est erronée. La référence déclarée à gauche est vers un tableau de tableaux alors que seul un tableau d'entiers est créé dans le membre de droite.
-        -
-            .. code-block:: java
-
-                   int[] t=new int[3][8];
-
-            .. class:: comment-feedback
-
-
-                Cette ligne est erronée. La référence déclarée à gauche est vers un tableau alors qu'un tableau de tableaux d'entiers est créé dans le membre de droite.
-        -
-            .. code-block:: java
-
-                   int[][] t=new int[2][4];
-
-            .. class:: comment-feedback
-
-                Le tableau créé a deux lignes et 4 colonnes. Il ne permet donc pas de stocker 24 nombres entiers.
-
- Question XX - Tableaux ordonnés
- -------------------------------
-
-            Laquelle des suites d'instructions ci-dessous est une implémentation correcte de la spécification suivante :
-
-            .. code-block:: java
-
-             /**
-              * @pre  t est un tableau contenant au moins un élément
-              * @post retourne true si les données du tableau t sont en ordre
-              *       décroissant, false sinon
-              */
-              public static boolean decroissant(double[] t)
-              {
-                // corps à inclure
-              }
-        .. class:: positive-multiple
-        -   valid: true
-
-                .. code-block:: java
-
-                   if(t.length==1) {
-                       return true;
-                   }
-                   for(int i=1;i<t.length;i++) {
-                     if (t[i-1] <= t[i]) {
-                           return false;
-                     }
-                   }
+               if(t.length==1) {
                    return true;
-        -   valid: true
+               }
+               for(int i=t.length-1;i>=1;i=i-1) {
+                 if (t[i-1] <= t[i]) {
+                       return false;
+                 }
+               }
+               return true;
 
-                .. code-block:: java
+.. class:: negative-multiple
 
-                   if(t.length==1) {
-                       return true;
-                   }
-                   for(int i=t.length-1;i>=1;i=i-1) {
-                     if (t[i-1] <= t[i]) {
-                           return false;
-                     }
-                   }
-                   return true;
-        -
-                .. code-block:: java
+    -
+        .. code-block:: java
 
-                   if(t.length==1) {
-                       return true;
-                   }
-                   for(int i=0;i<t.length;i++) {
-                     if (t[i-1] <= t[i]) {
-                           return false;
-                     }
-                   }
-                   return true;
-            .. class:: comment-feedback
+           if(t.length==1) {
+               return true;
+           }
+           for(int i=0;i<t.length;i++) {
+             if (t[i-1] <= t[i]) {
+                   return false;
+             }
+           }
+           return true;
+        .. class:: comment-feedback
 
+            Que se passe-t-il lors du premier passage dans la boucle ``for`` avec un tableau ``t`` contenant ``{ 1.0, 2.0 }`` ? ``i`` vaut ``0``, quel est la valeur de ``t[0-1]`` ?
 
-                Que se passe-t-il lors du premier passage dans la boucle ``for`` avec un tableau ``t`` contenant ``{ 1.0, 2.0 }`` ? ``i`` vaut ``0``, quel est la valeur de ``t[0-1]`` ?
-        -
-                .. code-block:: java
+    -
+        .. code-block:: java
 
-                   if(t.length==1) {
-                       return true;
-                   }
-                   for(int i=t.length;i>=1;i=i-1) {
-                     if (t[i-1] <= t[i]) {
-                           return false;
-                     }
-                   }
-                   return true;
-            .. class:: comment-feedback
+           if(t.length==1) {
+               return true;
+           }
+           for(int i=t.length;i>=1;i=i-1) {
+             if (t[i-1] <= t[i]) {
+                   return false;
+             }
+           }
+           return true;
 
+        .. class:: comment-feedback
 
-                Que se passe-t-il lors du premier passage dans la boucle ``for`` avec un tableau ``t`` contenant ``{ 1.0, 2.0 }`` ? ``i`` vaut ``t.length``, quel est la valeur de ``t[i]`` ?
-        -
-                .. code-block:: java
+            Que se passe-t-il lors du premier passage dans la boucle ``for`` avec un tableau ``t`` contenant ``{ 1.0, 2.0 }`` ? ``i`` vaut ``t.length``, quel est la valeur de ``t[i]`` ?
 
-                   if(t.length==1) {
-                       return true;
-                   }
-                   for(int i=1;i<t.length;i++) {
-                     if (t[i-1] <= t[i]) {
-                        return false;
-                     }
-                     else  {
-                       return true;
-                     }
-                   }
-                   return true;
-            .. class:: comment-feedback
+    -
+        .. code-block:: java
 
+           if(t.length==1) {
+               return true;
+           }
+           for(int i=1;i<t.length;i++) {
+             if (t[i-1] <= t[i]) {
+                return false;
+             }
+             else  {
+               return true;
+             }
+           }
+           return true;
 
-                Cette méthode teste-t-elle vraiment l'entièreté du tableau ? Combien de fois passe-t-elle dans la boucle ``for`` ?
-        -
-                .. code-block:: java
+        .. class:: comment-feedback
 
-                   if(t.length==1) {
-                       return true;
-                   }
-                   for(int i=t.length-1;i>=1;i=i-1) {
-                     if (t[i-1] <= t[i]) {
-                        return false;
-                     }
-                     else {
-                        return true;
-                     }
-                   }
-                   return true;
-            .. class:: comment-feedback
+            Cette méthode teste-t-elle vraiment l'entièreté du tableau ? Combien de fois passe-t-elle dans la boucle ``for`` ?
 
+    -
+        .. code-block:: java
 
-                Cette méthode teste-t-elle vraiment l'entièreté du tableau ? Combien de fois passe-t-elle dans la boucle ``for`` ?
+           if(t.length==1) {
+               return true;
+           }
+           for(int i=t.length-1;i>=1;i=i-1) {
+             if (t[i-1] <= t[i]) {
+                return false;
+             }
+             else {
+                return true;
+             }
+           }
+           return true;
 
-Question XX - Initialisation de tableaux à deux dimensions
+        .. class:: comment-feedback
+
+            Cette méthode teste-t-elle vraiment l'entièreté du tableau ? Combien de fois passe-t-elle dans la boucle ``for`` ?
+
+Question 09 - Initialisation de tableaux à deux dimensions
 ----------------------------------------------------------
 
-            Considérons un tableau à deux dimensions initialisé comme suit :
+Considérons un tableau à deux dimensions initialisé comme suit :
 
-            .. code-block:: java
+.. code-block:: java
 
-             int[][] tab= {  { 1,2,3} ,
-                             { 4,5}
-                      } ;
+ int[][] tab = { {1,2,3},
+                 {4,5}
+                };
 
-            Laquelle des expressions booléennes ci-dessous est-elle vraie ?
-        .. class:: positive-multiple
-        -   valid: true
+Laquelle des expressions booléennes ci-dessous est-elle vraie ?
 
-                .. code-block:: java
+.. class:: positive-multiple
 
-                    (tab[0].length==3) && (tab[1][1]==5)
-        -   valid: true
+    -
+        .. code-block:: java
 
-                .. code-block:: java
+            (tab[0].length==3) && (tab[1][1]==5)
 
-                    (tab.length==2) && (tab[0][2]==3)
-        -
-                .. code-block:: java
+    -
+        .. code-block:: java
 
-                   (tab.length==1) && (tab[1][1]==4)
-            .. class:: comment-feedback
+            (tab.length==2) && (tab[0][2]==3)
 
+.. class:: negative-multiple
 
-                ``tab.length`` est le nombre de lignes du tableau ``tab``, c'est-à-dire ``2``.  Relisez |jn7.5.1|_ et |jn7.5.2|_
+    -
+        .. code-block:: java
 
-                 .. _jn7.5.1 : http://math.hws.edu/javanotes/c7/s5.html#arrays.5.1
-                 .. |jn7.5.1| replace:: `7.5.1 : Creating Two-dimensional Arrays`
+               (tab.length==1) && (tab[1][1]==4)
 
-                 .. _jn7.5.2 : http://math.hws.edu/javanotes/c7/s5.html#arrays.5.2
-                 .. |jn7.5.2| replace:: `7.5.2 : Using Two-dimensional Arrays`
-        -
-                .. code-block:: java
-
-                   (tab[1].length==3) && (tab[0][1]==2)
-            .. class:: comment-feedback
+        .. class:: comment-feedback
 
 
-                ``tab[1].length`` est le nombre de colonnes de la ligne ``1`` du tableau, c'est-à-dire ``2``.  Relisez |jn7.5.1|_ et |jn7.5.2|_
+            ``tab.length`` est le nombre de lignes du tableau ``tab``, c'est-à-dire ``2``.
+
+    -
+        .. code-block:: java
+
+               (tab[1].length==3) && (tab[0][1]==2)
+
+        .. class:: comment-feedback
 
 
-                 .. _jn7.5.1 : http://math.hws.edu/javanotes/c7/s5.html#arrays.5.1
-                 .. |jn7.5.1| replace:: `7.5.1 : Creating Two-dimensional Arrays`
+                ``tab[1].length`` est le nombre de colonnes de la ligne ``1`` du tableau, c'est-à-dire ``2``.
 
-                 .. _jn7.5.2 : http://math.hws.edu/javanotes/c7/s5.html#arrays.5.2
-                 .. |jn7.5.2| replace:: `7.5.2 : Using Two-dimensional Arrays`
-        -
-                .. code-block:: java
+    -
+        .. code-block:: java
 
-                   (tab[0][2]==2) && (tab[1][0]==4)
-            .. class:: comment-feedback
+                (tab[0][2]==2) && (tab[1][0]==4)
 
+        .. class:: comment-feedback
 
                 L'élément ``tab[0][2]`` a comme valeur ``3`` et non ``2``.
 
-Question XX - Manipulation de tableau à deux dimensions
+Question 10 - Manipulation de tableau à deux dimensions
+-------------------------------------------------------
+
+Considérons la matrice ``m`` de ``li`` lignes et ``c`` colonnes qui a été initialisée par les instructions ci-dessous :
+
+.. code-block:: java
+
+
+       double m[][] = new double[li][c];
+       int count =1;
+       for(int i=0;i<li;i++) {
+         for(int j=0; j<c; j++) {
+             m[i][j]=count;
+         count++;
+         }
+       }
+
+Laquelle des expressions booléennes ci-dessous est-elle vraie ?
+
+.. class:: positive-multiple
+
+-
+
+        .. code-block:: java
+
+            ( m[li-1][0]==((li-1)*c)+1) && (m[0][c-1]==c)
+-
+
+        .. code-block:: java
+
+            ( m[0][0]==1) && (m[li-1][c-1]==1+li*ci)
+-
+
+    .. code-block:: java
+
+        ( m[0][c-1]==c-1)
+
+    .. class:: comment-feedback
+
+        Cet élément de la matrice vaut ``c`` et car ``count`` est incrémentée à chaque passage dans la boucle ``for j<c``.
+
+-
+    .. code-block:: java
+
+        ( m[li][c]==li*ci)
+
+    .. class:: comment-feedback
+
+
+        Il n'existe pas d'élément ``m[li][c]`` dans la matrice ``m``.
+-
+    .. code-block:: java
+
+        (m[0][0]==0) && (m[0][c-1]==c)
+
+    .. class:: comment-feedback
+
+
+        ``count`` étant initialisé à ``1``, l'élément ``m[0][0]`` est initialisé à la valeur ``1``.
+-
+    .. code-block:: java
+
+         ( m[0][1]==1) && (m[0][c-1]==c)
+
+    .. class:: comment-feedback
+
+
+        ``m[0][1]`` vaut ``2``
+
+Question 11 - Somme des éléments d'un tableau
 ---------------------------------------------
 
-            Considérons la matrice ``m`` de ``li`` lignes et ``c`` colonnes qui a été initialisée par les instructions ci-dessous :
+Laquelle des implémentations suivantes est-elle une implémentation correcte de la méthode ``sumTab`` dont la spécification est reprise ci-dessous :
 
-            .. code-block:: java
+.. code-block:: java
 
 
-               double m[][]=new double[li][c];
-               int count=1;
-               for(int i=0;i<li;i++) {
-                 for(int j=0; j<c; j++) {
-                     m[i][j]=count;
-                 count++;
-                 }
-               }
+  /*
+   * @pre tableau contenant au moins un élément
+   * @post retourne la somme des valeurs stockées dans le tableau
+   */
+  public static double sumTab(double[] t)
 
-            Laquelle des expressions booléennes ci-dessous est-elle vraie ?
-        .. class:: positive-multiple
-        -   valid: true
+.. class:: positive-multiple
 
-                .. code-block:: java
+    -
 
-                    ( m[li-1][0]==((li-1)*c)+1) && (m[0][c-1]==c)
-        -   valid: true
+        .. code-block:: java
 
-                .. code-block:: java
+          double sum=0.0;
+          for(int i=0;i<t.length;i++) {
+            sum=sum+t[i];
+          }
+          return sum;
+    -
 
-                    ( m[0][0]==1) && (m[li-1][c-1]==1+li*ci)
-        -
-                .. code-block:: java
+        .. code-block:: java
 
-                    ( m[0][c-1]==c-1)
-            .. class:: comment-feedback
+          double sum=0.0;
+          for(int i=t.length-1;i>=0;i=i-1) {
+            sum=sum+t[i];
+          }
+          return sum;
+    -
+        .. code-block:: java
 
+          double sum=0.0;
+          for(int i=0;i<t.length;i++) {
+           for(int j=0;j<t[i].length;j++) {
+            sum=sum+t[i];
+           }
+          }
+          return sum;
 
-                Cet élément de la matrice vaut ``c`` et car ``count`` est incrémentée à chaque passage dans la boucle ``for j<c``.
-        -
-                .. code-block:: java
+        .. class:: comment-feedback
 
-                    ( m[li][c]==li*ci)
-            .. class:: comment-feedback
 
+            Ce code est utilisable pour calculer la somme des éléments d'un tableau à deux dimensions, mais le tableau ``t`` qui est passé comme paramètre effectif à la méthode est un tableau à une seule dimension. Ce code ne compilera pas dans la méthode ``sumTab``.
+    -
+        .. code-block:: java
 
-                Il n'existe pas d'élément ``m[li][c]`` dans la matrice ``m``.
-        -
-                .. code-block:: java
+          double sum=0.0;
+          for(int i=t.length-1;i>=0;i=i-1) {
+           for(int j=0;j<t[i].length;j++) {
+            sum=sum+t[i];
+           }
+          }
+          return sum;
 
-                    (m[0][0]==0) && (m[0][c-1]==c)
-            .. class:: comment-feedback
+        .. class:: comment-feedback
 
 
-                ``count`` étant initialisé à ``1``, l'élément ``m[0][0]`` est initialisé à la valeur ``1``.
-        -
-                .. code-block:: java
+            Ce code est utilisable pour calculer la somme des éléments d'un tableau à deux dimensions, mais le tableau ``t`` qui est passé comme paramètre effectif à la méthode est un tableau à une seule dimension. Ce code ne compilera pas dans la méthode ``sumTab``.
+    -
+        .. code-block:: java
 
-                     ( m[0][1]==1) && (m[0][c-1]==c)
-            .. class:: comment-feedback
+           double sum=0.0;
+           for(int i=0;i<=t.length;i++) {
+             sum=sum+t[i];
+           }
+           return sum;
+        .. class:: comment-feedback
 
 
-                ``m[0][1]`` vaut ``2``
+            Ce code provoquera une erreur à l'exécution. Il n'y a pas d'élément dans le tableau ``t`` à l'indice ``t.length``. L'indice le plus élevé du tableau est ``t.length-1``.
 
-Question XX - Somme des éléments d'un tableau
----------------------------------------------
+Question 12 - Assertions
+------------------------
 
-            Laquelle des implémentations suivantes est-elle une implémentation correcte de la méthode ``sumTab`` dont la spécification est reprise ci-dessous :
+En Java, les assertions peuvent être utilisées pour vérifier explicitement les préconditions et les postconditions d'une méthode. En programmation défensive, on utilise des ``assert`` pour vérifier explicitement les préconditions de chaque méthode. Considérons la méthode dont la spécification est reprise ci-dessous :
 
-            .. code-block:: java
+.. code-block:: java
 
+ /**
+  * @pre a>0, b>2*a et b est pair
+  * @post ....
+  */
+ private void methode(int a, int b)
 
-              /*
-               * @pre tableau contenant au moins un élément
-               * @post retourne la somme des valeurs stockées dans le tableau
-               */
-              public static double sumTab(double[] t)
-        .. class:: positive-multiple
-        -   valid: true
+Laquelle des séquences d'instructions ci-dessous vérifie explicitement les préconditions de cette méthode ?
 
-                .. code-block:: java
+.. class:: positive-multiple
 
-                  double sum=0.0;
-                  for(int i=0;i<t.length;i++) {
-                    sum=sum+t[i];
-                  }
-                  return sum;
-        -   valid: true
+-
 
-                .. code-block:: java
+    .. code-block:: java
 
-                  double sum=0.0;
-                  for(int i=t.length-1;i>=0;i=i-1) {
-                    sum=sum+t[i];
-                  }
-                  return sum;
-        -
-                .. code-block:: java
+       assert a>0 : "a doit être strictement positif";
+       assert ( (b>2*a) && (b%2)==0 ) : "b invalide";
+    .. class:: comment-feedback
 
-                  double sum=0.0;
-                  for(int i=0;i<t.length;i++) {
-                   for(int j=0;j<t[i].length;j++) {
-                    sum=sum+t[i];
-                   }
-                  }
-                  return sum;
-            .. class:: comment-feedback
 
+        Notez qu'en Java l'expression ``(b%2)`` est une expression entière. Elle peut donc apparaître à gauche d'un signe ``==``. Il est intéressant d'utiliser des commentaires pour indiquer quelle précondition n'est pas vérifiée.
+-
 
-                Ce code est utilisable pour calculer la somme des éléments d'un tableau à deux dimensions, mais le tableau ``t`` qui est passé comme paramètre effectif à la méthode est un tableau à une seule dimension. Ce code ne compilera pas dans la méthode ``sumTab``.
-        -
-                .. code-block:: java
+    .. code-block:: java
 
-                  double sum=0.0;
-                  for(int i=t.length-1;i>=0;i=i-1) {
-                   for(int j=0;j<t[i].length;j++) {
-                    sum=sum+t[i];
-                   }
-                  }
-                  return sum;
-            .. class:: comment-feedback
+       assert a>0 : "a doit être strictement positif";
+       assert (b>2*a) : "b trop petit";
+       int reste=b%2;
+       assert reste==0 : "b n'est pas pair";
 
+    .. class:: comment-feedback
 
-                Ce code est utilisable pour calculer la somme des éléments d'un tableau à deux dimensions, mais le tableau ``t`` qui est passé comme paramètre effectif à la méthode est un tableau à une seule dimension. Ce code ne compilera pas dans la méthode ``sumTab``.
-        -
-                .. code-block:: java
 
-                   double sum=0.0;
-                   for(int i=0;i<=t.length;i++) {
-                     sum=sum+t[i];
-                   }
-                   return sum;
-            .. class:: comment-feedback
+        Il est intéressant d'utiliser des commentaires pour indiquer quelle précondition n'est pas vérifiée.
+-
+    .. code-block:: java
 
+       assert a<=0;
+       assert ( (b>2*a) && (b%2)==0 ) : "b invalide";
+    .. class:: comment-feedback
 
-                Ce code provoquera une erreur à l'exécution. Il n'y a pas d'élément dans le tableau ``t`` à l'indice ``t.length``. L'indice le plus élevé du tableau est ``t.length-1``.
 
-Question XX - Assertions
------------------------------------
+        La première assertion est incorrecte. Elle est vraie lorsque ``a<=0`` or la précondition de la méthode est ``a>0``.
+-
+    .. code-block:: java
 
-            En Java, les assertions peuvent être utilisées pour vérifier explicitement les préconditions et les postconditions d'une méthode. En programmation défensive, on utilise des ``assert`` pour vérifier explicitement les préconditions de chaque méthode. Considérons la méthode dont la spécification est reprise ci-dessous :
+       int reste=b%2;
+       assert a<=0 : "a doit être strictement positif";
+       assert reste!=0 : "b n'est pas pair";
+       assert (b<=2*a) : "b trop petit";
 
-            .. code-block:: java
+    .. class:: comment-feedback
 
-             /**
-              * @pre a>0, b>2*a et b est pair
-              * @post ....
-              */
-             private void methode(int a, int b)
 
-            Laquelle des séquences d'instructions ci-dessous vérifie explicitement les préconditions de cette méthode ?
-        .. class:: positive-multiple
-        -   valid: true
+        En Java, ``assert`` permet de vérifier qu'une précondition est remplie. Si c'est le cas, l'instruction ``assert`` n'a aucun effet. Sinon, l'instruction ``assert`` affiche le message qui suit ``:`` et provoque une erreur. Lorsque l'on utilise ``assert`` pour vérifier les préconditions, on souhaite que l'exécution du programme s'arrête et que le message d'erreur soit afficher lorsqu'une précondition n'est pas vérifiée. Pour cela, l'expression booléenne contenu dans l'assertion doit être la précondition à vérifier.
+-
+    .. code-block:: java
 
-                .. code-block:: java
+       assert a<=0 : "a doit être strictement positif";
+       assert ( (b<=2*a) && (b%2)!=0 ) : "b invalide";
 
-                   assert a>0 : "a doit être strictement positif";
-                   assert ( (b>2*a) && (b%2)==0 ) : "b invalide";
-            .. class:: comment-feedback
+    .. class:: comment-feedback
 
+        Notez qu'en Java l'expression ``(b%2)`` est une expression entière. Elle peut donc apparaître à gauche d'un signe ``==``. En Java, ``assert`` permet de vérifier qu'une précondition est remplie. Si c'est le cas, l'instruction ``assert`` n'a aucun effet. Sinon, l'instruction ``assert`` affiche le message qui suit ``:`` et provoque une erreur. Lorsque l'on utilise ``assert`` pour vérifier les préconditions, on souhaite que l'exécution du programme s'arrête et que le message d'erreur soit afficher lorsqu'une précondition n'est pas vérifiée. Pour cela, l'expression booléenne contenu dans l'assertion doit être la précondition à vérifier.
 
-                Notez qu'en Java l'expression ``(b%2)`` est une expression entière. Elle peut donc apparaître à gauche d'un signe ``==``. Il est intéressant d'utiliser des commentaires pour indiquer quelle précondition n'est pas vérifiée.
-        -   valid: true
+Question 13 - Somme de vecteurs
+-------------------------------
 
-                .. code-block:: java
+Considérons les tableaux ``a``, ``b`` et ``s`` déclarés comme indiqués ci-dessous :
 
-                   assert a>0 : "a doit être strictement positif";
-                   assert (b>2*a) : "b trop petit";
-                   int reste=b%2;
-                   assert reste==0 : "b n'est pas pair";
-            .. class:: comment-feedback
+.. code-block:: java
 
+  int[] a= newint[20];
+  int[] b= new int[20];
+  int[] s= new int[20];
 
-                Il est intéressant d'utiliser des commentaires pour indiquer quelle précondition n'est pas vérifiée.
-        -
-                .. code-block:: java
 
-                   assert a<=0;
-                   assert ( (b>2*a) && (b%2)==0 ) : "b invalide";
-            .. class:: comment-feedback
+Supposons que ces tableaux servent à stocker des vecteurs (au sens mathématique du terme). Laquelle des séquences d'instructions ci-dessous place-t-elle dans le vecteur ``s`` la somme des vecteurs ``a`` et ``b``?
 
+.. class:: positive-multiple
 
-                La première assertion est incorrecte. Elle est vraie lorsque ``a<=0`` or la précondition de la méthode est ``a>0``.
-        -
-                .. code-block:: java
+    -
+        .. code-block:: java
 
-                   int reste=b%2;
-                   assert a<=0 : "a doit être strictement positif";
-                   assert reste!=0 : "b n'est pas pair";
-                   assert (b<=2*a) : "b trop petit";
-            .. class:: comment-feedback
+            for(int i=0; i<a.length;i++) {
+             s[i]=a[i]+b[i];
+            }
+    -
+        .. code-block:: java
 
+            for(int i=0; i<b.length;i++) {
+             s[i]=a[i]+b[i];
+            }
 
-                En Java, ``assert`` permet de vérifier qu'une précondition est remplie. Si c'est le cas, l'instruction ``assert`` n'a aucun effet. Sinon, l'instruction ``assert`` affiche le message qui suit ``:`` et provoque une erreur. Lorsque l'on utilise ``assert`` pour vérifier les préconditions, on souhaite que l'exécution du programme s'arrête et que le message d'erreur soit afficher lorsqu'une précondition n'est pas vérifiée. Pour cela, l'expression booléenne contenu dans l'assertion doit être la précondition à vérifier.
-        -
-                .. code-block:: java
+    -
+        .. code-block:: java
 
-                   assert a<=0 : "a doit être strictement positif";
-                   assert ( (b<=2*a) && (b%2)!=0 ) : "b invalide";
-            .. class:: comment-feedback
+            for(int i=s.length-1; i>=0;i=i-1) {
+             s[i]=a[i]+b[i];
+            }
 
+.. class:: negative-multiple
 
-                Notez qu'en Java l'expression ``(b%2)`` est une expression entière. Elle peut donc apparaître à gauche d'un signe ``==``. En Java, ``assert`` permet de vérifier qu'une précondition est remplie. Si c'est le cas, l'instruction ``assert`` n'a aucun effet. Sinon, l'instruction ``assert`` affiche le message qui suit ``:`` et provoque une erreur. Lorsque l'on utilise ``assert`` pour vérifier les préconditions, on souhaite que l'exécution du programme s'arrête et que le message d'erreur soit afficher lorsqu'une précondition n'est pas vérifiée. Pour cela, l'expression booléenne contenu dans l'assertion doit être la précondition à vérifier.
+    -
+        .. code-block:: java
 
-Question XX - Somme de vecteurs
-------------------------------------
+            s[]=a[]+b[];
 
-            Considérons les tableaux ``a``, ``b`` et ``s`` déclarés comme indiqués ci-dessous :
+        .. class:: comment-feedback
 
-            .. code-block:: java
+            Cette instruction est invalide en Java. Il est nécessaire d'utiliser une boucle pour calculer cette somme.
 
-              int[] a=new int[20];
-              int[] b=new int[20];
-              int[] s=new int[20];
+    -
+        .. code-block:: java
 
+            for(int i=0; i<=a.length;i++) {
+             s[i]=a[i]+b[i];
+            }
 
-            Supposons que ces tableaux servent à stocker des vecteurs (au sens mathématique du terme). Laquelle des séquences d'instructions ci-dessous place-t-elle dans le vecteur ``s`` la somme des vecteurs ``a`` et ``b``?
-        .. class:: positive-multiple
-        -   valid: true
+        .. class:: comment-feedback
 
-                .. code-block:: java
 
-                    for(int i=0; i<a.length;i++) {
-                     s[i]=a[i]+b[i];
-                    }
-        -   valid: true
+        Cette boucle va provoquer une erreur à l'exécution lorsque ``i`` vaut ``a.length``. Voyez-vous pourquoi ?
 
-                .. code-block:: java
+    -
+        .. code-block:: java
 
-                    for(int i=0; i<b.length;i++) {
-                     s[i]=a[i]+b[i];
-                    }
-        -   valid: true
+            for(int i=0; i<=b.length;i++) {
+             s[i]=a[i]+b[i];
+            }
 
-                .. code-block:: java
+        .. class:: comment-feedback
 
-                    for(int i=s.length-1; i>=0;i=i-1) {
-                     s[i]=a[i]+b[i];
-                    }
-        -
-                .. code-block:: java
+            Cette boucle va provoquer une erreur à l'exécution lorsque ``i`` vaut ``b.length``. Voyez-vous pourquoi ?
 
-                    s[]=a[]+b[];
-            .. class:: comment-feedback
+    -
+        .. code-block:: java
 
+            for(int i=s.length-1; i>0;i=i-1) {
+             s[i]=a[i]+b[i];
+            }
 
-                Cette instruction est invalide en Java. Il est nécessaire d'utiliser une boucle pour calculer cette somme.
-        -
-                .. code-block:: java
+        .. class:: comment-feedback
 
-                    for(int i=0; i<=a.length;i++) {
-                     s[i]=a[i]+b[i];
-                    }
-            .. class:: comment-feedback
+            Cette boucle ne calculera pas la valeur de ``s[0]``. Voyez-vous pourquoi ?
 
+    -
+        .. code-block:: java
 
-                Cette boucle va provoquer une erreur à l'exécution lorsque ``i`` vaut ``a.length``. Voyez-vous pourquoi ?
-        -
-                .. code-block:: java
+            for(int i=s.length; i>=0;i=i-1) {
+             s[i]=a[i]+b[i];
+            }
 
-                    for(int i=0; i<=b.length;i++) {
-                     s[i]=a[i]+b[i];
-                    }
-            .. class:: comment-feedback
+        .. class:: comment-feedback
 
 
-                Cette boucle va provoquer une erreur à l'exécution lorsque ``i`` vaut ``b.length``. Voyez-vous pourquoi ?
-        -
-                .. code-block:: java
+            Cette boucle va provoquer une erreur à l'exécution lorsque ``i`` vaut ``s.length``. Voyez-vous pourquoi ?
 
-                    for(int i=s.length-1; i>0;i=i-1) {
-                     s[i]=a[i]+b[i];
-                    }
-            .. class:: comment-feedback
 
-
-                Cette boucle ne calculera pas la valeur de ``s[0]``. Voyez-vous pourquoi ?
-        -
-                .. code-block:: java
-
-                    for(int i=s.length; i>=0;i=i-1) {
-                     s[i]=a[i]+b[i];
-                    }
-            .. class:: comment-feedback
-
-
-                Cette boucle va provoquer une erreur à l'exécution lorsque ``i`` vaut ``s.length``. Voyez-vous pourquoi ?
-
-
-Question XX - Tableaux de caractères
+Question 14 - Tableaux de caractères
 ------------------------------------
 
 La semaine passée, vous avez écrit une méthode ``count`` permettant de déterminer le nombre d'occurences d'un caractère dans un ``String``. Lequel des corps ci-dessous est une implémentation correcte de la méthode ``isIn`` dont la spécification est
@@ -956,8 +1000,8 @@ La semaine passée, vous avez écrit une méthode ``count`` permettant de déter
 
             Que fait cette méthode après avoir comparé ``c`` avec l'élément ``s[0]`` ?
 
-Question 4 - toCharArray
-------------------------
+Question 15 - toCharArray
+-------------------------
 
 La classe ``String`` contient une méthode baptisée `toCharArray() <http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/String.html#toCharArray()>`_ qui permet de convertir un ``String`` en un tableau de caractères. Une méthode statique équivalent pourrait avoir les spécification et signature suivantes :
 
@@ -977,7 +1021,10 @@ Laquelle des séquences ci-dessous est une implémentation correcte de cette mé
     -
         .. code-block:: java
 
-           char[] r=new char[s.length()];
+           char[] r= new
+
+        -
+        - char[s.length()];
            for(int i=0;i<s.length();i++) {
               r[i]=s.charAt(i);
            }
@@ -990,7 +1037,10 @@ Laquelle des séquences ci-dessous est une implémentation correcte de cette mé
     -
         .. code-block:: java
 
-            char[] r=new char[s.length()];
+            char[] r= new
+
+        -
+        - char[s.length()];
             for(int i=s.length()-1;i>=0;i=i-1) {
               r[i]=s.charAt(i);
             }
@@ -1028,7 +1078,10 @@ Laquelle des séquences ci-dessous est une implémentation correcte de cette mé
     -
         .. code-block:: java
 
-          char[] r=new char[s.length];
+          char[] r= new
+
+        -
+        - char[s.length];
           for(int i=0;i<s.length;i++) {
               r[i]=s.charAt(i);
           }
