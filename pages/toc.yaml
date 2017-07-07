@@ -1,13 +1,13 @@
-chap_boucle :
-  title : LES boucle
+CH4_boucles :
+  title : Les boucle
   content : 
-    boucle_while_theorie:
+    while:
       title : La boucle while
-    boucle_for:
+    for:
       title: "La boucle for"
-    boucle_while_qcm:
+    exercices_qcm:
       title: QCM 
-    boucle_while_inginious:
+    exercices_inginious:
       title: Exercice Inginious 
 chapitre_exemple:
   title: "Chapitre d'exemple"
