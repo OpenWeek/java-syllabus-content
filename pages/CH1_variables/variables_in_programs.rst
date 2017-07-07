@@ -39,10 +39,10 @@ Par exemple :
   double principal; // Amount of money invested.
   double interestRate; // Rate as a decimal, not percentage.
 
-Pour le moment, nous n'utilisons que des variables déclarées à l'intérieur des fonctions du programme.
-Ces variables sont appelées **variables locales**. Elles existent seulement à l'intérieur du bloc (délimité par des {} )
-dans laquelle elles sont déclarées et sont inaccessibles depuis l'extérieur de ce bloc. Une variable peut être déclarée n'importe où dans
-une fonction tant qu'elle est déclarée avant d'être utilisée.
+Pour le moment, nous n'utilisons que des variables **variables locales**.
+Elles existent uniquement à l'intérieur du bloc (délimité par des {} )
+dans laquelle elles sont déclarées et sont inaccessibles depuis l'extérieur de ce bloc.
+Une **variable locale** peut être utilisée, après sa déclaration, n'importe où dans ce même bloc.
 
 Exercices
 *********
@@ -109,3 +109,7 @@ Question 2
 .. raw:: html
 
   <div id="checker" class="checker"><h1>Vérifiez vos réponses</h1><input type="submit" value="Vérifier" id="verifier"></div>
+
+.. author::
+
+    Fitvoye Florian, Mottet Sébastien, Charlier Gilles
