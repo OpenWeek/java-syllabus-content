@@ -85,9 +85,23 @@ En programation défensive, écrivez ici le corps de la fonction ``multiplicatio
 
     /* code a completer */
 
-Question 4 :
----------------------------------------
+Question 4 : Mélange d''un tableau
+----------------------------------
 
+Dans cette question, on s'intéresse à l'écriture d'une méthode dont le but est de mélanger les éléments de manière aléatoire d'un tableau passé en paramètre.
+Par exemple ``[1 2 3 4]`` peut devenir ``[2 3 4 1]``.
+
+En programmation défensive, écrivez ici le corps de la méthode ``shuffle`` permettant d'inverser un tableau d'entier.
+
+.. code-block:: java
+
+    /**
+     * @pre: tab != null
+     * @post: le tableau tab est mélanger
+     */
+    public static void shuffle(int tab[]) {
+        // code à completer
+    }
 
 .. inginious:: ch6q4
 
