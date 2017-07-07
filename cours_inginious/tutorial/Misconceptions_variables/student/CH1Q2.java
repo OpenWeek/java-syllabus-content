@@ -21,30 +21,25 @@ import org.junit.Test;
 import java.util.Random;
 import org.junit.runner.notification.Failure;
 
-public class Affectation{
+public class CH1Q2{
 	
 	private static String str = "Le code semble comporter des erreurs : ";
 	
 	@Test
 	public void test(){
 		try{
-           	Object obj[] = AffectationStu.getAns();
-            float goodAnsF = 3.14F;
-            char goodAnsC = 'q';
-            long goodAnsL = 0;
-            float AnsF = (float)obj[0];
-            long AnsL = (long)obj[1];
-            char AnsC = (char)obj[2];
-            assertEquals("Ce n'est pas la valeur de pi attendue\n",goodAnsF,AnsF,0.01);
+           	int tab1[] = CH1Q2Stu.aAndB(4,10);
+            assertEquals("La variable 'a' n'a pas la bonne valeur pour un b=10 initialement \n",11,tab1[0]);
+			 assertEquals("La variable 'b' n'a pas la bonne valeur\n",10,tab1[1]);
             
-            assertEquals("Ce n'est pas la bonne lettre\n",goodAnsC,AnsC);
-            assertEquals("Ce n'est pas la valeur de popWorld attendue\n",goodAnsL,AnsL);
-			 
+            int tab2[] = CH1Q2Stu.aAndB(23,56);
+            assertEquals("La variable 'a' n'a pas la bonne valeur pour un b=56 initialement \n",57,tab2[0]);
+			 assertEquals("La variable 'b' n'a pas la bonne valeur\n",56,tab2[1]);
 		}catch (ArithmeticException e){
 			fail(str + "Le code est incorrect : il est interdit de diviser par zéro.");
 			e.printStackTrace();
 		}catch(ClassCastException e){
-			fail(str + "Attention, vous avez utilisé un mauvais type !");
+			fail(str + "Attention, problème de conversion de type !");
 			e.printStackTrace();
 		}catch(StringIndexOutOfBoundsException e){
 			e.printStackTrace();
@@ -65,10 +60,10 @@ public class Affectation{
 	
 	// Code verificateur
 	public static void main(String[] args) {
-		Result result = JUnitCore.runClasses(Affectation.class);
+		Result result = JUnitCore.runClasses(CH1Q2.class);
 		for (Failure failure: result.getFailures()) {
        
-			System.err.println(failure.toString().split("\n")[0]);
+			System.err.println(failure.toString());
 		}
 		if (result.wasSuccessful()) {
 			System.out.println("Tous les tests se sont passés sans encombre");
