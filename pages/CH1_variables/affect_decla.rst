@@ -67,7 +67,40 @@ Voici une illustration des différents concepts évoqués :
 QCM : déclaration et affectation
 --------------------------------
 
-Question 1 : Syntaxe correcte
+Question 1 :
+------------
+
+Laquelle/Lesquelles de ses variables sont mal utilisées ?
+
+.. code-block:: java
+
+    int a;
+    b = 5;
+    int c = 42;
+    int b;
+    a = 7;
+
+.. class:: positive
+
+  - b
+
+.. class:: negative
+
+  - a et b
+
+  - Toutes ces variables sont correctement utilisées.
+
+  - a
+
+  - c
+
+  - Aucune n'est utilisée correctement.
+
+  - b et c
+
+  - a et c
+
+Question 2 : Syntaxe correcte
 -----------------------------
 
 Quelles déclarations sont correctes ?
@@ -107,7 +140,7 @@ Quelles déclarations sont correctes ?
 
                         Bonne réponse !
 
-Question 2 : Modification de variable
+Question 3 : Modification de variable
 -------------------------------------
 
 .. code-block:: java
@@ -117,7 +150,7 @@ Question 2 : Modification de variable
         int rate  = 5;                     // ligne 3
         int calcul =  val * (rate + val);    // ligne 4
 
-Combien vaut la variable *calcul* suivante ?
+Quelle est la valeur de la variable *calcul* ?
 
 .. class:: positive
 
@@ -143,7 +176,123 @@ Combien vaut la variable *calcul* suivante ?
 
                         Cette réponse n'a aucun sens :)
 
+Question 4 : Portée des variables
+---------------------------------
+
+.. code-block:: java
+
+        {
+          int a = 3;
+          {
+            int a = 5;
+            {
+              int b = 7;
+              // Ligne 1
+            }
+            // Ligne 2
+          }
+          // Ligne 3
+        }
+
+Quel est la valeur de la variable *a* à la Ligne 1 ?
+----------------------------------------------------
+
+.. class:: positive
+
+  - 5
+
+.. class:: negative
+
+  - 3
+
+  - 7
+
+  - la variable *a* n'existe pas
+
+Quel est la valeur de la variable *a* à la Ligne 2 ?
+----------------------------------------------------
+
+.. class:: positive
+
+  - 5
+
+.. class:: negative
+
+  - 3
+
+  - 7
+
+  - la variable *a* n'existe pas
+
+Quel est la valeur de la variable *a* à la Ligne 3 ?
+----------------------------------------------------
+
+.. class:: positive
+
+  - 3
+
+.. class:: negative
+
+  - 5
+
+  - 7
+
+  - la variable *a* n'existe pas
+
+Quel est la valeur de la variable *b* à la Ligne 1 ?
+----------------------------------------------------
+
+.. class:: positive
+
+  - 7
+
+.. class:: negative
+
+  - 5
+
+  - 3
+
+  - la variable *b* n'existe pas
+
+
+Quel est la valeur de la variable *b* à la Ligne 2 ?
+----------------------------------------------------
+
+.. class:: positive
+
+  - la variable *b* n'existe pas
+
+.. class:: negative
+
+  - 5
+
+  - 3
+
+  - 7
+
+
+
+
+
+Quel est la valeur de la variable *b* à la Ligne 3 ?
+----------------------------------------------------
+
+.. class:: positive
+
+  - la variable *b* n'existe pas
+
+.. class:: negative
+
+  - 5
+
+  - 3
+
+  - 7
 
 .. raw:: html
 
     <div id="checker" class="checker"><h1>Vérifiez vos réponses</h1><input type="submit" value="Vérifier" id="verifier"></div>
+
+.. author::
+
+    Fitvoye Florian, Mottet Sébastien, Charlier Gilles
