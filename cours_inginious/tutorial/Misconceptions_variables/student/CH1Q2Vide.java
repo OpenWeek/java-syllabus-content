@@ -15,7 +15,7 @@
 */
 package student;
 
-public class MisconceptionsStu{
+public class CH1Q2Stu{
     
     public static int[] aAndB(int aVal, int bVal){
         

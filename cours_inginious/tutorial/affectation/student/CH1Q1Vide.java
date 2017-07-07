@@ -16,7 +16,7 @@
 package student;
 import java.lang.Long;
 
-public class AffectationStu{
+public class CH1Q1Stu{
     
     public static Object[] getAns(){
         

@@ -1,7 +1,7 @@
 accessible: true
 author: Alexandre Fiset
 context: Il vous est demander de réaliser une fonction calculant n!. Pour rappel n!
-    = n+(n-1)+...+2+1.
+    = n*(n-1)*...*2*1.
 environment: java7
 evaluate: best
 groups: false
