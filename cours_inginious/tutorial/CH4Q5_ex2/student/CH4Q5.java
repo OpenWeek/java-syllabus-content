@@ -673,21 +673,22 @@ import java.io.FileReader;
 import java.io.PrintStream;
 import org.junit.runner.notification.Failure;
 
-public class M1Q7 {
+public class CH4Q5 {
 	
 	private static String str = "Le code semble comporter des erreurs : ";
 	
 	@Test
 	public void testPos(){
 		try{
-			PrintStream ps = new PrintStream("hello.out");
-			System.setOut(ps);
-			Hello.main(null);
-			ps.close();
-			BufferedReader br = new BufferedReader(new FileReader("hello.out"));
-			String s = br.readLine();
-			assertEquals(str + "Vous devez écrire \"Bonjour !\" mais vous avez écrit \""+s+"\"", "Bonjour !", s);
-			br.close();
+			int i = 0;
+			int sum = 0;
+			assertTrue("Factoriel 0 devrais renvoyer 1, mais votre code renvoit "+CH4Q5Stu.fact(i),CH4Q5Stu.fact(0) == 1);
+			while(i++ < 20)
+			{
+				sum = sum +i;
+				assertTrue("Factoriel "+i+" devrais renvoyer"+sum+", mais votre code renvoit "+CH4Q5Stu.fact(i),CH4Q5Stu.fact(i) == sum);
+			}
+
 		}catch (ArithmeticException e){
 			fail(str + "Le code est incorrect : il est interdit de diviser par zéro.");
 			e.printStackTrace();
@@ -705,6 +706,9 @@ public class M1Q7 {
 		}catch(NullPointerException e){
 			fail(str + "Attention, vous faites une opération sur un objet qui vaut null ! Veillez à bien gérer ce cas.");
 			e.printStackTrace();
+		}catch(NumberFormatException e){
+			fail(str + "Il fallait renvoyer un entier !");
+			e.printStackTrace();
 		}catch(Exception e){
 			fail(str + "\n" + e.getMessage());
 			e.printStackTrace();
@@ -713,7 +717,7 @@ public class M1Q7 {
 	
 	// Code verificateur
 	public static void main(String[] args) {
-		Result result = JUnitCore.runClasses(M1Q7.class);
+		Result result = JUnitCore.runClasses(CH4Q5.class);
 		for (Failure failure: result.getFailures()) {
 			System.err.println(failure.toString());
 		}
