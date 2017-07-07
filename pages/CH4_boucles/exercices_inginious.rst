@@ -28,7 +28,7 @@ Rempliser le code si dessous pour réaliser cela.
 	int i = 10;
 	//utilisez System.out.println(i) pour afficher le contenu de la variable i.
 
-.. inginious:: CH4Q1_while_infinite
+.. inginious:: CH4Q4_ex1
 
 	//a remplir
 
@@ -36,7 +36,7 @@ Rempliser le code si dessous pour réaliser cela.
 Question 2. Factoriel.
 ----------------------
 
-Il vous est demandé de réaliser une fonction qui retourne n!. Pour rappel n! = n+(n-1)+...+2+1.
+Il vous est demandé de réaliser une fonction qui retourne n!. Pour rappel n! = n*(n-1) *...*2*1.
 
 .. code-block:: console
 
@@ -45,7 +45,7 @@ Il vous est demandé de réaliser une fonction qui retourne n!. Pour rappel n! =
 	//utilisez return n pour retourner la valeur de n.
 	//a remplir
 	}
-.. inginious:: CH4Q2_nbrepft
+.. inginious:: CH4Q5_ex2
 
 	//a remplir
 
@@ -79,6 +79,6 @@ Pour vous aider vous pouvez vous documenter sur la recherche par bissection.(htt
 	{
 	//a remplir.
 	}
-.. inginious:: CH4Q3_forerror
+.. inginious:: CH4Q6_ex3
 
 	//remplissez votre code ici
