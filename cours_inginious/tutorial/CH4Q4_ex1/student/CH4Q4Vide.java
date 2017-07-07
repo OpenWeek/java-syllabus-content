@@ -1,6 +1,6 @@
 package student;
 
-public class Q1Stu {
+public class CH4Q4Stu {
 
 	// Code a verifier
 	public static void decompte(int i){

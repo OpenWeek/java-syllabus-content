@@ -9,39 +9,21 @@ import java.io.FileReader;
 import java.io.PrintStream;
 import org.junit.runner.notification.Failure;
 
-public class Q1 {
+public class CH4Q5 {
 	
 	private static String str = "Le code semble comporter des erreurs : ";
 	
 	@Test
 	public void testPos(){
 		try{
-			PrintStream ps = new PrintStream("fichier.out");
-			System.setOut(ps);
-			Q1Stu.decompte(10);
-			BufferedReader br = new BufferedReader(new FileReader("fichier.out"));
-			int i = 10;
-			int count = 0;
-			String s;
-			while((s = br.readLine()) != null)
+			int i = 0;
+			int sum = 0;
+			assertTrue("Factoriel 0 devrais renvoyer 1, mais votre code renvoit "+CH4Q5Stu.fact(i),CH4Q5Stu.fact(0) == 1);
+			while(i++ < 20)
 			{
-				assertTrue("Votre code nous renvoie "+s+", il devrait renvoyer "+i,i == Integer.parseInt(s));
-				i-=2;
-				count ++;
+				sum = sum +i;
+				assertTrue("Factoriel "+i+" devrais renvoyer"+sum+", mais votre code renvoit "+CH4Q5Stu.fact(i),CH4Q5Stu.fact(i) == sum);
 			}
-			assertTrue("Votre code nous renvoie "+count+" nombres, il devrait nous en renvoyer 6",count == 6);
-			Q1Stu.decompte(100);
-			ps.close();
-			i = 100;
-		 	count = 0;
-			while((s = br.readLine()) != null)
-			{
-				assertTrue("Votre code ne renvoit pas la bonne réponse, se test a été effectuer pour prevenir du hard coding",i == Integer.parseInt(s));
-				i-=2;
-				count ++;
-			}
-			assertTrue("Votre code ne renvoit pas la bonne réponse, se test a été effectuer pour prevenir du hard coding",count ==  51);
-			br.close();
 
 		}catch (ArithmeticException e){
 			fail(str + "Le code est incorrect : il est interdit de diviser par zéro.");
@@ -71,7 +53,7 @@ public class Q1 {
 	
 	// Code verificateur
 	public static void main(String[] args) {
-		Result result = JUnitCore.runClasses(Q1.class);
+		Result result = JUnitCore.runClasses(CH4Q5.class);
 		for (Failure failure: result.getFailures()) {
 			System.err.println(failure.toString());
 		}

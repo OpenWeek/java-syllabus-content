@@ -4,11 +4,11 @@ import java.io.*;
 import java.math.*;
 
 
-public class Q3Stu {
+public class CH4Q6Stu {
 	
 	int turn = 0;
 	int door;
-	public Q3Stu(int a)
+	public CH4Q6Stu(int a)
 	{
 		door = a;
 	}

@@ -9,22 +9,17 @@ import java.io.FileReader;
 import java.io.PrintStream;
 import org.junit.runner.notification.Failure;
 
-public class Q2 {
+public class CH4Q1 {
 	
 	private static String str = "Le code semble comporter des erreurs : ";
 	
 	@Test
 	public void testPos(){
 		try{
-			int i = 0;
-			int sum = 0;
-			assertTrue("Factoriel 0 devrais renvoyer 1, mais votre code renvoit "+Q2Stu.fact(i),Q2Stu.fact(0) == 1);
-			while(i++ < 20)
+			if(10 != CH4Q1Stu.whileLoop())
 			{
-				sum = sum +i;
-				assertTrue("Factoriel "+i+" devrais renvoyer"+sum+", mais votre code renvoit "+Q2Stu.fact(i),Q2Stu.fact(i) == sum);
+				fail("Vous n'itérez pas le bon nombre de fois dans la boucle.");
 			}
-
 		}catch (ArithmeticException e){
 			fail(str + "Le code est incorrect : il est interdit de diviser par zéro.");
 			e.printStackTrace();
@@ -42,9 +37,6 @@ public class Q2 {
 		}catch(NullPointerException e){
 			fail(str + "Attention, vous faites une opération sur un objet qui vaut null ! Veillez à bien gérer ce cas.");
 			e.printStackTrace();
-		}catch(NumberFormatException e){
-			fail(str + "Il fallait renvoyer un entier !");
-			e.printStackTrace();
 		}catch(Exception e){
 			fail(str + "\n" + e.getMessage());
 			e.printStackTrace();
@@ -53,7 +45,7 @@ public class Q2 {
 	
 	// Code verificateur
 	public static void main(String[] args) {
-		Result result = JUnitCore.runClasses(Q2.class);
+		Result result = JUnitCore.runClasses(CH4Q1.class);
 		for (Failure failure: result.getFailures()) {
 			System.err.println(failure.toString());
 		}
