@@ -38,7 +38,7 @@ public class CH3Q1 {
 				assertEquals("Il ne faut pas modifier l age !",i , a[0]);
 
 				boolean maj;
-				if (i < 18) {
+				if (i < 21) {
 					maj = false;
 				}
 				else {
