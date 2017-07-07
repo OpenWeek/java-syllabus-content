@@ -24,6 +24,17 @@ contribuer:
       title: Contribuer au contenu du syllabus
     create_task:
       title: "Créer une tâche"
+ch6_tableaux:
+  title: Les Tableaux
+  content:
+    theorie:
+      title: Théorie
+    qcm:
+      title: QCM
+    exercices:
+      title: Exercices
+    erreurs_frequentes:
+        title: Erreurs fréquentes
 CH1_variables:
   title: "Les variables"
   content:
