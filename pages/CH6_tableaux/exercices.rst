@@ -37,7 +37,7 @@ Exemple :
         /* code a completer */
     }
 
-.. inginious:: ch6q1
+.. inginious:: CH6Q1
 
     /* code a completer */
 
@@ -60,7 +60,7 @@ Par exemple ``[1 2 3 4]`` devient ``[4 3 2 1]``.
         /* Code à compléter */
     }
 
-.. inginious:: ch6q2
+.. inginious:: CH6Q2
 
     /* code a completer */
 
@@ -81,7 +81,7 @@ En programation défensive, écrivez ici le corps de la fonction ``multiplicatio
         /* Code a complèter */
     }
 
-.. inginious:: ch6q3
+.. inginious:: CH6Q3
 
     /* code a completer */
 
@@ -104,7 +104,7 @@ En programmation défensive, écrivez ici le corps de la méthode ``shuffle`` pe
         // code à completer
     }
 
-.. inginious:: ch6q4
+.. inginious:: CH6Q4
 
     /* code a completer */
 
@@ -133,7 +133,7 @@ Complétez ici le corps de la méthode ``shiftRightOne``.
         /* Code a complèter */
     }
 
-.. inginious:: ch6q5
+.. inginious:: CH6Q5
 
     /* code a completer */
 
@@ -170,7 +170,7 @@ Exemple :
         /* code a completer */
     }
 
-.. inginious:: ch6q6
+.. inginious:: CH6Q6
 
     /* code a completer */
 

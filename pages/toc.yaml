@@ -1,48 +1,49 @@
+#CH0_intro :
+#    title : Introduction
+CH1_variables :
+    title : Variables
+    content :
+        syntax :
+            title : Syntaxe des noms de variable
+        affect_decla :
+            title : Déclaration et affectation de variable
+        types :
+            title : Types de variable
+        variables_in_programs :
+            title : Variables dans les programmes
+CH2_expressions :
+    title : Expressions
+    content :
+        arithmetic_operator :
+            title : Expressions
+CH3_conditionnelles :
+    title : Expressions conditionnelles
+    content :
+        theorie :
+            title : Théorie
 CH4_boucles :
-  title : Les boucle
-  content :
-    while:
-      title : La boucle while
-    for:
-      title: "La boucle for"
-    exercices_qcm:
-      title: QCM
-    exercices_inginious:
-      title: Exercice Inginious
-chapitre_exemple:
-  title: "Chapitre d'exemple"
-  content:
-    theorie:
-      title: "Exemple de théorie"
-    qcm:
-      title: "Exemple de QCM"
-  chapter_intro_file: "chapter_description.rst"
-contribuer:
-  title: Contribuer
-  content:
-    contribuer:
-      title: Contribuer au contenu du syllabus
-    create_task:
-      title: "Créer une tâche"
-ch6_tableaux:
-  title: Les Tableaux
-  content:
-    theorie:
-      title: Théorie
-    qcm:
-      title: QCM
-    exercices:
-      title: Exercices
-    erreurs_frequentes:
-        title: Erreurs fréquentes
-CH1_variables:
-  title: "Les variables"
-  content:
-    syntax:
-      title: "Syntaxe des noms de variable"
-    affect_decla:
-      title: "Déclaration et affectation de variable"
-    types:
-      title: "Types de variable"
-    variables_in_programs:
-      title: "Variables dans les programmes"
+    title : Boucles
+    content :
+        while :
+            title : Boucle while
+        for :
+            title : Boucle for
+        exercices_qcm :
+            title : QCM
+        exercices_inginious :
+            title : Exercices Inginious
+CH6_tableaux :
+    title : Tableaux
+    content :
+        theorie :
+            title : Théorie
+        qcm :
+            title : QCM
+        exercices :
+            title : Exercices
+        erreurs_frequentes :
+            title : Erreurs fréquentes
+#CH7_fonctions :
+#    title : Fonctions
+#CH8_cheat_sheet :
+#    title : Cheat sheet

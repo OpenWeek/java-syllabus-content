@@ -55,7 +55,7 @@ Les variables a et b ont déjà été déclarées. (la réponse est courte).
   int a = ... ; // la variable a est initialisée avec une valeur aléatoire
   int b = ... ; // la variable b est initialisée avec une valeur aléatoire
 
-.. inginious:: Misconceptions_variables
+.. inginious:: CH1Q2_misconceptions_variables
 
         // your code here
 
