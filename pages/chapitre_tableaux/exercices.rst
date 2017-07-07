@@ -64,9 +64,22 @@ Par exemple ``[1 2 3 4]`` devient ``[4 3 2 1]``.
 
     /* code a completer */
 
-Question 3 :
+Question 3 : Multiplication de matrices
 ---------------------------------------
 
+Dans cette question, on s'intéresse à l'écriture d'une fonction dont le but est de renvoyer la matrice résultat de la multiplication de deux matrices ``l`` et ``m``. Ces deux matrices sont stockées chaqu'une dans un tableau de tableau, passées en paramètres de la fonction à implémenter.
+
+En programation défensive, écrivez ici le corps de la fonction ``multiplication`` qui retourne le résultat de la multiplication.
+
+.. code-block:: java
+
+    /**
+     * @pre: l et m sont de dimensions compatibles pour être multipliées
+     * @post: retourne le résultat de l.m
+     */
+    public static int[][] multiplication(int l[][], int m[][]){
+        /* Code a complèter */
+    }
 
 .. inginious:: ch6q3
 
