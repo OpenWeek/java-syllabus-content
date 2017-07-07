@@ -1,6 +1,6 @@
 package student;
 
-public class Q3Stu {
+public class CH4Q1Stu {
 
 	// Code a verifier
 	public static int whileLoop(){

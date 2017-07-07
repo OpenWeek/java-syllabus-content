@@ -9,23 +9,23 @@ import java.io.FileReader;
 import java.io.PrintStream;
 import org.junit.runner.notification.Failure;
 
-public class Q3 {
+public class CH4Q6 {
 	
 	private static String str = "Le code semble comporter des erreurs : ";
 	
 	@Test
 	public void testPos(){
 		try{
-			Q3Stu one = new Q3Stu(10);
+			CH4Q6Stu one = new CH4Q6Stu(10);
 			assertTrue("Votre code ne fonctionne pas pour chercher la porte 10 dans un set de 40 portes. Porte renvoyée : "+one.jeux(40),one.jeux(40) == 10);
-			Q3Stu two = new Q3Stu(0);
+			CH4Q6Stu two = new CH4Q6Stu(0);
 			assertTrue("Votre code ne fonctionne pas pour chercher la porte 0 dans un set de 40 portes. Porte renvoyée : "+two.jeux(40),two.jeux(40) == 0);
-			Q3Stu three = new Q3Stu(39);
+			CH4Q6Stu three = new CH4Q6Stu(39);
 			assertTrue("Votre code ne fonctionne pas pour chercher la porte 39 dans un set de 40 portes Porte renvoyée : "+three.jeux(40),three.jeux(40) == 39);
-			Q3Stu four = new Q3Stu(10);
+			CH4Q6Stu four = new CH4Q6Stu(10);
 			int err = four.jeux(20);
 			assertTrue("Votre code n'utilise pas une recher par bissection",four.turn == 1);
-			Q3Stu five = new Q3Stu(30);
+			CH4Q6Stu five = new CH4Q6Stu(30);
 			err = five.jeux(40);
 			assertTrue("Votre code n'utilise pas une recher par bissection",five.turn == 2);
 		}catch (ArithmeticException e){
@@ -56,7 +56,7 @@ public class Q3 {
 	
 	// Code verificateur
 	public static void main(String[] args) {
-		Result result = JUnitCore.runClasses(Q3.class);
+		Result result = JUnitCore.runClasses(CH4Q6.class);
 		for (Failure failure: result.getFailures()) {
 			System.err.println(failure.toString());
 		}
