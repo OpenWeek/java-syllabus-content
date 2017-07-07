@@ -1,3 +1,5 @@
+.. Cette page est publiée sous la license Creative Commons BY-SA (https://creativecommons.org/licenses/by-sa/3.0/fr/)
+
 .. raw:: html
 
   <script type="text/javascript" src="static/js/jquery-3.1.1.min.js"></script>
@@ -10,7 +12,7 @@
 
 .. author::
 
-    Alexandre Fiset et Jean-MArtin Vlaeminck
+    Alexandre Fiset et Jean-Martin Vlaeminck
 
 =========================
 La boucle while : QCM
@@ -168,7 +170,7 @@ Quelle bout de code ne fait pas une boucle infinie ?
 		}
 
 --------------------------------------
-Question 3. Boucle while et exécution.
+Question 4. Boucle while et exécution.
 --------------------------------------
 
 Quelle est la sortie sur le terminal du bout de code suivant ?
@@ -238,7 +240,7 @@ Quelle est la sortie sur le terminal du bout de code suivant ?
 
 
 -------------------------------------------
-Question 4. Boucle do...while et exécution.
+Question 5. Boucle do...while et exécution.
 -------------------------------------------
 
 Quelle est la sortie sur le terminal du bout de code suivant ?

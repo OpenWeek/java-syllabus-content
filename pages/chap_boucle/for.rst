@@ -1,5 +1,16 @@
+.. Cette page est publiée sous la license Creative Commons BY-SA (https://creativecommons.org/licenses/by-sa/3.0/fr/)
+
+.. raw:: html
+
+  <script type="text/javascript" src="static/js/jquery-3.1.1.min.js"></script>
+  <script type="text/javascript" src="static/js/jquery-shuffle.js"></script>
+  <script type="text/javascript" src="static/js/rst-form.js"></script>
+  <script type="text/javascript" src="static/js/prettify.js"></script>
+.. This variable hold the number of proposition shown to the student
+
 .. author::
-   Alexandre Fiset et Jea-MArtin Vlaeminck
+
+   Alexandre Fiset et Jean-Martin Vlaeminck
 
 La boucle for
 =============

@@ -1,3 +1,5 @@
+.. Cette page est publiée sous la license Creative Commons BY-SA (https://creativecommons.org/licenses/by-sa/3.0/fr/)
+
 .. raw:: html
 
   <script type="text/javascript" src="static/js/jquery-3.1.1.min.js"></script>
@@ -10,7 +12,7 @@
 
 .. author::
 
-    Alexandre Fiset Jean-MArtin Vlaeminck
+    Alexandre Fiset et Jean-Martin Vlaeminck
 
 =========================
 La boucle while : théorie
