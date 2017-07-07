@@ -1,5 +1,5 @@
 package student;
-public class BouclesQ4Stu {
+public class CH4Q3Stu {
     public static void printSum(int n, int m) {
         /*
          * Effectue la somme sur chaque ligne des n premiers nombres multiples de 1, 2, 3, ..., m

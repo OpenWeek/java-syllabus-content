@@ -13,7 +13,7 @@ import java.io.InputStreamReader;
 import java.io.FileReader;
 import java.io.IOException;
 
-public class BouclesQ4 {
+public class CH4Q3 {
 
     private static String str = "Le code semble comporter des erreurs :\n";
 
@@ -39,7 +39,7 @@ public class BouclesQ4 {
             System.err.println("End of error");*/
             PrintStream ps = new PrintStream("student/output.txt");
             System.setOut(ps);
-            BouclesQ4Stu.printSum(17, 6); // ça devrait suffir
+            CH4Q3Stu.printSum(17, 6); // ça devrait suffir
             ps.close();
             assertEquals("Votre programme n'affiche pas la bonne sortie", true, filesEquals("student/output.txt", "student/corr_output1.txt"));
         } catch(IOException e) {
@@ -71,7 +71,7 @@ public class BouclesQ4 {
         try {
             PrintStream ps = new PrintStream("student/output.txt");
             System.setOut(ps);
-            BouclesQ4Stu.printSum(5, 0);
+            CH4Q3Stu.printSum(5, 0);
             ps.close();
             assertEquals("Votre programme n'affiche pas la bonne sortie", true, filesEquals("student/output.txt", "student/corr_output2.txt"));
         } catch(IOException e) {
@@ -103,7 +103,7 @@ public class BouclesQ4 {
         try {
             PrintStream ps = new PrintStream("student/output.txt");
             System.setOut(ps);
-            BouclesQ4Stu.printSum(0, 5);
+            CH4Q3Stu.printSum(0, 5);
             ps.close();
             assertEquals("Votre programme n'affiche pas la bonne sortie", true, filesEquals("student/output.txt", "student/corr_output3.txt"));
         } catch(IOException e) {
@@ -147,7 +147,7 @@ public class BouclesQ4 {
     }
 
     public static void main(String[] args) {
-        Result res = JUnitCore.runClasses(BouclesQ4.class);
+        Result res = JUnitCore.runClasses(CH4Q3.class);
         for (Failure fail : res.getFailures()) {
             System.err.println(fail.toString());
         }
