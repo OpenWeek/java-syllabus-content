@@ -7,14 +7,15 @@ environment: java7
 evaluate: best
 groups: false
 limits:
-    time: '30'
-    memory: '100'
     output: '2'
+    memory: '100'
+    time: '30'
 name: 'Déclaration et affectation '
 network_grading: false
 problems:
     q1:
         type: code
+        language: java
         header: |-
             1) Déclarez et initialisez une variable nommée "piVal" contenant la valeur de pi avec deux chiffres significatifs après la virgule. (utilisez le moins de mémoire possible)
 
@@ -22,7 +23,6 @@ problems:
 
             3) Déclarez et initialisez une variable nommée "c" contenant la 17 ième lettre de l'alphabet en miniscule.
         name: Déclaration et Affectation
-        language: java
 stored_submissions: 0
 submission_limit:
     amount: -1

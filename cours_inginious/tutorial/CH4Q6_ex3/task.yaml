@@ -1,0 +1,48 @@
+accessible: true
+author: Alexandre Fiset
+context: |-
+    Il vous es demandé de crée un algorithme de recherche de porte.
+
+    Déroulement :
+        À l'aide des données fournies sur l'entrée standart, nous vous demandons de trouver le numéro de porte où se trouve Charlie.
+
+        Pour tester si la porte est la bonne vous avez le droit à la fonction isDoor(n) où n est le numéro de la porte candidate .Cette fonction vous donnera une indication 'r' si la porte se trouve à droite de la porte candidate et 'l' si la porte se trouve à gauche de la porte candidate.
+
+    Règle :
+        La variable n contient le nombre de porte.
+
+        Vous avez un nombre limité de réponse avant que Charlie ne s'enfuit.
+
+        Le caractère '!' serra renvoyé une fois Charlie trouvé et votre code doit renvoyé le numéro de la porte.
+
+        Les portes sont numérotées de gauche à droite et le numéro de portes est comprit entre 0 et n-1 inclut.
+
+
+    Pour vous aider vous pouver vous documenter sur la recherche par bissection.(https://www.youtube.com/watch?v=HfFbNcIp25s)
+
+    .. code-block:: java
+
+        public int jeux(int n)
+        {
+        /*1*/
+        }
+environment: java7
+evaluate: best
+groups: false
+limits:
+    memory: '100'
+    time: '30'
+    output: '2'
+name: Petit jeux
+network_grading: false
+problems:
+    q1:
+        name: Completez le code
+        language: java
+        header: ''
+        type: code
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+weight: 1.0

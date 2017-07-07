@@ -1,3 +1,14 @@
+CH4_boucles :
+  title : Les boucle
+  content :
+    while:
+      title : La boucle while
+    for:
+      title: "La boucle for"
+    exercices_qcm:
+      title: QCM
+    exercices_inginious:
+      title: Exercice Inginious
 chapitre_exemple:
   title: "Chapitre d'exemple"
   content:
@@ -13,14 +24,25 @@ contribuer:
       title: Contribuer au contenu du syllabus
     create_task:
       title: "Créer une tâche"
-chapitre_variable:
+ch6_tableaux:
+  title: Les Tableaux
+  content:
+    theorie:
+      title: Théorie
+    qcm:
+      title: QCM
+    exercices:
+      title: Exercices
+    erreurs_frequentes:
+        title: Erreurs fréquentes
+CH1_variables:
   title: "Les variables"
   content:
     syntax:
       title: "Syntaxe des noms de variable"
-    variables_affect_decla:
-      title: "Affectation et déclaration de variable"
-    variables_type:
+    affect_decla:
+      title: "Déclaration et affectation de variable"
+    types:
       title: "Types de variable"
     variables_in_programs:
       title: "Variables dans les programmes"
