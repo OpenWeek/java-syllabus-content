@@ -24,8 +24,3 @@ chapitre_variable:
       title: "Types de variable"
     variables_in_programs:
       title: "Variables dans les programmes"
-chapitre_expression:
-  title: "Les expressions"
-  content:
-    arithmetic_operator:
-      title: "Opérateurs arithmétiques"
