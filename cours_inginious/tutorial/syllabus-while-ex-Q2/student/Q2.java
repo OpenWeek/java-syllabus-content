@@ -16,8 +16,9 @@ public class Q2 {
 	@Test
 	public void testPos(){
 		try{
-			int i = -1;
+			int i = 0;
 			int sum = 0;
+			assertTrue("Factoriel 0 devrais renvoyer 1, mais votre code renvoit "+Q2Stu.fact(i),Q2Stu.fact(0) == 1);
 			while(i++ < 20)
 			{
 				sum = sum +i;
