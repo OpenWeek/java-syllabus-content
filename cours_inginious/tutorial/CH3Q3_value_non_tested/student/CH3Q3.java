@@ -12,8 +12,7 @@
  *  You should have received a copy of the GNU Affero General Public License
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-
-
+ 
 package student;
 import static org.junit.Assert.*;
 import org.junit.runner.JUnitCore;
@@ -25,39 +24,16 @@ import java.io.FileReader;
 import java.io.PrintStream;
 import org.junit.runner.notification.Failure;
 
-public class CH3Q1 {
-
+public class CH3Q3 {
+	
 	private static String str = "Le code semble comporter des erreurs : ";
-
+	
 	@Test
-	public void test(){
+	public void testPos(){
 		try{
-
-            for (int i=0; i<50; i++) {
-				int[] a = CH3Q1Stu.cond(i);
-				assertEquals("Il ne faut pas modifier l age !",i , a[0]);
-
-				boolean maj;
-				if (i < 21) {
-					maj = false;
-				}
-				else {
-					maj = true;
-				}
-
-               boolean majRep;
-
-				if (a[1] == 0) {
-					majRep = false;
-				}
-				else {
-					majRep = true;
-				}
-
-				assertEquals("Vous avez indiqué majeur = " + majRep + " pour l'âge suivant : " + i, maj, majRep) ;
-			}
-
-
+			int a = CH3Q3Stu.cond();
+			assertEquals("", 18, a);
+			
 		}catch (ArithmeticException e){
 			fail(str + "Le code est incorrect : il est interdit de diviser par zéro.");
 			e.printStackTrace();
@@ -80,10 +56,10 @@ public class CH3Q1 {
 			e.printStackTrace();
 		}
 	}
-
+	
 	// Code verificateur
 	public static void main(String[] args) {
-		Result result = JUnitCore.runClasses(CH3Q1.class);
+		Result result = JUnitCore.runClasses(CH3Q3.class);
 		for (Failure failure: result.getFailures()) {
 			System.err.println(failure.toString());
 		}
