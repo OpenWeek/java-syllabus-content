@@ -681,11 +681,10 @@ public class CH4Q5 {
 	public void testPos(){
 		try{
 			int i = 0;
-			int sum = 0;
-			assertTrue("Factoriel 0 devrais renvoyer 1, mais votre code renvoit "+CH4Q5Stu.fact(i),CH4Q5Stu.fact(0) == 1);
+			int sum = 1;
 			while(i++ < 20)
 			{
-				sum = sum +i;
+				sum = sum *i;
 				assertTrue("Factoriel "+i+" devrais renvoyer"+sum+", mais votre code renvoit "+CH4Q5Stu.fact(i),CH4Q5Stu.fact(i) == sum);
 			}
 
