@@ -82,7 +82,7 @@ Exercice
 Modifiez la condition du code suivant pour que la variable booléenne **majeur** soit mise à la valeur **true**
 uniquement si la variable int **age** est plus grande ou égale à 18.
 
-.. inginious:: syllabus-Cond01
+.. inginious:: CH3Q1_condition
 
     if( age < 13 ) {
         majeur = true;
@@ -125,7 +125,7 @@ Dans cet exemple, la cliente achète 1 ticket. Lorsque plusieurs **if** sont uti
 
 Ce code comporte une erreur. En effet, il y a une valeur pour la variable **age** qui n'est pas testée, laquelle ?
 
-.. inginious:: syllabus-Cond03
+.. inginious:: CH3Q3_value_non_tested
 
 
 Conditions complexes
@@ -187,7 +187,7 @@ Exercice
 Modifiez la condition du code suivant pour que la variable booléenne **majeur** soit mise à la valeur **true**
 uniquement si la variable int **age** est plus grande ou égale à 18, et **false** dans le cas contraire.
 
-.. inginious:: syllabus-Cond02
+.. inginious:: CH3Q2_else
 
     if( 10 > age ) {
         majeur = true;
