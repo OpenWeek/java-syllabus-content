@@ -122,3 +122,7 @@ Question 5
 .. raw:: html
 
   <div id="checker" class="checker"><h1>Vérifiez vos réponses</h1><input type="submit" value="Vérifier" id="verifier"></div>
+
+.. author::
+
+    Fitvoye Florian, Mottet Sébastien, Charlier Gilles
