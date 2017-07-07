@@ -2,7 +2,7 @@
 
 .. author::
 
-    Marie-Marie van der Beek, Pablo Gonzalez Alvarez, Antoine Habran
+    Arnaud Gellens, Pablo Gonzalez Alvarez, Antoine Habran, François Michel
 
 ============
 Les Tableaux
@@ -41,6 +41,54 @@ Exemple :
 
     /* code a completer */
 
+Question 2 : Inversion de tableau
+---------------------------------
+
+Dans cette question, on s'intéresse à l'écriture d'une méthode dont le but est d'inverser les éléments d'un tableau passé en paramètre, c'est-à-dire que le premier élement deviendra le dernier, le deuxième l'avant dernier, etc.
+
+Par exemple ``[1 2 3 4]`` devient ``[4 3 2 1]``.
+
+Écrivez ci-dessous le corps de la méthode ``inverse`` permettant d'inverser un tableau d'entier, en utilisant de la programation défensive.
+
+.. code-block:: java
+
+    /**
+     * @pre: tab != null
+     * @post: le tableau tab est inverse
+     */
+    public static void inverse(int tab[]) {
+        /* Code à compléter */
+    }
+
+.. inginious:: ch6q2
+
+    /* code a completer */
+
+Question 3 :
+---------------------------------------
+
+
+.. inginious:: ch6q3
+
+    /* code a completer */
+
+Question 4 :
+---------------------------------------
+
+
+.. inginious:: ch6q4
+
+    /* code a completer */
+
+Question 5 :
+---------------------------------------
+
+
+.. inginious:: ch6q5
+
+    /* code a completer */
+
+
 Question 6 : Tableaux à deux dimensions
 ---------------------------------------
 
@@ -76,3 +124,7 @@ Exemple :
 .. inginious:: ch6q6
 
     /* code a completer */
+
+.. author::
+
+    Arnaud Gellens, Pablo Gonzalez Alvarez, Antoine Habran, François Michel
