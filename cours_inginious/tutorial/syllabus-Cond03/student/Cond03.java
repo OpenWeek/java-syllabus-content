@@ -9,14 +9,14 @@ import java.io.FileReader;
 import java.io.PrintStream;
 import org.junit.runner.notification.Failure;
 
-public class Cond03 {
+public class CH3Q3 {
 	
 	private static String str = "Le code semble comporter des erreurs : ";
 	
 	@Test
 	public void testPos(){
 		try{
-			int a = Cond03Stu.cond();
+			int a = CH3Q3Stu.cond();
 			assertEquals("", 18, a);
 			
 		}catch (ArithmeticException e){
@@ -44,7 +44,7 @@ public class Cond03 {
 	
 	// Code verificateur
 	public static void main(String[] args) {
-		Result result = JUnitCore.runClasses(Cond03.class);
+		Result result = JUnitCore.runClasses(CH3Q3.class);
 		for (Failure failure: result.getFailures()) {
 			System.err.println(failure.toString());
 		}

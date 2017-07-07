@@ -1,6 +1,6 @@
 package student;
 
-public class Cond03Stu {
+public class CH3Q3Stu {
 
 	public static int cond(){ 
 
