@@ -41,7 +41,7 @@ Exemple :
 
     /* code a completer */
 
-Question 2 : Tableaux à deux dimensions
+Question 6 : Tableaux à deux dimensions
 ---------------------------------------
 
 Un tableau à deux dimensions peut représenter l'équivalent d'une matrice en mathématiques.
@@ -73,6 +73,6 @@ Exemple :
         /* code a completer */
     }
 
-.. inginious:: ch6q2
+.. inginious:: ch6q6
 
     /* code a completer */
