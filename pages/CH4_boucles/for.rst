@@ -244,7 +244,7 @@ Le programme ci-dessous contient un certain nombre d'erreurs classiques lors de 
          for (int i = 0; i <= n; i++) {
                  int sum = 0;
                  for (int j = 0; i <= m; j++) {
-                         sum = sum + j * i;
+                         sum = sum + j * m;
                  }
                  System.out.println("Somme des " + n + " premiers nombres multiples de " + j + " : " + sum);
          }
