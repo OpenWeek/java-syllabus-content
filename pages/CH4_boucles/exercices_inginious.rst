@@ -55,7 +55,7 @@ Il vous est demandé de réaliser une fonction qui retourne n!. Pour rappel n! =
 Question 3. Petit jeux.
 -----------------------
 
-Il vous es demandé de crée un algorithme de recherche de porte.
+Il vous est demandé de crée un algorithme de recherche de porte.
 
 Déroulement :
 	-À l'aide des données fournies sur l'entrée standart, nous vous demandons de trouver le numéro de porte où se trouve Charlie.
@@ -71,7 +71,7 @@ Règle :
 
 	-Les portes sont numérotées de gauche à droite et le numéro de portes est comprit entre 0 et n-1 inclut.
 
-Pour vous aider vous pouver vous documenter sur la recherche par bissection.(https://www.youtube.com/watch?v=HfFbNcIp25s)
+Pour vous aider vous pouvez vous documenter sur la recherche par bissection.(https://www.youtube.com/watch?v=HfFbNcIp25s)
 
 .. code-block:: console
 	
