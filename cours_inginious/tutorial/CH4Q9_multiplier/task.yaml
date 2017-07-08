@@ -7,23 +7,23 @@ context: |-
 
         int i = nextInt();
 
-    Plusieurs réponses étant possibles (une par type de boucle), tentez de résoudre l'exercice avec les 3 types de boucles vues : ``while``, ``do...while`` et ``for``.
+    Plusieurs réponses étant possibles (une par type de boucle), tentez de résoudre l'exercice avec les 2 types de boucles ``while`` vues : ``while`` et ``do...while``.
 environment: java7
 evaluate: best
 groups: false
 limits:
     output: '1'
-    memory: '200'
     time: '30'
+    memory: '200'
 name: 'Boucles : multiplicateur'
 network_grading: false
 problems:
     q1:
-        type: code
         language: Java
+        type: code
+        name: Multiplicateur
         header: |
             Écrivez ici le code du multiplicateur.
-        name: Multiplicateur
 stored_submissions: 0
 submission_limit:
     amount: -1

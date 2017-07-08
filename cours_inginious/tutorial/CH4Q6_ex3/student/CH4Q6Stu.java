@@ -32,27 +32,44 @@ public class CH4Q6Stu {
         this.door = door;
     }
 
-    // Code a verifier
+    // Solution de la question
     public int jeux(){
         int candidateDoor = -42;
-        @@q1@@
+        char c = 'a';
+        int lower = 0, upper = nDoors;
+        int nLoops = 0;
+        while ((lower + 1) < upper && nLoops < 10) {
+            nLoops++;
+            int mid = (lower + upper) / 2;
+            c = isDoor(mid);
+            System.err.println(lower + " " + mid + " " + upper + " : " + c);
+            if (c == 'r')
+                //upper = mid;
+                lower = mid;
+            else if (c == 'l')
+                //lower = mid;
+                upper = mid;
+            else if (c == '!') {
+                lower = mid;
+                System.err.println("Trouvé !");
+                break;
+            }
+        }
+        candidateDoor = lower;
         return candidateDoor;
     }
 
-    public char isDoor(int suggestion)
+    public char isDoor(int n)
     {
         turn ++;
-        if (suggestion == door)
+        if(n == door)
         {
             return '!';
         }
-        else if (suggestion > door) // l'étudiant a visé à droite
+        else if(n>door)
         {
             return 'l';
         }
-        else // suggestion < door : l'étudiant a visé à gauche
-        {
-            return 'r';
-        }
+        return 'r';
     }
 }

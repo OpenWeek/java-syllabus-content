@@ -1,46 +1,45 @@
 accessible: true
 author: Alexandre Fiset
-context: |-
-    Il vous es demandé de crée un algorithme de recherche de porte.
+context: |
+    Il vous est demandé de créer un algorithme de recherche de porte.
 
     Déroulement :
-        À l'aide des données fournies sur l'entrée standart, nous vous demandons de trouver le numéro de porte où se trouve Charlie.
+        À l'aide des données fournies sur l'entrée standard, nous vous demandons de trouver le numéro de porte où se trouve Charlie.
 
-        Pour tester si la porte est la bonne vous avez le droit à la fonction isDoor(n) où n est le numéro de la porte candidate .Cette fonction vous donnera une indication 'r' si la porte se trouve à droite de la porte candidate et 'l' si la porte se trouve à gauche de la porte candidate.
+        Vous pouvez tester si la porte ``n`` est la bonne en utilisant la fonction ``isDoor(n)`` où ``n`` est le numéro de la porte candidate. Cette fonction retourne un caractère (``char``) valant ``'r'`` si la porte se trouve à droite de la porte candidate et ``'l'`` si la porte se trouve à gauche de la porte candidate.
 
     Règle :
-        La variable n contient le nombre de porte.
+        La variable ``nDoors`` contient le nombre de porte.
 
         Vous avez un nombre limité de réponse avant que Charlie ne s'enfuit.
 
-        Le caractère '!' serra renvoyé une fois Charlie trouvé et votre code doit renvoyé le numéro de la porte.
+        Le caractère ``'!'`` sera renvoyé une fois Charlie trouvé et votre code devra mettre le numéro de la porte où vous pensez trouver Charlie dans la variable ``candidateDoor``.
 
-        Les portes sont numérotées de gauche à droite et le numéro de portes est comprit entre 0 et n-1 inclut.
+        Les portes sont numérotées de gauche à droite, de ``0`` à ``n-1`` inclus
 
 
-    Pour vous aider vous pouver vous documenter sur la recherche par bissection.(https://www.youtube.com/watch?v=HfFbNcIp25s)
+    Pour vous aider vous pouvez vous documenter sur la recherche par bisection.(https://www.youtube.com/watch?v=HfFbNcIp25s)
 
-    .. code-block:: java
+    .. code-block:: Java
 
-        public int jeux(int n)
-        {
-        /*1*/
-        }
+        // int nDoors = 40; // le nombre de portes.
+        // int candidateDoor = -42; // la porte derrière laquelle vous pensez que Charlie se trouve
+        /* Votre code */
 environment: java7
 evaluate: best
 groups: false
 limits:
-    memory: '100'
-    time: '30'
     output: '2'
-name: Petit jeux
+    time: '30'
+    memory: '100'
+name: Petit jeu
 network_grading: false
 problems:
     q1:
-        name: Completez le code
         language: java
-        header: ''
         type: code
+        name: Petit jeu
+        header: Complétez le code demandé.
 stored_submissions: 0
 submission_limit:
     amount: -1
