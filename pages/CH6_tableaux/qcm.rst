@@ -150,14 +150,22 @@ Quelle elle la valeur de ``tab[0]``?
 
 .. class:: positive
 
-    - 1
+    - Aucune des autres valeurs proposées
+
+    .. class:: comment-feedback
+
+        Good job!
 
 .. class:: negative
 
     - 0
+    - 1
     - 2
     - 3
-    - Aucune des autres valeurs proposées
+
+    .. class:: comment-feedback
+
+        Il manque un ``;``
 
 Question 04 - Déclaration de tableaux
 -------------------------------------
@@ -993,7 +1001,7 @@ La semaine passée, vous avez écrit une méthode ``count`` permettant de déter
 Question 15 - toCharArray
 -------------------------
 
-La classe ``String`` contient une méthode baptisée `toCharArray() <http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/String.html#toCharArray()>`_ qui permet de convertir un ``String`` en un tableau de caractères. Une méthode statique équivalent pourrait avoir les spécification et signature suivantes :
+La classe ``String`` contient une méthode baptisée `toCharArray() <https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#toCharArray-->`_ qui permet de convertir un ``String`` en un tableau de caractères. Une méthode statique équivalent pourrait avoir les spécification et signature suivantes :
 
 .. code-block:: java
 
