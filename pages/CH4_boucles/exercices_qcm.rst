@@ -18,11 +18,11 @@
 La boucle while : QCM
 =========================
 
-------------------------------------------
-Question 1. Sémantique de la boucle while.
-------------------------------------------
+-----------------------------------------
+Question 1. Sémantique de la boucle while
+-----------------------------------------
 
-Quelle bout de code est valide sous java ?
+Quel bout de code est valide en Java ?
 
 .. class:: positive
 	
@@ -74,7 +74,7 @@ Quelle bout de code est valide sous java ?
 Question 2. Sémantique de la boucle do...while.
 -----------------------------------------------
 
-Quelle bout de code est valide sous java ?
+Quel bout de code est valide en Java ?
 
 .. class:: positive
 	
@@ -123,7 +123,7 @@ Quelle bout de code est valide sous java ?
 Question 3. Boucle infinie.
 ---------------------------
 
-Quelle bout de code ne fait pas une boucle infinie ?
+Quel bout de code ne provoque pas une boucle infinie ?
 
 .. class:: positive
 	
@@ -173,7 +173,7 @@ Quelle bout de code ne fait pas une boucle infinie ?
 Question 4. Boucle while et exécution.
 --------------------------------------
 
-Quelle est la sortie sur le terminal du bout de code suivant ?
+Quelle est la sortie sur le terminal (sortie standard) du bout de code suivant ?
 
 .. code-block:: console
 		
