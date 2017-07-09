@@ -4,9 +4,9 @@
 
         Gilles Charlier, Alexandre Fiset, Florian Fitvoye, Arnaud Gellens, Antoine Habran, Pablo Gonzalez Alvarez, François Michel, Sébastien Mottet, Antoine Lambot, Maxime Mulamba, Marie-Marie van der Beek et Jean-Martin Vlaeminck
 
-===============================
-Introduction à la programmation
-===============================
+===============================================
+Introduction : qu'est-ce que la programmation ?
+===============================================
 
 Avant de commencer à apprendre la programmation, qui plus est en langage Java, il est nécessaire de d'abord présenter ce qu'est la programmation, comment fonctionne un ordinateur, ainsi que diverses autres choses. Cela vous permettra de mieux comprendre "le paysage mental" dans lequel vous allez évoluer dans ce cours.
 
@@ -44,7 +44,7 @@ Si le processeur exécute les programmes, c'est parce qu'il est commandé par le
 
 La très grande majorité des programmeurs ne code pas en assembleur, mais dans des langages de plus haut niveau. Un de ces langages de haut niveau est justement Java, qui va nous permettre d'écrire beaucoup plus simplement
 
-.. code-block:: Java
+.. code-block:: java
 
         b = a + 1;
 
