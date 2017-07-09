@@ -23,7 +23,7 @@ Question 1 : Launch !
 La NASA a besoin de vous pour créer un compte à rebour décomptant par 2 de 10 à 0.
 Remplissez le code ci-dessous pour réaliser cela.
 
-.. code-block:: Java
+.. code-block:: java
 
 	int i = 10;
 	//utilisez System.out.println(i) pour afficher le contenu de la variable i.
@@ -38,7 +38,7 @@ Question 2 : Factorielle
 
 Il vous est demandé de réaliser une fonction qui retourne n!. Pour rappel, n! = n * (n-1) * ... * 2 * 1. Vous avez accès à la variable ``n``, dont il faut calculer la factorielle, et le résultat devra être mis dans la variable ``factorial``.
 
-.. code-block:: Java
+.. code-block:: java
 
 	// int n = 10; // le nombre dont on veut calculer la factorielle.
         // int factorial; // La factorielle de ce nombre, calculée par vos soins.
@@ -64,7 +64,7 @@ Question 4 : Additionneur
 
 On vous propose de coder un petit programme qui additionne entre eux les nombres entiers entrés par l'utilisateur sur l'entrée standard. L'utilisateur rentre en premier lieu un nombre entier positif ``n``, le nombre d'entiers qu'il va rentrer dans le programme ; après avoir lu ``n`` entiers, le programme affiche sur la sortie standard (avec ``System.out.println``) la somme de tous les nombres (sauf ``n``) et s'arrête. Pour vous aider, vous pouvez récupérer le nombre entier suivant rentré par l'utilisateur dans la variable ``int i`` comme suit :
 
-.. code-block:: Java
+.. code-block:: java
 
         int i = nextInt(); // Ceci est une fonction.
 
@@ -108,7 +108,7 @@ Pour vous aider vous pouvez vous documenter sur la recherche par bissection (htt
 
 Cet exercice est plus dur que les précédents ; n'hésitez pas à y revenir plus tard, pour ne pas ralentir votre découverte de la programmation.
 
-.. code-block:: Java
+.. code-block:: java
 
 	// int nDoors = 40; // le nombre de portes, pas nécessairement égal à 40.
         // int candidateDoor = -42; // la porte derrière laquelle vous pensez que Charlie se trouve.
