@@ -17,7 +17,7 @@ limits:
     time: '30'
 name: 'Mission 2: Question de démarrage 2 : Somme d''entiers'
 network_grading: false
-order: 20
+order: 21
 problems:
     q1:
         header: 'Écrivez ici le bout de programme permettant de calculer la somme
