@@ -16,9 +16,9 @@ Hello, world!
 
 La tradition veut que, lorsqu'on débute un cours de programmation, le premier programme que l'on écrit et que l'on découvre est un programme qui se contente d'afficher sur la sortie standard la phrase "Hello, wordl!" ("Bonjour, le monde !" littéralement). Voici un code source qui effectue justement cela :
 
-.. inginious:: syllabus-bonjour
+.. inginious:: CH0Q1_bonjour
 
-        public class Main
+        public class Hello
         {
                 public static void main(String[] args) {
                         System.out.println("Hello, world!");
@@ -29,7 +29,7 @@ Pour pouvoir exécuter ce programme, copiez-collez le code ci-dessus dans un éd
 
 Détaillons un peu le code ci-dessus, qui est déjà relativement chargé.
 
-``public class Main``
+``public class Hello``
 =====================
 
 Cette première ligne déclare ce que l'on appelle une *classe*. Pour ce cours, vous n'avez pas besoin de savoir ce dont il s'agit, juste que vous devrez mettre l'ensemble des fonctions (nous y reviendrons) et des variables globales (également) entre l'accolade ``{`` de la ligne 2 et l'accolade fermante de la ligne 7.
