@@ -33,7 +33,6 @@ problems:
                 public static void shiftRightOne (int[] tab) {
                     /* Code a complèter */
                 }
-
         language: Java
         type: code
     q2:
@@ -54,5 +53,5 @@ problems:
                 public static void shiftRight (int[] tab, int n) {
                     /* Code a complèter */
                 }
-
 weight: 1.0
+order: 18

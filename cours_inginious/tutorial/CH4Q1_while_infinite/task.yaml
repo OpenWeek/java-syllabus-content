@@ -1,14 +1,14 @@
 accessible: true
-author: alexandre fiset
+author: Alexandre Fiset
 context: |-
-    completer la boucle pour ne pas obtenir une boucle infinie :
+    Complétez la boucle pour ne pas obtenir une boucle infinie :
 
     .. code-block:: java
 
         int i = 0;
         while(i < 10)
         {
-            /*1*/
+            /* Q1 */
         }
 environment: java7
 evaluate: best
@@ -17,16 +17,17 @@ limits:
     output: '2'
     time: '10'
     memory: '100'
-name: Boucle while infine
+name: Boucle while infinie
 network_grading: false
 problems:
     q1:
         language: java
-        header: 'écrivez ici le code à exécuter pour ne pas crée une boucle infinie. '
-        name: boucle while finie
         type: code-single-line
+        name: Boucle while finie
+        header: Ecrivez ici le code à exécuter pour ne pas créer une boucle infinie.
 stored_submissions: 0
 submission_limit:
     amount: -1
     period: -1
 weight: 1.0
+order: 5

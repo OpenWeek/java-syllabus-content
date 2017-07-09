@@ -1,5 +1,5 @@
 /**
- *  Copyright (c) 2017 Jean-Martin Vlaeminck, Alexandre Fiset, Florian Fitvoye
+ *  Copyright (c) 2017 Alexandre Fiset, Florian Fitvoye
  *
  *  This program is free software: you can redistribute it and/or modify
  *  it under the terms of the GNU Affero General Public License as published by
@@ -17,10 +17,12 @@
 
 package student;
 
-public class CH4Q3Stu {
+public class CH4Q5Stu {
 
-    // code à vérifier
-    public static void printSum(int n, int m) {
+    // Code a verifier
+    public static int fact(int n){
+        int factorial = -42;
         @@q1@@
+        return factorial;
     }
 }

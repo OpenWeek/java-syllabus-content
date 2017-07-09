@@ -26,17 +26,40 @@ import java.io.FileReader;
 import java.io.PrintStream;
 import org.junit.runner.notification.Failure;
 
-public class CH4Q1 {
+public class CH4Q4 {
 	
 	private static String str = "Le code semble comporter des erreurs : ";
 	
 	@Test
 	public void testPos(){
 		try{
-			if(10 != CH4Q1Stu.whileLoop())
+			PrintStream ps = new PrintStream("fichier.out");
+			System.setOut(ps);
+			CH4Q4Stu.decompte(10);
+			BufferedReader br = new BufferedReader(new FileReader("fichier.out"));
+			int i = 10;
+			int count = 0;
+			String s;
+			while((s = br.readLine()) != null)
 			{
-				fail("Vous n'itérez pas le bon nombre de fois dans la boucle.");
+				assertTrue("Votre code nous renvoie "+s+", il devrait renvoyer "+i,i == Integer.parseInt(s));
+				i-=2;
+				count ++;
 			}
+			assertTrue("Votre code nous renvoie "+count+" nombres, il devrait nous en renvoyer 6",count == 6);
+			CH4Q4Stu.decompte(100);
+			ps.close();
+			i = 100;
+		 	count = 0;
+			while((s = br.readLine()) != null)
+			{
+				assertTrue("Votre code ne renvoit pas la bonne réponse, se test a été effectuer pour prevenir du hard coding",i == Integer.parseInt(s));
+				i-=2;
+				count ++;
+			}
+			assertTrue("Votre code ne renvoit pas la bonne réponse, se test a été effectuer pour prevenir du hard coding",count ==  51);
+			br.close();
+
 		}catch (ArithmeticException e){
 			fail(str + "Le code est incorrect : il est interdit de diviser par zéro.");
 			e.printStackTrace();
@@ -54,6 +77,9 @@ public class CH4Q1 {
 		}catch(NullPointerException e){
 			fail(str + "Attention, vous faites une opération sur un objet qui vaut null ! Veillez à bien gérer ce cas.");
 			e.printStackTrace();
+		}catch(NumberFormatException e){
+			fail(str + "Il fallait renvoyer un entier !");
+			e.printStackTrace();
 		}catch(Exception e){
 			fail(str + "\n" + e.getMessage());
 			e.printStackTrace();
@@ -62,7 +88,7 @@ public class CH4Q1 {
 	
 	// Code verificateur
 	public static void main(String[] args) {
-		Result result = JUnitCore.runClasses(CH4Q1.class);
+		Result result = JUnitCore.runClasses(CH4Q4.class);
 		for (Failure failure: result.getFailures()) {
 			System.err.println(failure.toString());
 		}

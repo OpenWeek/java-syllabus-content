@@ -172,7 +172,7 @@ A vous ! Pour votre première boucle ``for``, vous allez écrire un petit progra
 
 .. _diviseurs stricts: https://fr.wikipedia.org/wiki/Diviseur_strict
 
-.. inginious:: syllabus-boucles-for-Q1-nbrepft
+.. inginious:: CH4Q2_nbrepft
 
         // int n = 34; Le nombre naturel à vérifier
         int nbreDiviseurs = 0;
@@ -233,7 +233,7 @@ Exercice : les erreurs classiques des boucles ``for``
 
 Le programme ci-dessous contient un certain nombre d'erreurs classiques lors de l'utilisation de boucles imbriquées. Pouvez-vous les identifier et les afficher ? Indice : il y en a 5.
 
-.. inginious:: syllabus-boucles-for-Q2-forforerror
+.. inginious:: CH4Q3_forforerror
 
         /*
          * Effectue la somme sur chaque ligne des n premiers nombres multiples de 1, 2, 3, ..., m
