@@ -556,7 +556,7 @@ Modifiez le code à l'intérieur de la boucle ``while`` a l'aide d'une incrémen
 
 
 
-Il est aussi fréquent que un programmeur oublie d'incrémenter la variable de boucle après avoir implémenté le code à l'intérieur de la boucle. 
+Il est aussi fréquent que un programmeur oublie d'incrémenter la variable de boucle après avoir implémenté le code à l'intérieur de la boucle.
 
 
 .. raw:: html

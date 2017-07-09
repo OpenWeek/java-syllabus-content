@@ -27,9 +27,9 @@ import java.io.PrintStream;
 import org.junit.runner.notification.Failure;
 
 public class M1Q7 {
-	
+
 	private static String str = "Le code semble comporter des erreurs : ";
-	
+
 	@Test
 	public void testPos(){
 		try{
@@ -63,7 +63,7 @@ public class M1Q7 {
 			e.printStackTrace();
 		}
 	}
-	
+
 	// Code verificateur
 	public static void main(String[] args) {
 		Result result = JUnitCore.runClasses(M1Q7.class);
@@ -76,3 +76,4 @@ public class M1Q7 {
 		}
 	}
 }
+

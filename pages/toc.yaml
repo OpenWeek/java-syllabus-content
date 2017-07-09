@@ -59,13 +59,4 @@ contribuer:
             title: Contribuer au contenu du syllabus
         create_task:
             title: Créer une tâche INGInious
-chapitre_exemple:
-        title: Chapitre d'exemple
-        content:
-            chapter_description:
-                title: Description du chapitre
-            qcm:
-                title: QCM
-            theorie:
-                title: Théorie
 #
