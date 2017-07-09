@@ -26,7 +26,7 @@ Quel bout de code est valide en Java ?
 
 .. class:: positive
 	
-	- .. code-block:: console
+	- .. code-block:: java
 
 	    	int i = 0;
 	    	while(i != 10 )
@@ -38,7 +38,7 @@ Quel bout de code est valide en Java ?
 
 .. class:: negative
 	
-	- .. code-block:: console
+	- .. code-block:: java
 
 		while(i != 10 )
     		{
@@ -49,18 +49,18 @@ Quel bout de code est valide en Java ?
 
 .. class:: negative
 	
-	- .. code-block:: console
+	- .. code-block:: java
 
 		int i = 0;
 		while(i = 10 )
 		{
 			System.out.println(i);
       			i++;
-    		}
+		}
 
 .. class:: negative
 	
-  	- .. code-block:: console
+  	- .. code-block:: java
 
 		while(i < 10 )
 		{
