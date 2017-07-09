@@ -29,7 +29,7 @@ Ceci nous amène donc à l'utilisation de la boucle la plus simple en java, **la
 
 Sémantique de la boucle while et do...while
 ===========================================
-.. code-block:: console
+.. code-block:: Java
 
 	//while
 	while(<condition>)
@@ -327,7 +327,7 @@ Question 1. Analyse de code.
 
 Quelles boucle while sont valide sémantiquement si les variables a et b sont correctement initialisées?
 
-.. code-block:: console
+.. code-block:: Java
 
     /*1*/
 	while( a = a )
@@ -386,7 +386,7 @@ Avantages et désavantages entre les deux boucles.
 
 Pour comprendre quelles sont les avantages et désavantages entres les deux boucle, il est plus facile de travailler avec du pseudo-code. Imaginons un informaticien qui boit du café dans une tasse remplie. Un pseudo-code pour représenter la fonction qui fait boire l'informaticien pourrait être implémentée comme ci-dessous.
 
-.. code-block:: console
+.. code-block:: Java
 	
 	/*
 	*pseudo-code fessant boire un informaticien utilisant une boucle while.
@@ -408,7 +408,7 @@ Pour comprendre quelles sont les avantages et désavantages entres les deux bouc
 
 Nous pouvons remarquer que dans la boucle **do...while** un problème se pose. En effet, un informaticien pourrait boire dans la tasse de café alors qu'elle est vide. Pour remedier à cela, nous pourrions protéger notre boucle avec une condition comme cela :
 
-.. code-block:: console
+.. code-block:: Java
 	
 	/*
 	*pseudo-code fessant boire un informaticien utilisant une boucle do...while sans erreur.
@@ -426,7 +426,7 @@ Ce qui revient à faire une boucle while et donc une utilisation de la boucle **
 
 Par contre, un pseudo-code qui permettrait a notre informatitien de travailler si il a reçut une tasse de café pourrait être implémenter comme si dessous.
 
-.. code-block:: console
+.. code-block:: Java
 	
 	/*
 	*pseudo-code fessant demander une tasse de café pour l'informaticien utilisant une boucle while.
@@ -449,7 +449,7 @@ Par contre, un pseudo-code qui permettrait a notre informatitien de travailler s
 
 Si le processus ne sait pas si l'informaticien a une tasse de café ou non (typiquement une variable non initialisé). Alors notre processus ne serra pas quoi faire au moment de tester la condition dans la boucle **while** ( java vous renvéra une erreur ). Pour remédier à cette erreur nous pouvons reimplémenter le code comme suite.
 
-.. code-block:: console
+.. code-block:: Java
 	
 	/*
 	*pseudo-code fessant demander une tasse de café pour l'informaticien utilisant une boucle while sans erreur.
@@ -467,7 +467,7 @@ Ce bout de code correspond exactement à une boucle **do...while** au niveau de 
 
 Une possible implémentation des deux choix les plus juducieux pourrais être.
 
-.. code-block:: console
+.. code-block:: Java
 	
 	/*
 	*code fessant boire un informaticien.
@@ -517,7 +517,7 @@ La boucle infinie.
 
 Le problème de la boucle infini est sans doute le problème le plus important lors de la création d'une boucle. Elle survient quand la condition de la boucle while ne passe jamais à false. Un belle exemple de boucle infinie peut etre illustré avec l'exemple si dessous.
 
-.. code-block:: console
+.. code-block:: Java
 	
 	/*
 	*boucle infinie
@@ -538,7 +538,7 @@ Question 3. Stop me.
 
 Modifier le code à l'interieur de la boucle while a k'aide d'une incrémentation afin de ne pas crée une boucle infinie.
 
-.. code-block:: console
+.. code-block:: Java
 	
 	int i = 0;
 	while(i < 10)
