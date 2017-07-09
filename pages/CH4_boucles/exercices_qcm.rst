@@ -56,7 +56,7 @@ Quel bout de code est valide en Java ?
 		{
 			System.out.println(i);
       			i++;
-    		}
+		}
 
 .. class:: negative
 	
