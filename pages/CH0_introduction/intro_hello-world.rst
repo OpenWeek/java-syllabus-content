@@ -30,19 +30,19 @@ Pour pouvoir exécuter ce programme, copiez-collez le code ci-dessus dans un éd
 Détaillons un peu le code ci-dessus, qui est déjà relativement chargé.
 
 ``public class Hello``
-=====================
+=========================
 
 Cette première ligne déclare ce que l'on appelle une *classe*. Pour ce cours, vous n'avez pas besoin de savoir ce dont il s'agit, juste que vous devrez mettre l'ensemble des fonctions (nous y reviendrons) et des variables globales (également) entre l'accolade ``{`` de la ligne 2 et l'accolade fermante de la ligne 7.
 
 Pour les curieux : les classes constituent les briques de base du langage Java, et particulièrement d'une technique de programmation appelée *programmation orientée objet*. Java requiert obligatoirement au moins une classe pour pouvoir fonctionner, au point que l'auteur aime qualifier Java de "langage obsédé objets". Dans ce premier cours, nous ne verrons pas la programmation orientée objet.
 
 ``public static void main(String[] args)``
-==========================================
+=============================================
 
 Cette ligne déclare ce que l'on appelle une *fonction* (dans le jargon Java, c'est le synonyme de méthode). Une fonction est un ensemble d'instructions qui peut être exécutée par un autre point du programme, sans avoir besoin de répéter ces instructions à plusieurs endroits (*factorisation* du code source) et avec des petites variantes via ce qu'on appelle des *arguments*. Les fonctions seront vues dans un chapitre ultérieur (non encore écrit), et vous pouvez donc considérer, jusqu'à ce futur chapitre, que l'ensemble du code des prochains chapitres devra être écrit entre l'accolade ouvrante à la fin de la ligne 3 et l'accolade fermante de la ligne 5.
 
 ``System.out.println("Hello world!");``
-======================================
+==========================================
 
 Il s'agit enfin de la première (et unique) instruction de notre programme ! Celle-ci affiche la *chaine de caractères* (texte) comprise entre les guillemets anglais ``"`` à l'écran. Pour cela, on utilise une fonction, ``System.out.prinln``. Celle-ci a pour rôle d'affcher une ligne de texte, la ligne de texte étant spécifiée comme argument, entre les parenthèses ``(...)``. En Java, les chaines de caractres (nommées ``String``) sont comprises entre guillemets, et permettent de stocker du texte. En réalité, il s'agit d'objets, mais vous pouvez ignorer ce détail. Enfin, il y a un point-virgule à la fin de la ligne, marquant la fin de l'instruction.
 
