@@ -1,5 +1,10 @@
-#CH0_intro :
-#    title : Introduction
+CH0_introduction :
+    title : Introduction
+    content:
+        intro_programmation:
+            title: Qu'est-ce que la programmation ?
+        intro_hello-world:
+            title: Introduction au langage Java
 CH1_variables :
     title : Variables
     content :
@@ -47,3 +52,20 @@ CH6_tableaux :
 #    title : Fonctions
 #CH8_cheat_sheet :
 #    title : Cheat sheet
+contribuer:
+    title: Contribuer au syllabus
+    content:
+        contribuer:
+            title: Contribuer au contenu du syllabus
+        create_task:
+            title: Créer une tâche INGInious
+chapitre_exemple:
+        title: Chapitre d'exemple
+        content:
+            chapter_description:
+                title: Description du chapitre
+            qcm:
+                title: QCM
+            theorie:
+                title: Théorie
+#
