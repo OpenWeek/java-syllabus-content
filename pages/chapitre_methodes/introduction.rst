@@ -1,3 +1,5 @@
+.. Cette page est publiée sous la license Creative Commons BY-SA (https://creativecommons.org/licenses/by-sa/3.0/fr/)
+.. auteurs : Damien Raquet et François Duchêne
 ===============
 Introduction
 ===============
@@ -14,21 +16,20 @@ Pour récupérer et utiliser ladite valeur de retour, il suffit de déclarer une
 
 Par exemple, cette méthode renvoie "false" et cette valeur est stockée dans la variable 'boolean'.
 
-<exemple de code>
-public static void main (String[] args) {
-  boolean windows;
-  windows = Non();
-  System.out.println("Windows est-il un bon logiciel ? " + windows);
-}
+.. code-block:: java
+	:linenos:
+	
+	public static void main (String[] args) {
+	  boolean windows;
+	  windows = Non();
+	  System.out.println("Windows est-il un bon logiciel ? " + windows);
+	}
+	public static boolean Non() {
+		return false;
+	}
 
-public static boolean Non() {
-	return false;
-}
-</exemple de code>
 
-<impression code>
-  Windows est-il un bon logiciel ? false
-<impression code>
+*Windows est-il un bon logiciel ? false*
 
 D'un point de vue technique, il est tout à fait possible de tout coder directement dans la main (cela s'appele faire du hard-code),
 mais cela mène assez facilement à des codes illisibles, mal indentés et très difficiles à corriger, même si vous en êtes l'auteur.
@@ -38,60 +39,59 @@ Si vous devez changer la méthode, vous devrez le faire à chaque fois, de même
 A l'inverse, si vous définnissez une méthode, ces longues répétitions de code seront simplifiées, et il suffira de changer le code une fois,
 et sans vous préoccuper du nom des variables ailleurs dans le code.
 
-<exemple de code>
-public static void main (String[] args) {
+.. code-block:: java
+	:linenos:
 
-	int [5] tab1 = {1,2,3,4,5};
-	int [3]	tab2 = {1,2,3};
-	int [4]	tab3 = {2,5,8,7};
-	int min1 = Integer.MAX_VALUE;
-	int min2 = min1;
-	int min3 = min1;
-	for(int i=0, i<tab1.length(), i++){
-		if(tab1[i]<min1){
-			min1=tab1[i];
+	public static void main (String[] args) {
+		int [5] tab1 = {1,2,3,4,5};
+		int [3]	tab2 = {1,2,3};
+		int [4]	tab3 = {2,5,8,7};
+		int min1 = Integer.MAX_VALUE;
+		int min2 = min1;
+		int min3 = min1;
+		for(int i=0, i<tab1.length(), i++){
+			if(tab1[i]<min1){
+				min1=tab1[i];
+			}
+		}
+		for(int i=0, i<tab2.length(), i++){
+			if(tab2[i]<min1){
+				min2=tab2[i];
+			}
+		}
+		for(int i=0, i<tab3.length(), i++){
+			if(tab3[i]<min1){
+				min3=tab3[i];
+			}
 		}
 	}
-	for(int i=0, i<tab2.length(), i++){
-		if(tab2[i]<min1){
-			min2=tab2[i];
-		}
-	}
-	for(int i=0, i<tab3.length(), i++){
-		if(tab3[i]<min1){
-			min3=tab3[i];
-		}
-	}
-}
-</exemple de code>
 
 Comme vous pouvez le constater, le code devient déjà ridiculement long, sans compter qu'il augmente le risque d'erreurs,
 ne serait-ce que si vous oubliez de changer ou vous vous trompez dans le nom de l'une des variables de votre 'copier-collage'.
 
 Voici le même code, mais avec l'utilisation d'une méthode.
 
-<exemple de code>
-public static void main (String[] args) {
+.. code-block:: java
+	:linenos:
 
-	int [5] tab1 = {1,2,3,4,5};
-	int [3]	tab2 = {1,2,3};
-	int [4]	tab3 = {2,5,8,7};
-	int min1, min2, min3;
-	min1=FindLowerElement(tab1);
-	min2=FindLowerElement(tab2);
-	min3=FindLowerElement(tab3);
-}
-
-public static int FindLowerElement(int [] tab){
-  int min=Integer.MAX_VALUE;
-  for(int i=0, i<tab.length(), i++){
-		if(tab[i]<min){
-			min=tab[i];
-		}
+	public static void main (String[] args) {
+		int [5] tab1 = {1,2,3,4,5};
+		int [3]	tab2 = {1,2,3};
+		int [4]	tab3 = {2,5,8,7};
+		int min1, min2, min3;
+		min1=FindLowerElement(tab1);
+		min2=FindLowerElement(tab2);
+		min3=FindLowerElement(tab3);
 	}
-  return min;
-}
-</exemple de code>
+	public static int FindLowerElement(int [] tab){
+	  int min=Integer.MAX_VALUE;
+	  for(int i=0, i<tab.length(), i++){
+			if(tab[i]<min){
+				min=tab[i];
+			}
+		}
+	  return min;
+	}
 
 Il est tout à fait possible pour une méthode, d'utiliser d'autres méthodes déjà créées, voire de s'utiliser elle-même.
 Cela peut paraître un peu farfelu, mais cela permet de faire des améliorations de performances non négligeables.
@@ -100,16 +100,17 @@ Cependant nous n'entrerons pas dans les détails ici, cette partie de matière f
 Comme vous avez pu le constater, en programation, il y a beaucoup de conventions. Et bien la création de méthode n'échappe pas à la règle.
 Voici un exemple de méthode assez mal documentée.
 
-<exemple de code>
-public static int FindMaxInt (int tab, String trol, double random, char p) {
-  p='r';
-  for (int i=5, i<tab, i++){
-    tab=i+tab-trol.length();
-  }
-  int ozef = (tab * 6)/6
-  return ozef;
-}
-</exemple de code>
+.. code-block:: java
+        :linenos:
+
+	public static int FindMaxInt (int tab, String trol, double random, char p) {
+	  p='r';
+	  for (int i=5, i<tab, i++){
+	    tab=i+tab-trol.length();
+	  }
+	  int ozef = (tab * 6)/6
+	  return ozef;
+	}
 
 Il est assez difficile de comprendre ce que cette méthode remplit comme fonction, et elle est assez courte.
 Imaginez si les développeurs devaient passer 15 minutes sur chaque méthode dès qu'ils s'échangent du code.
@@ -124,20 +125,22 @@ Tandis que le texte de présentation décris la fonction que remplit la méthode
 
 En reprenant notre méthode de findLowerElement, une présentation correcte pourrait donner ceci.
 
-<exemple de code>
-/*
-*   Cette méthode prends en argument un tableau d'entier non null, et retourne
-*   le plus petit entier trouvé dans ce tableau
-*
-*   pre: tab != null
-*   post: tab est inchangé, renvoie le minimum du tableau
-*/
-public static int FindLowerElement(int [] tab) {
-  int min=Integer.MAX_VALUE;
-	for(int i=0, i<tab3.length(), i++){
-		if(tab[i]<min){
-			min=tab[i];
+.. code-block:: java
+        :linenos:
+
+	/*
+	*   Cette méthode prends en argument un tableau d'entier non null, et retourne
+	*   le plus petit entier trouvé dans ce tableau
+	*
+	*   pre: tab != null
+	*   post: tab est inchangé, renvoie le minimum du tableau	
+	*/
+	public static int FindLowerElement(int [] tab) {
+		int min=Integer.MAX_VALUE;
+		for(int i=0, i<tab3.length(), i++){
+			if(tab[i]<min){
+				min=tab[i];
+			}
 		}
+		return min;
 	}
-  return min;
-}
