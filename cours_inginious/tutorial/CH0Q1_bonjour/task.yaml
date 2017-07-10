@@ -1,0 +1,25 @@
+accessible: 2016-09-26 10:45:00/2017-09-26 16:00:00
+author: François MICHEL & Clémentine MUNYABARENZI
+context: Tâche uniquement intéressante dans le context du syllabus. Voir syllabus
+    pour énoncé.
+environment: java7
+evaluate: best
+groups: false
+limits:
+    memory: '200'
+    output: '2'
+    time: '30'
+name: '"Bonjour !"'
+network_grading: false
+order: 0
+problems:
+    q1:
+        language: Java
+        name: Changement de code
+        type: code
+        header: Changer l code
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+weight: 1.0

@@ -1,7 +1,7 @@
 accessible: true
 author: alexandre fiset
 context: |
-    La NASA a besoin de vous pour crée un décompte par 2 de 10 à 0.
+    La NASA a besoin de vous pour créer un décompte par 2 de 10 à 0.
 environment: java7
 evaluate: best
 groups: false
@@ -14,19 +14,19 @@ network_grading: false
 problems:
     q1:
         language: java
+        type: code
+        name: code à completer
         header: |-
-            Compléter le code si dessous pour répondre aux exigeances de la NASA.
-
-
+            Complétez le code ci-dessous pour répondre aux exigeances de la NASA.
 
             .. code-block:: java
 
                 //Utilisez la fonction System.out.println(i) pour afficher le contenu de la variable i.
                 int i = 10;
-        name: code à completer
-        type: code
+                /* Votre code */
 stored_submissions: 0
 submission_limit:
     amount: -1
     period: -1
 weight: 1.0
+order: 9

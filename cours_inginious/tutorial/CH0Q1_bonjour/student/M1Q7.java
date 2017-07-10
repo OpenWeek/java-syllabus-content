@@ -1,5 +1,5 @@
 /**
- *  Copyright (c) 2017 Alexandre Fiset, Florian Fitvoye
+ *  Copyright (c) 2017 Jean-Martin Vlaeminck, Alexandre Fiset, Florian Fitvoye
  *
  *  This program is free software: you can redistribute it and/or modify
  *  it under the terms of the GNU Affero General Public License as published by
@@ -26,17 +26,21 @@ import java.io.FileReader;
 import java.io.PrintStream;
 import org.junit.runner.notification.Failure;
 
-public class CH4Q1 {
-	
+public class M1Q7 {
+
 	private static String str = "Le code semble comporter des erreurs : ";
-	
+
 	@Test
 	public void testPos(){
 		try{
-			if(10 != CH4Q1Stu.whileLoop())
-			{
-				fail("Vous n'itérez pas le bon nombre de fois dans la boucle.");
-			}
+			PrintStream ps = new PrintStream("hello.out");
+			System.setOut(ps);
+			Hello.main(null);
+			ps.close();
+			BufferedReader br = new BufferedReader(new FileReader("hello.out"));
+			String s = br.readLine();
+			assertEquals(str + "Vous devez écrire \"Bonjour !\" mais vous avez écrit \""+s+"\"", "Bonjour !", s);
+			br.close();
 		}catch (ArithmeticException e){
 			fail(str + "Le code est incorrect : il est interdit de diviser par zéro.");
 			e.printStackTrace();
@@ -59,10 +63,10 @@ public class CH4Q1 {
 			e.printStackTrace();
 		}
 	}
-	
+
 	// Code verificateur
 	public static void main(String[] args) {
-		Result result = JUnitCore.runClasses(CH4Q1.class);
+		Result result = JUnitCore.runClasses(M1Q7.class);
 		for (Failure failure: result.getFailures()) {
 			System.err.println(failure.toString());
 		}
@@ -72,3 +76,4 @@ public class CH4Q1 {
 		}
 	}
 }
+

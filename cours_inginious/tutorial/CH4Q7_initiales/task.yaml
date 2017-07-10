@@ -8,18 +8,19 @@ evaluate: best
 groups: false
 limits:
     output: '1'
-    memory: '200'
     time: '30'
+    memory: '200'
 name: 'Boucles for : initiales de mots'
 network_grading: false
 problems:
     q1:
-        type: code
         language: Java
-        header: Écrivez le code qui répond à la question ici.
+        type: code
         name: 'Boucles for : initiales'
+        header: Écrivez le code qui répond à la question ici.
 stored_submissions: 0
 submission_limit:
     amount: -1
     period: -1
 weight: 1.0
+order: 12
