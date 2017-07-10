@@ -22,7 +22,7 @@ Jusqu'à présent, nous avons vu la boucle ``while`` (et sa congénère la boucl
 
 Vous l'avez sans doute remarqué, en Java, on doit souvent écrire des boucles dans lesquelles on déclare une ou plusieurs variables avant la boucle, que l'on incrémente ensuite dans la boucle, et dont on vérifie la valeur dans la condition de la boucle. Par exemple,
 
-.. code-block:: Java
+.. code-block:: java
 
         int i = 0;
         while (i <= 5) {
@@ -32,7 +32,7 @@ Vous l'avez sans doute remarqué, en Java, on doit souvent écrire des boucles d
 
 ou encore
 
-.. code-block:: Java
+.. code-block:: java
 
         int i = 10;
         System.out.print("Décollage dans ");
@@ -45,7 +45,7 @@ ou encore
 
 ou encore
 
-.. code-block:: Java
+.. code-block:: java
 
         System.out.println("Combien de tasse de café me faut-il ?");
         int i = 1;
@@ -64,7 +64,7 @@ Toutes ces boucles comprennent des caractéristiques communes :
 
 Ce type de boucles est tellement fréquente en pratique (elle est omniprésente dans les tableaux par exemple) que les concepteurs du langage ont créé une structure condensée, la boucle for :
 
-.. code-block:: Java
+.. code-block:: java
 
         for (<déclarations et initialisation>; <condition>; <incrémentations>) {
                 <code>
@@ -81,13 +81,13 @@ Détaillons la manière dont fonctionne cette boucle :
 
 Comme exemples, réécrivons les exemples ci-dessus à l'aide d'une boucle ``for`` :
 
-.. code-block:: Java
+.. code-block:: java
 
         for (int i = 0; i <= 5; i = i + 1) {
                 System.out.println("Coucou " + i + " fois.");
         }
 
-.. code-block:: Java
+.. code-block:: java
 
         System.out.print("Décollage dans ");
 
@@ -98,7 +98,7 @@ Comme exemples, réécrivons les exemples ci-dessus à l'aide d'une boucle ``for
         System.out.println();
         System.out.println("Décollage !");
 
-.. code-block:: Java
+.. code-block:: java
 
         System.out.println("Combien de tasse de café me faut-il ?");
 
@@ -138,7 +138,7 @@ Afficher l'alphabet
 
 Le code suivant affiche l'alphabet, de la lettre ``'A'`` à la lettre ``'Z'``.
 
-.. code-block:: Java
+.. code-block:: java
 
         for (char ch = 'A'; ch <= 'Z'; ch = ch + 1) {
                 System.out.println(ch);
@@ -149,7 +149,7 @@ Déterminer si un nombre est premier
 
 Un nombre entier est qualifié de *premier* s'il ne possède que deux diviseurs entiers différents : 1 et lui-même. Les nombres premiers sont 2, 3, 5, 7, 11, 13, et une infinité d'autres. Pour vérifier qu'un nombre est premier, il suffit de compter son nombre de diviseurs, et de comparer à 2. Le programme suivant permet de vérifier si un nombre est premier
 
-.. code-block:: Java
+.. code-block:: java
 
         int nombre = 34;
         int nbreDiviseurs = 0;
@@ -172,7 +172,7 @@ A vous ! Pour votre première boucle ``for``, vous allez écrire un petit progra
 
 .. _diviseurs stricts: https://fr.wikipedia.org/wiki/Diviseur_strict
 
-.. inginious:: syllabus-boucles-for-Q1-nbrepft
+.. inginious:: CH4Q2_nbrepft
 
         // int n = 34; Le nombre naturel à vérifier
         int nbreDiviseurs = 0;
@@ -193,7 +193,7 @@ Boucles ``for`` imbriquées
 
 Pour certains programmes, une boucle ``for`` ne suffit pas. Il faut très souvent utiliser deux ou plusieurs boucles ``for`` imbriquées. Par exemple, imaginons que vous souhaitiez afficher une table de multiplication à l'attention de votre petit frère. Voici un exemple d'une telle table, de 12 lignes et de 20 colonnes :
 
-.. code-block:: Java
+.. code-block:: java
 
    1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  17  18  19  20
    2   4   6   8  10  12  14  16  18  20  22  24  26  28  30  32  34  36  38  40
@@ -210,7 +210,7 @@ Pour certains programmes, une boucle ``for`` ne suffit pas. Il faut très souven
 
 Les colonnes de la table ne sont pas alignées, mais Voici un code qui affiche une telle table :
 
-.. code-block:: Java
+.. code-block:: java
 
         int nLignes = 12; // contient le nombre de lignes de la table de multiplication
         int nColonnes = 20; // contient le nombre de colonnes de la table
@@ -233,7 +233,7 @@ Exercice : les erreurs classiques des boucles ``for``
 
 Le programme ci-dessous contient un certain nombre d'erreurs classiques lors de l'utilisation de boucles imbriquées. Pouvez-vous les identifier et les afficher ? Indice : il y en a 5.
 
-.. inginious:: syllabus-boucles-for-Q2-forforerror
+.. inginious:: CH4Q3_forforerror
 
         /*
          * Effectue la somme sur chaque ligne des n premiers nombres multiples de 1, 2, 3, ..., m
