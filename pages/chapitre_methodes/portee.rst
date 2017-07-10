@@ -12,7 +12,6 @@ Cela est impossible, et rendrait l'utilisation des arguments inutiles. Cependant
 Dans le code ci-dessous, un entier "zero" est déclaré dans la main, mais il vous est tout à fait possible de renommer une variable "zero" dans chacune de vos méthodes auxiliaires.
 
 .. code-block:: java
-        :linenos:
 
 	public static void main(String []args) {
 		int zero = 0; //On déclare une première fois une variable zero
@@ -25,7 +24,6 @@ Dans le code ci-dessous, un entier "zero" est déclaré dans la main, mais il vo
 Ces variables sont dites *locales*, elles n'existent que dans le cadre de leur méthode. C'est ce que l'on appelle leur portée. Par exemple, le code suivant est incorrect.
 
 .. code-block:: java
-        :linenos:
 
 	public static void main(String []args) {
 		MethodQuiNeMarchePas();
@@ -39,7 +37,6 @@ Ainsi, si vous désirez utiliser cette valeur, il faut soit que la méthode reto
 C'est une variable qui est directement écrite dans le corps de la classe Java, et non pas dans une méthode. On pourrait l'écrire :
 
 .. code-block:: java
-        :linenos:
 
 	class nombre {
 		public static int zero = 0;
@@ -52,7 +49,6 @@ La variable globale zero est donc *visible* dans **l'ensemble** de la classe nom
 Deuxièmement, les variables passées en argument à une méthode transmettent uniquement une valeur. Un argument a une portée locale sur la méthode. Si on change a valeur de cet argument, on ne change que la valeur de la variable locale à cette méthode.
 
 .. code-block:: java
-        :linenos:
 
         public static void main(String []args) {
                 int zero = 0;

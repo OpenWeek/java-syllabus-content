@@ -10,7 +10,6 @@ Modificateurs et types de retour
 Vous l'avez sûrement déjà remarqué mais un bon nombre de mots se trouvent devant le nom d'une fonction. Ils forment la définition d'une fonction.
 
 .. code-block:: java
-        :linenos:
 
 	public static int exposant(int a, int b) {
 		//code
@@ -44,7 +43,6 @@ Donc lorsque vous modifiez une donnée dans une méthode, la donnée est modifi�
 Voici un exemple simple avec un String "Hello"
 
 .. code-block:: java
-        :linenos:
 
 	public static void main (String[] args){
 	  String bonjour = "Hello";
@@ -63,7 +61,6 @@ Tant que les paramètres sont différents, le reste des modificateurs et type de
 Par exemple :
 
 .. code-block:: java
-        :linenos:
 
 	public static int add() {
 	  int a=1;
@@ -83,7 +80,6 @@ Tous ces codes sont légaux. Java sait quelle méthode appeler à partir des par
 En revanche,
 
 .. code-block:: java
-        :linenos:
 
 	public static String add(String a) {
 	  return a.append("coucou");
