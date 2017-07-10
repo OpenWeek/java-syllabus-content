@@ -17,7 +17,6 @@ Pour récupérer et utiliser ladite valeur de retour, il suffit de déclarer une
 Par exemple, cette méthode renvoie "false" et cette valeur est stockée dans la variable 'boolean'.
 
 .. code-block:: java
-	:linenos:
 	
 	public static void main (String[] args) {
 	  boolean windows;
@@ -40,7 +39,6 @@ A l'inverse, si vous définnissez une méthode, ces longues répétitions de cod
 et sans vous préoccuper du nom des variables ailleurs dans le code.
 
 .. code-block:: java
-	:linenos:
 
 	public static void main (String[] args) {
 		int [5] tab1 = {1,2,3,4,5};
@@ -72,7 +70,6 @@ ne serait-ce que si vous oubliez de changer ou vous vous trompez dans le nom de 
 Voici le même code, mais avec l'utilisation d'une méthode.
 
 .. code-block:: java
-	:linenos:
 
 	public static void main (String[] args) {
 		int [5] tab1 = {1,2,3,4,5};
@@ -101,7 +98,6 @@ Comme vous avez pu le constater, en programation, il y a beaucoup de conventions
 Voici un exemple de méthode assez mal documentée.
 
 .. code-block:: java
-        :linenos:
 
 	public static int FindMaxInt (int tab, String trol, double random, char p) {
 	  p='r';
@@ -116,17 +112,13 @@ Il est assez difficile de comprendre ce que cette méthode remplit comme fonctio
 Imaginez si les développeurs devaient passer 15 minutes sur chaque méthode dès qu'ils s'échangent du code.
 Afin de palier à ce problème, deux conventions ont été proposées.
 
-- Premièrement, comme pour les noms de variables, il est recommander de nommer des méthodes selon les rôles qu'elles remplissent.
-Par exemple, notre fonction plus haut servant à trouver le plus petit élément d'un tableau pourrait s'appeler "findLowerElement".
+- Premièrement, comme pour les noms de variables, il est recommander de nommer des méthodes selon les rôles qu'elles remplissent. Par exemple, notre fonction plus haut servant à trouver le plus petit élément d'un tableau pourrait s'appeler "findLowerElement".
 
-- La seconde convention est de présenter votre méthode à l'aide de conditions et d'un petit texte de présentation.
-Les conditions se nomment les "pre" et "post" conditions et décrivent respectivement l'état des données avant et après l'exécution de la méthode.
-Tandis que le texte de présentation décris la fonction que remplit la méthode.
+- La seconde convention est de présenter votre méthode à l'aide de conditions et d'un petit texte de présentation. Les conditions se nomment les "pre" et "post" conditions et décrivent respectivement l'état des données avant et après l'exécution de la méthode. Tandis que le texte de présentation décris la fonction que remplit la méthode.
 
 En reprenant notre méthode de findLowerElement, une présentation correcte pourrait donner ceci.
 
 .. code-block:: java
-        :linenos:
 
 	/*
 	*   Cette méthode prends en argument un tableau d'entier non null, et retourne
