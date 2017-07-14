@@ -46,8 +46,8 @@ CH6_tableaux :
             title : Opérations sur un tableau
         tableaux_multidimensions :
             title : Tableaux multidimensionnels
-        qcm :
-            title : QCM
+        qcm_avances :
+            title : QCM Avancés
         exercices :
             title : Exercices
         erreurs_frequentes :
