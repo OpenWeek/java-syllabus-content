@@ -1,0 +1,23 @@
+accessible: true
+author: François MICHEL
+context: ''
+environment: java7
+evaluate: best
+groups: false
+limits:
+    time: '30'
+    memory: '100'
+    output: '2'
+name: Exécute du code java et affiche la sortie standard
+network_grading: false
+problems:
+    q1:
+        language: java
+        name: code a exécuter
+        header: ''
+        type: code
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+weight: 1.0
