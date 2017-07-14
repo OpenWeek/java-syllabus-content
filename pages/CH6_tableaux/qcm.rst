@@ -637,6 +637,8 @@ Laquelle des expressions booléennes ci-dessous est-elle vraie ?
         .. code-block:: java
 
             ( m[0][0]==1) && (m[li-1][c-1]==1+li*ci)
+.. class:: negative-multiple
+
 -
 
     .. code-block:: java
@@ -709,6 +711,8 @@ Laquelle des implémentations suivantes est-elle une implémentation correcte de
             sum=sum+t[i];
           }
           return sum;
+.. class:: negative-multiple
+
     -
         .. code-block:: java
 
@@ -721,7 +725,6 @@ Laquelle des implémentations suivantes est-elle une implémentation correcte de
           return sum;
 
         .. class:: comment-feedback
-
 
             Ce code est utilisable pour calculer la somme des éléments d'un tableau à deux dimensions, mais le tableau ``t`` qui est passé comme paramètre effectif à la méthode est un tableau à une seule dimension. Ce code ne compilera pas dans la méthode ``sumTab``.
     -
@@ -737,7 +740,6 @@ Laquelle des implémentations suivantes est-elle une implémentation correcte de
 
         .. class:: comment-feedback
 
-
             Ce code est utilisable pour calculer la somme des éléments d'un tableau à deux dimensions, mais le tableau ``t`` qui est passé comme paramètre effectif à la méthode est un tableau à une seule dimension. Ce code ne compilera pas dans la méthode ``sumTab``.
     -
         .. code-block:: java
@@ -748,7 +750,6 @@ Laquelle des implémentations suivantes est-elle une implémentation correcte de
            }
            return sum;
         .. class:: comment-feedback
-
 
             Ce code provoquera une erreur à l'exécution. Il n'y a pas d'élément dans le tableau ``t`` à l'indice ``t.length``. L'indice le plus élevé du tableau est ``t.length-1``.
 
@@ -777,7 +778,6 @@ Laquelle des séquences d'instructions ci-dessous vérifie explicitement les pr�
        assert ( (b>2*a) && (b%2)==0 ) : "b invalide";
     .. class:: comment-feedback
 
-
         Notez qu'en Java l'expression ``(b%2)`` est une expression entière. Elle peut donc apparaître à gauche d'un signe ``==``. Il est intéressant d'utiliser des commentaires pour indiquer quelle précondition n'est pas vérifiée.
 -
 
@@ -790,15 +790,16 @@ Laquelle des séquences d'instructions ci-dessous vérifie explicitement les pr�
 
     .. class:: comment-feedback
 
-
         Il est intéressant d'utiliser des commentaires pour indiquer quelle précondition n'est pas vérifiée.
+        
+.. class:: negative-multiple
+
 -
     .. code-block:: java
 
        assert a<=0;
        assert ( (b>2*a) && (b%2)==0 ) : "b invalide";
     .. class:: comment-feedback
-
 
         La première assertion est incorrecte. Elle est vraie lorsque ``a<=0`` or la précondition de la méthode est ``a>0``.
 -
