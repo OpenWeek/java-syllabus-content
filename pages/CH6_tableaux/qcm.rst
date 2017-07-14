@@ -637,6 +637,7 @@ Laquelle des expressions booléennes ci-dessous est-elle vraie ?
         .. code-block:: java
 
             ( m[0][0]==1) && (m[li-1][c-1]==1+li*ci)
+
 .. class:: negative-multiple
 
 -
@@ -791,7 +792,7 @@ Laquelle des séquences d'instructions ci-dessous vérifie explicitement les pr�
     .. class:: comment-feedback
 
         Il est intéressant d'utiliser des commentaires pour indiquer quelle précondition n'est pas vérifiée.
-        
+
 .. class:: negative-multiple
 
 -
