@@ -1,5 +1,22 @@
 .. Cette page est publiée sous la license Creative Commons BY-SA (https://creativecommons.org/licenses/by-sa/3.0/fr/)
 
+.. name: Viens faire un qcm!
+
+.. This file is an example of MCQ.
+
+.. These scripts are needed for executing the mcq
+
+.. raw:: html
+
+  <script type="text/javascript" src="static/js/jquery-3.1.1.min.js"></script>
+  <script type="text/javascript" src="static/js/jquery-shuffle.js"></script>
+  <script type="text/javascript" src="static/js/rst-form.js"></script>
+  <script type="text/javascript" src="static/js/prettify.js"></script>
+
+.. This variable hold the number of proposition shown to the student
+
+  <script type="text/javascript">$nmbr_prop = 3</script>
+
 .. author::
 
     Marie-Marie van der Beek, Pablo Gonzalez Alvarez, Antoine Habran
@@ -109,6 +126,355 @@ Par défaut, si aucune valeur n'est assignée au cases d'un tableau, Java initia
 Pour plus de détails, se référer à la Javadoc [1]_.
 
 .. [1] https://docs.oracle.com/javase/specs/jls/se7/html/jls-4.html#jls-4.12.5
+
+QCM
+---
+
+Question 1 - Définition d'un tableau Java
+------------------------------------------
+
+Un tableau ``Java`` est :
+
+.. class:: positive-multiple
+
+    - Une structure de données indexée
+
+    .. class:: comment-feedback
+
+        *Good job!*
+
+.. class:: negative-multiple
+
+    - Un tableau blanc sur lequel on dessine des cases au feutre
+
+    .. class:: comment-feedback
+
+        *Donner une définition plus précise.*
+
+    - Un tableau noir sur lequel on dessine des cases à la craie
+
+    .. class:: comment-feedback
+
+        *Donner une définition plus précise.*
+
+
+Question 2 - Initialiser un tableau Java
+-----------------------------------------
+
+Cocher les cases correctes :
+
+.. class:: positive-multiple
+
+    -
+        .. code-block:: Java
+
+            int[] tab = new int[100];
+
+        .. class:: comment-feedback
+
+            *Good job!*
+
+    -
+        .. code-block:: Java
+
+            int tab[] = new int[100];
+
+        .. class:: comment-feedback
+
+            *Good job!*
+
+.. class:: negative-multiple
+
+    -
+        .. code-block:: Java
+
+            int[] tab = new int[100]
+
+        .. class:: comment-feedback
+
+            *il manque un ``;``*
+
+    -
+        .. code-block:: Java
+
+            int[] tab = int[100];
+
+        .. class:: comment-feedback
+
+            *il manque le mot-clef ``new``*
+
+    -
+        .. code-block:: Java
+
+            int tab = int[100];
+
+        .. class:: comment-feedback
+
+            *il manque des crochets*
+
+    -
+        .. code-block:: Java
+
+            int []tab = new int[100];
+
+        .. class:: comment-feedback
+
+            *Les crochets sont mal placés*
+
+    -
+        .. code-block:: Java
+
+            int tab[] = new int[100]
+
+        .. class:: comment-feedback
+
+            *il manque un ``;``*
+
+    -
+        .. code-block:: Java
+
+            int tab[] = int[100];
+
+        .. class:: comment-feedback
+
+            *il manque le mot-clef ``new``*
+
+
+Question 3 - Index dans un tableau Java
+----------------------------------------
+
+On initialise le tableau suivant :
+
+.. code-block:: Java
+
+    String tab[] = {1, 2, 3}
+
+Quelle elle la valeur de ``tab[0]``?
+
+.. class:: positive
+
+    - Aucune des autres valeurs proposées
+
+    .. class:: comment-feedback
+
+        Good job!
+
+.. class:: negative
+
+    - 0
+    - 1
+    - 2
+    - 3
+
+    .. class:: comment-feedback
+
+        Il manque un ``;``
+
+Question 4 - Déclaration de tableaux
+-------------------------------------
+
+Parmi les déclarations suivantes, quelle est celle qui permet de déclarer correctement un tableau dont la référence est dénommée ``tab`` et qui peut contenir 5 nombres entiers ?
+
+.. class:: positive-multiple
+
+        -
+            .. code-block:: java
+
+                   int[] tab = new int[5];
+
+            .. class:: comment-feedback
+
+                C'est la déclaration la plus courante pour un tableau d'entiers. Notez que cette ligne combine une déclaration (``int[] tab`` et la création du tableau correspondant permettant de stocker 5 éléments de type ``int``.
+
+        -
+            .. code-block:: java
+
+                   int[] tab;
+                   tab = new int[5];
+
+            .. class:: comment-feedback
+
+                La première ligne déclare que ``tab`` est une référence vers un tableau d'entiers. La deuxième ligne associe cette référence à un tableau permettant de stocker 5 entiers.
+
+.. class:: negative-multiple
+
+        -
+            .. code-block:: java
+
+                    tab = int [5];
+
+            .. class:: comment-feedback
+
+                Cette ligne est incorrecte. ``tab`` n'a pas été déclaré préalablement et il faut utiliser le mot clé ``new`` pour initialiser un tableau.
+        -
+            .. code-block:: java
+
+                    tab = new int[5];
+
+            .. class:: comment-feedback
+
+                Cette ligne est incorrecte. ``tab`` n'a pas été déclaré préalablement. Il faut faire précéder cette ligne d'une déclaration de ``tab``.
+
+        -
+            .. code-block:: java
+
+                    int[] tab = new int[];
+
+            .. class:: comment-feedback
+
+                Cette ligne est incorrecte. Lorsque l'on initialise un tableau, il faut spécifier le nombre d'éléments du tableau entre [] dans le membre de droite. En Java, les tableaux ont une taille fixe qui est définie à leur création.
+
+        -
+            .. code-block:: java
+
+                    int[5] tab = new int[];
+
+            .. class:: comment-feedback
+
+                Cette ligne est incorrecte. Lorsque l'on initialise un tableau, il faut spécifier le nombre d'éléments du tableau entre [] dans le membre de droite. En Java, les tableaux ont une taille fixe qui est définie à leur création.
+
+        -
+            .. code-block:: java
+
+                    int tab[5] = new int[];
+
+            .. class:: comment-feedback
+
+                Cette ligne est incorrecte. Lorsque l'on initialise un tableau, il faut spécifier le nombre d'éléments du tableau entre [] dans le membre de droite.
+
+Question 5 - Initialisation de tableaux
+----------------------------------------
+
+Laquelle des lignes ci-dessous déclare un tableau contenant trois nombres réels et l'initialise avec les valeurs ``-1.0``, ``0.0`` et ``1.0``.
+
+.. class:: positive-multiple
+
+        -
+            .. code-block:: java
+
+                    double[] t = new double[] {-1.0, 0.0, 1.0};
+
+            .. class:: comment-feedback
+
+                Cette ligne est correcte. Le livre la préfère à la ligne ``double[] t = { -1.0, 0.0, 1.0};`` même si les deux sont équivalentes pour Java.
+
+        -
+            .. code-block:: java
+
+                    double[] t = {-1.0, 0.0, 1.0};
+
+            .. class:: comment-feedback
+
+                Cette ligne est correcte. Le livre préfère la ligne ``double[] t = new double[] { -1.0, 0.0, 1.0};`` qui est plus explicite même si les deux sont équivalentes pour Java.
+
+.. class:: negative-multiple
+
+        -
+            .. code-block:: java
+
+                   double[3] t = {-1.0, 0.0, 1.0};
+
+            .. class:: comment-feedback
+
+                En Java, il n'existe pas de type ``double[3]`` pouvant être mis dans une déclaration.
+
+        -
+            .. code-block:: java
+
+                   double t = {-1.0, 0.0, 1.0};
+
+            .. class:: comment-feedback
+
+                En Java, ``double t`` déclare un réel et non un tableau de réels.
+
+        -
+            .. code-block:: java
+
+                   double[] t = new double[-1.0, 0.0,1.0];
+
+            .. class:: comment-feedback
+
+
+                Cette ligne n'est pas syntaxiquement correct.
+
+        -
+            .. code-block:: java
+
+                   double[] t = new double{-1.0,0.0,1.0};
+
+            .. class:: comment-feedback
+
+
+                Cette ligne n'est pas syntaxiquement correcte.
+
+        -
+            .. code-block:: java
+
+                   double[] t = [-1.0, 0.0, 1.0];
+
+            .. class:: comment-feedback
+
+
+                Cette ligne n'est pas syntaxiquement correcte. Ne confondez pas ``{`` et ``[``.
+
+
+Question 6 - Initialisation de tableaux
+----------------------------------------
+
+Une fois qu'un tableau a été déclaré et initialisé, il faut parfois pouvoir connaître le nombre d'éléments se trouvant dans le tableau. Lequel des codes ci-dessous affiche-t-il le nombre d'entiers dans le tableau ``tab`` déclaré via ``int[] tab = new int[]{1,2,7,9,3,99,-12,78,119}`` ?
+
+.. class:: positive-multiple
+
+    -
+
+            .. code-block:: java
+
+               System.out.println(tab.length);
+
+.. class:: negative-multiple
+
+    -
+        .. code-block:: java
+
+               System.out.println(tab.length());
+
+        .. class:: comment-feedback
+
+            En Java, la syntaxe ``tab.length()`` correspond à l'exécution de la méthode ``length()`` sur l'objet dont la référence est ``tab``. Les tableaux Java ne sont pas des objets ayant des méthodes que l'on peut appeler.
+
+    -
+        .. code-block:: java
+
+               System.out.println(tab.size);
+
+        .. class:: comment-feedback
+
+            ``tab.size`` n'existe pas.
+
+    -
+        .. code-block:: java
+
+               System.out.println(tab[0]);
+
+        .. class:: comment-feedback
+
+            ``tab[0]`` est le premier élément du tableau ``tab`` et non le nombre d'éléments présents dans le tableau.
+
+    -
+        .. code-block:: java
+
+               System.out.println(tab.[length]);
+
+        .. class:: comment-feedback
+
+            Cette ligne est syntaxiquement incorrecte.
+
+.. This line include the "check your answer" button that gives a note to the student and mark questions with the
+    correct marker if the answer is to good one, or the incorrect marker if not.
+
+.. raw:: html
+
+    <div id="checker" class="checker"><h1>Vérifiez vos réponses</h1><input type="submit" value="Vérifier" id="verifier"></div>
 
 .. author::
 
