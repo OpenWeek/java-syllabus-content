@@ -392,10 +392,10 @@ Pour comprendre quels sont les avantages et désavantages entres les deux boucle
 	/*
 	*pseudo-code faisant boire un informaticien utilisant une boucle while.
 	*/
-	while(/*tasse pas vide*/)
+	while(tasse_non_vide())
 	{
-		/*informaticien boit*/
-		/*tasse se vide*/
+                System.out.println("L'informaticien boit.");
+                System.out.println("La tasse se vide.");
 	}
 	
 	/*
@@ -403,24 +403,24 @@ Pour comprendre quels sont les avantages et désavantages entres les deux boucle
 	*/
 	do
 	{
-		/*informaticien boit*/
-		/*tasse se vide*/
-	}while(/*tasse pas vide*/);
+                System.out.println("L'informaticien boit.");
+                System.out.println("La tasse se vide.");
+	}while(tasse_non_vide());
 
-Nous pouvons remarquer que dans la boucle ``do...while`` un problème se pose. En effet, un informaticien pourrait boire dans la tasse de café alors qu'elle est vide. Pour remédier à cela, nous pourrions protéger notre boucle avec une condition comme cela :
+Nous pouvons remarquer que dans la boucle version ``do...while`` un problème se pose. En effet, un informaticien pourrait boire dans la tasse de café alors qu'elle est vide. Pour remédier à cela, nous pourrions protéger notre boucle avec une condition comme cela :
 
 .. code-block:: java
 	
 	/*
-	*pseudo-code fessant boire un informaticien utilisant une boucle do...while sans erreur.
+	*pseudo-code faisant boire un informaticien utilisant une boucle do...while sans erreur.
 	*/
-	if(/*tasse pas vide*/)
+	if(tasse_non_vide())
 	{
 		do
 		{
-			/*informaticien boit*/
-			/*tasse se vide*/
-		}while(/*tasse pas vide*/);
+                        System.out.println("L'informaticien boit.");
+                        System.out.println("La tasse se vide.");
+		}while(tasse_non_vide());
 	}
 	
 Ce qui revient à faire une boucle ``while`` et donc une utilisation de la boucle ``do...while`` n'est pas judicieuse dans notre problème.
@@ -432,23 +432,23 @@ Par contre, un pseudo-code qui permettrait a notre informatitien de travailler s
 	/*
 	*pseudo-code faisant demander une tasse de café pour l'informaticien utilisant une boucle while.
 	*/
-	while(/*pas de tasse de café*/)
+	while(pas_de_tasse_de_cafe())
 	{
-		/*demande une tasse de café*/
+                System.out.println("L'informaticien demande une tasse de café.");
 	}
-	/*informaticien travaille*/
+        System.out.println("L'informaticien travaille (ou pas).");
 	
 	/*
 	*pseudo-code faisant demander une tasse de café pour l'informaticien utilisant une boucle do...while.
 	*/
 	do
 	{
-		/*demande une tasse de café*/
-	}while(/*pas de tasse de café*/);
-	/*informaticien travaille*/
+                System.out.println("L'informaticien demande une tasse de café.");
+	}while(pas_de_tasse_de_cafe());
+        System.out.println("L'informaticien travaille (ou pas).");
 
 
-Si le processus ne sait pas si l'informaticien a une tasse de café ou non (typiquement une variable non initialisé). Alors notre processus ne saura pas quoi faire au moment de tester la condition dans la boucle ``while`` (Java vous renverra une erreur). Pour remédier à cette erreur nous pouvons réimplémenter le code comme suit.
+Si le processus ne sait pas si l'informaticien a une tasse de café ou non (typiquement une variable non initialisé), alors notre processus ne saura pas quoi faire au moment de tester la condition dans la boucle ``while`` (Java vous renverra une erreur). Pour remédier à cette erreur nous pouvons réimplémenter le code comme suit.
 
 .. code-block:: java
 	
@@ -456,12 +456,12 @@ Si le processus ne sait pas si l'informaticien a une tasse de café ou non (typi
 	*pseudo-code faisant demander une tasse de café pour l'informaticien utilisant une boucle while sans erreur.
 	*/
 
-	/*demande une tasse de café*/
-	while(/*pas de tasse de café*/)
+        System.out.println("L'informaticien demande une tasse de café.");
+	while(pas_de_tasse_de_cafe())
 	{
-		/*demande une tasse de café*/
+                System.out.println("L'informaticien demande une tasse de café.");
 	}
-	/*informaticien travail*/
+        System.out.println("L'informaticien travaille (ou pas).");
 
 Ce bout de code correspond exactement à une boucle ``do...while`` au niveau de l'enchainement du block condition/code à exécuter. Et donc le choix judicieux pour résoudre ce problème est l'utilisation d'une boucle ``do...while``.
 

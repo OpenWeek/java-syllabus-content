@@ -11,13 +11,12 @@ Il existe 8 types intégrés dans Java appelés **types primitifs**, tout repose
 
 (1) **byte**, **short**, **int**, **long** : ces quatres types contiennent des entiers.
 (2) **float**, **double** : contiennent des nombres réels.
-(3) **char** : contient un caractère unique comme 'A', '*', 'x', ' ' ainsi que des caractères spéciaux comme une tabulation ('\\t') ou un retour à la ligne ('\\n'). Lorsque l'on utilise dans un programme, on doit rajouter les ' ' sinon '*' devient * qui est le symbole de la multiplication.
+(3) **char** : contient un caractère unique comme 'A', '*', 'x', ' ' ainsi que des caractères spéciaux comme une tabulation ('\\t') ou un retour à la ligne ('\\n'). Lorsque l'on utilise dans un programme, on doit rajouter des apostrophes (les ``' '``) sinon '*' devient * qui est le symbole de la multiplication.
 (4) **boolean** : contient une des deux expressions logiques (True ou False), souvent le résultat d'expression logique (cfr chapitre sur les expressions logiques).
 
 Pour comprendre la différence entre les types contenant des entiers (ou des réels), il faut s'intéresser à la manière dont une donnée est stockée en mémoire.
 Une donnée est stockée sous forme de numéro binaire, c'est à dire une séquence de 0 et de 1.
 Un seul 0 ou 1 est appellé un bit. Un séquence de 8 bits est appellé un byte. Généralement, on caractérise la taille d'une mémoire en bytes.
-
 
 * Un **byte** est donc un entier encodé sur 1 byte, il y a donc 256 séquences possibles avec des 0 et 1, correspondant à l'intervalle allant de -128 à 127.
 * Un **short** est un entier encodé sur 2 bytes, correspondant à l'intervalle allant de -32768 à 32767
@@ -25,11 +24,11 @@ Un seul 0 ou 1 est appellé un bit. Un séquence de 8 bits est appellé un byte.
 * Un **long** est un entier encodé sur 8 bytes, correspondant à l'intervalle allant de -9223372036854775808 à 9223372036854775807. Pour l'utiliser dans le programme il faut rajouter un 'L' (x=1002L).
 * Un **float** est un réel encodé sur 4 bytes, permettant d'avoir jusqu'à 7 chiffres significatifs. Pour l'utiliser dans le programme il faut rajouter un 'F' ou 'f' (x=1.2F).
 * Un **double** est un réel encodé sur 8 bytes, permettant d'avoir jusqu'à 15 chiffres significatifs.
-* Un **char** est encodé sur 2 bytes.
+* Un **char** est encodé sur 2 bytes. Même s'il est conçu pour contenir des caractères et non des nombres, on peut effectuer les mêmes opérations que sur un ``short`` : addition, soustraction, multiplication... ce qui permet, par exemple, de passer au caractère suivant dans l'alphabet (avec des limites ; toutes les opérations n'ont pas forcément un sens, et ne donnent pas spécialement un caractère "logique").
 
 Le type **int** est suffisant pour la plupart des utilisations avec les entiers et le **double** avec les réels.
 
-Il existe d'autres types de données en Java dont le plus utilisé est le **String** qui est un séquence de caractères (**char**)
+Il existe d'autres types de données en Java dont le plus utilisé est le **String** qui est une séquence, une *chaine* de caractères (**char**)
 et est délimité par des guillemets (exemple : String s = "Hello World !").
 
 Exercice
