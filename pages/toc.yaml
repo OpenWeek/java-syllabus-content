@@ -40,10 +40,14 @@ CH4_boucles :
 CH6_tableaux :
     title : Tableaux
     content :
-        theorie :
-            title : Théorie
-        qcm :
-            title : QCM
+        tableaux_initialisation :
+            title : Initialiser un tableau
+        tableaux_operations :
+            title : Opérations sur un tableau
+        tableaux_multidimensions :
+            title : Tableaux multidimensionnels
+        qcm_avances :
+            title : QCM Avancés
         exercices :
             title : Exercices
         erreurs_frequentes :
