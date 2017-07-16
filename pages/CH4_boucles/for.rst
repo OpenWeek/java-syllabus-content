@@ -137,12 +137,21 @@ Afficher l'alphabet
 '''''''''''''''''''
 
 Le code suivant affiche l'alphabet, de la lettre ``'A'`` à la lettre ``'Z'``.
-
 .. code-block:: java
 
         for (char ch = 'A'; ch <= 'Z'; ch = ch + 1) {
                 System.out.println(ch);
         }
+
+Le code utilise une particularité du type ``char`` : sa ressemblance avec des entiers. En effet, même si un ``char`` est conçu pour contenir un caractère, que ce soit une lettre, un chiffre ou un idéogramme chinois, il est possible d'effectuer des opérations arithmétiques dessus, notamment des additions. Par exemple, le code suivant
+
+.. code-block:: java
+
+        char a = 'a';
+        char c = a + 2;
+        System.out.println(c);
+
+affiche la lettre ``'c'``. Littéralement, ce code signifie de prendre la lettre 'a' décalée de deux caractères dans l'alphabet, c'est-à-dire 'c'. Cette petite astuce nous permet de parcourir tout l'alphabet latin, en commençant à 'A', en terminant à 'Z' et en passant au caractère suivant par ``ch = ch + 1``. (N'essayez pas d'aller plus loin que 'Z' néanmoins, vous trouverez des caractères qui ont relativement peu de sens.)
 
 Déterminer si un nombre est premier
 '''''''''''''''''''''''''''''''''''
