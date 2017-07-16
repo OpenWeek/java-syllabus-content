@@ -210,7 +210,7 @@ Laquelle des implémentations suivantes est-elle une implémentation correcte de
             sum=sum+t[i];
           }
           return sum;
-          
+
 .. class:: negative-multiple
 
     -
