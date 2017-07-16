@@ -137,6 +137,7 @@ Afficher l'alphabet
 '''''''''''''''''''
 
 Le code suivant affiche l'alphabet, de la lettre ``'A'`` à la lettre ``'Z'``.
+
 .. code-block:: java
 
         for (char ch = 'A'; ch <= 'Z'; ch = ch + 1) {
