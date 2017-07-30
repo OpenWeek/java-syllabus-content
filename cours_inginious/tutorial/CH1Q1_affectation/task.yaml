@@ -1,0 +1,31 @@
+accessible: true
+author: Mottet Sébastien & Fitvoye Florian
+context: Dans cette question nous allons vous demander de déclarer et initialiser
+    plusieurs variables. Nous ne vous donnons pas leur type, c'est à vous de le déterminer
+    grâce aux informations fournies.
+environment: java7
+evaluate: best
+groups: false
+limits:
+    output: '2'
+    memory: '100'
+    time: '30'
+name: 'Déclaration et affectation '
+network_grading: false
+problems:
+    q1:
+        type: code
+        language: java
+        header: |-
+            1) Déclarez et initialisez une variable nommée "piVal" contenant la valeur de pi avec deux chiffres significatifs après la virgule. (utilisez le moins de mémoire possible)
+
+            2) Déclarez une variable nommée "popWorld" pouvant contenir le nombre d'êtres humains vivants sur terre et initialisez la à 0.
+
+            3) Déclarez et initialisez une variable nommée "c" contenant la 17 ième lettre de l'alphabet en miniscule.
+        name: Déclaration et Affectation
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+weight: 1.0
+order: 1

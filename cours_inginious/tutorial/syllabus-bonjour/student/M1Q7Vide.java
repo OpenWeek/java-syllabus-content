@@ -1,3 +1,0 @@
-package student;
-
-@@q1@@

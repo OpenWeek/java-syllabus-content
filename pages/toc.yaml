@@ -1,24 +1,71 @@
-chapitre_exemple:
-  title: "Chapitre d'exemple"
-  content:
-    theorie:
-      title: "Exemple de théorie"
-    qcm:
-      title: "Exemple de QCM"
-  chapter_intro_file: "chapter_description.rst"
-contribuer:
-  title: Contribuer
-  content:
-    contribuer:
-      title: Contribuer au contenu du syllabus
-    create_task:
-      title: "Créer une tâche"
+CH0_introduction :
+    title : Introduction
+    content:
+        intro_programmation:
+            title: Qu'est-ce que la programmation ?
+        intro_hello-world:
+            title: Introduction au langage Java
+CH1_variables :
+    title : Variables
+    content :
+        syntax :
+            title : Syntaxe des noms de variable
+        affect_decla :
+            title : Déclaration et affectation de variable
+        types :
+            title : Types de variable
+        variables_in_programs :
+            title : Variables dans les programmes
+CH2_expressions :
+    title : Expressions
+    content :
+        arithmetic_operator :
+            title : Expressions
+CH3_conditionnelles :
+    title : Expressions conditionnelles
+    content :
+        theorie :
+            title : Théorie
+CH4_boucles :
+    title : Boucles
+    content :
+        while :
+            title : Boucle while
+        for :
+            title : Boucle for
+        exercices_qcm :
+            title : QCM
+        exercices_inginious :
+            title : Exercices Inginious
+CH6_tableaux :
+    title : Tableaux
+    content :
+        tableaux_initialisation :
+            title : Initialiser un tableau
+        tableaux_operations :
+            title : Opérations sur un tableau
+        tableaux_multidimensions :
+            title : Tableaux multidimensionnels
+        qcm_avances :
+            title : QCM Avancés
+        exercices :
+            title : Exercices
+        erreurs_frequentes :
+            title : Erreurs fréquentes
 chapitre_methodes:
-  title: Chapitre - Les Méthodes
-  content:
-    introduction:
-      title: "Introduction"
-    definitions:
-      title: "Définitions de fonctions"
-    portee:
-      title: "Portée de variables"
+    title: Chapitre - Les Méthodes
+    content:
+        introduction:
+            title: "Introduction"
+        definitions:
+            title: "Définitions de fonctions"
+        portee:
+            title: "Portée de variables"
+contribuer:
+    title: Contribuer au syllabus
+    content:
+        contribuer:
+            title: Contribuer au contenu du syllabus
+        create_task:
+            title: Créer une tâche INGInious
+#
