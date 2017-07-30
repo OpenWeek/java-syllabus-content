@@ -52,10 +52,15 @@ CH6_tableaux :
             title : Exercices
         erreurs_frequentes :
             title : Erreurs fréquentes
-#CH7_fonctions :
-#    title : Fonctions
-#CH8_cheat_sheet :
-#    title : Cheat sheet
+chapitre_methodes:
+    title: Chapitre - Les Méthodes
+    content:
+        introduction:
+            title: "Introduction"
+        definitions:
+            title: "Définitions de fonctions"
+        portee:
+            title: "Portée de variables"
 contribuer:
     title: Contribuer au syllabus
     content:
