@@ -65,7 +65,7 @@ Conditions
 La condition "fournie" à l'instruction **if** peut être n'importe quelle expression booléenne,
 comme par exemple les comparaisons et égalités arithmétiques.
 
-Dans les exemples suivants, les conditions sont toutes vraies, eet les phrases sont affichées par le "**afficher**" :
+Dans les exemples suivants, les conditions sont toutes vraies, et les phrases sont affichées par le "**afficher**" :
 
 .. code-block:: java
 
@@ -84,7 +84,7 @@ Exercice
 --------
 
 Modifiez la condition du code suivant pour que la variable booléenne **majeur** soit mise à la valeur **true**
-uniquement si la variable int **age** est plus grande ou égale à 18.
+uniquement si la variable int **age** est plus grande ou égale à 21.
 
 .. inginious:: CH3Q1_condition
 
