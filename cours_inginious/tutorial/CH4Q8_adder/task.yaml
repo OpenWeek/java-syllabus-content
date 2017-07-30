@@ -1,0 +1,32 @@
+accessible: true
+author: Jean-Martin Vlaeminck
+context: |-
+    On vous propose de coder un petit programme qui additionne entre eux les nombres entiers entrés par l'utilisateur sur l'entrée standard. L'utilisateur rentre en premier un nombre entier positif ``n``, le nombre d'entiers qu'il va rentrer dans le programme ; après avoir lu ``n`` entiers, le programme affiche sur la sortie standard (avec ``System.out.println``) la somme de tous les nombres (sauf ``n``) et s'arrête. Pour vous aider, vous pouvez récupérer le nombre entier suivant rentré par l'utilisateur dans la variable ``int i`` comme suit :
+
+    .. code-block:: Java
+
+        int i = nextInt();
+
+    Plusieurs réponses étant possibles (une par type de boucle), tentez de résoudre l'exercice avec les 3 types de boucles vues : ``while``, ``do...while`` et ``for``.
+environment: java7
+evaluate: best
+groups: false
+limits:
+    output: '1'
+    time: '30'
+    memory: '200'
+name: 'Boucles : additionneur'
+network_grading: false
+problems:
+    q1:
+        language: Java
+        type: code
+        name: Additionneur
+        header: |
+            Écrivez ici le code de l'additionneur.
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+weight: 1.0
+order: 13

@@ -1,0 +1,25 @@
+accessible: true
+author: Mottet Sébastien & Fitvoye Florian
+context: ''
+environment: java7
+evaluate: best
+groups: false
+limits:
+    output: '2'
+    memory: '100'
+    time: '30'
+name: Misconceptions and variables
+network_grading: false
+problems:
+    q1:
+        type: code
+        language: Java
+        header: Ecrivez un code pour que la variable 'a' prennne la valeur 'b+1' et
+            que la variable 'b' garde sa valeur.
+        name: Changement de valeur
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+weight: 1.0
+order: 2

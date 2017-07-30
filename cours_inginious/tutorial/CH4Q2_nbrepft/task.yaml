@@ -1,0 +1,27 @@
+accessible: true
+author: Jean-Martin Vlaeminck
+context: |
+    Un nombre *parfait* est un nombre naturel dont la somme des `diviseurs stricts`_ est égale au nombre lui-même. Pour vous entrainer à utiliser les boucles ``for``, écrivez une boucle qui permet de déterminer si un nombre naturel, stocké dans la variable ``n``, est parfait ou non. Le résultat final doit être stocké dans la variable booléenne ``isPerfect`` à la fin de l'exécution de votre boucle.
+
+    .. _diviseurs stricts: https://fr.wikipedia.org/wiki/Diviseur_strict
+environment: java7
+evaluate: best
+groups: false
+limits:
+    output: '2'
+    memory: '300'
+    time: '30'
+name: 'Boucles : nombres parfaits'
+network_grading: false
+problems:
+    q1:
+        type: code
+        language: Java
+        header: Écrivez ici le bout de code déterminant si un nombre est parfait.
+        name: Nombre parfait
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+weight: 1.0
+order: 7

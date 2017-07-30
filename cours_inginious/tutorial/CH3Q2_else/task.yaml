@@ -1,0 +1,35 @@
+accessible: true
+author: Antoine Lambot & Maxime Mulamba
+context: Modifiez la condition de l'expression conditionnelle suivante pour que la
+    variable "majeur" ait la valeur "true" si la variable "age" est plus grande ou
+    égale à 18, et dans le cas contraire attribuer à la variable "majeur" la valeur
+    "false".
+environment: java7
+evaluate: best
+groups: false
+limits:
+    output: '2'
+    memory: '100'
+    time: '30'
+name: Expressions conditionnelles 2 - if else
+network_grading: false
+problems:
+    q1:
+        header: |-
+            .. code-block:: java
+
+                if(age < 13){
+                    majeur = true;
+                }
+                else {
+                    majeur = false;
+                }
+        type: code
+        language: Java
+        name: ''
+stored_submissions: 0
+submission_limit:
+    amount: -1
+    period: -1
+weight: 1.0
+order: 4
