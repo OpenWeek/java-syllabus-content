@@ -3,44 +3,43 @@ Déclaration et affectation de variable
 ======================================
 
 
-Les programmes de tous les jours utilisent constamment des *variables* stockées en mémoire.
-En langage machine, il est nécessaire de préciser l'endroit à laquelle la variable va être stockée en donnant une adresse numérique concrète.
-En java, ce n'est pas le cas. C'est à l'ordinateur de s'occuper des emplacements de variables.
-Le programmeur devra donc uniquement retenir le nom des variables.
+Les programmes de tous les jours utilisent constamment des **variables** stockées en mémoire. Une variable est un nom (chaîne de caractères) qui fait référence à une donnée stockée en mémoire.
 
-**Un nom utilisé pour faire référence à une donnée stockée en mémoire est donc appelé une variable.**
 La notion de variable est plutot subtile.
 Pour mieux comprendre le fonctionnement des variables, il est nécessaire de distinguer trois notions élémentaires :
 
-- le nom de la variable : nom qui permet d'identifier un endroit où un contenu est stocké
+- le nom de la variable : nom qui permet de référencer un endroit où un contenu est stocké
 - le contenu de la variable : l'information stockée. Le contenu d'une variable peut être modifié au cours de l'exécution d'un programme.
 - le type de variable (notion expliquée dans la section suivante)
 
-Pour déclarer une variable, nous utilisons une **déclaration**. Une déclaration suit la syntaxe suivante :
+Pour déclarer une variable, nous utilisons une **déclaration de variable** qui suit la syntaxe suivante
 
 .. code-block:: console
 
-  <type-name> <variable-name>;
+  <type> <nom>;
 
-Une déclaration crée une variable en mémoire de type *<type-name>* et ayant comme nom *<variable-name>*.
 
-Une fois la variable déclarée, il faut l'initialiser. Le **seul** moyen pour initialiser ou modifier le **contenu** d'une variable, est d'utiliser une **instruction d'affecation**.
+où ``<type>`` est un type comme expliqué dans la section suivante et ``<nom>`` est une chaîne de caractères qui respècte les règles définies dans la section précédente. Après la déclaration, il y a une variable de type ``<type>`` et référencée par le nom ``<nom>`` en mémoire.
+
+Une fois la variable déclarée, il faut l'initialiser. Le seul moyen pour initialiser ou modifier le contenu d'une variable, est d'utiliser une **instruction d'affecation**.
 L'initialisation correspond à la première affectation d'une variable.
 
 L'affectation suit la syntaxe suivante :
 
 .. code-block:: console
 
-  <variable-name> = <expression>;
+  <nom> = <expression>;
+
+Nous verrons plus tard différentes expressions qui peuvent être assignées à une variable. Le cas le plus basique est lorsque l'on assigne à une variable une valeur comme nous le verrons dans les exemples qui suivent.
 
 De plus, la déclaration et l'affectation peuvent s'effectuer en même temps en suivant la syntaxe suivante :
 
 .. code-block:: console
 
-  <type-name> <variable-name> = <expression>;
+  <type> <nom> = <expression>;
 
 
-Voici une illustration des différents concepts évoqués :
+Pour les exemples suivant, il vous faut savoir que le type ``int`` est le type utilisé pour les nombre entiers et ``String`` pour les chaînes de caractères. Voici une illustration des différents concepts évoqués :
 
 
 .. code-block:: java
@@ -51,7 +50,7 @@ Voici une illustration des différents concepts évoqués :
 
         int rate = 7; // déclaration et initialisation de 'rate'
 
-        int calcul  = rate * value; // calcul = 7 * 5
+        int calcul  = rate * value; // On peut affecter le résultat d'un calcul à une variable
 
         value  = 10; // modification d'une variable
 
