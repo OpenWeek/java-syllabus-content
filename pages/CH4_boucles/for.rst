@@ -18,7 +18,7 @@ La boucle for
 Présentation
 ------------
 
-Jusqu'à présent, nous avons vu la boucle ``while`` (et sa congénère la boucle ``do...while``). Celle-ci permet de réaliser toutes les boucles existantes en pratique, et on pourrait s'en contenter pour la suite. Néanmoins, il existe un autre type principal de boucle, qui est bien plus utilisé en pratique : la boucle ``for``.
+Jusqu'à présent, nous avons vu la boucle ``while`` (et sa congénère la boucle ``do...while``). Celle-ci permet de réaliser toutes les boucles existantes en pratique, et on pourrait s'en contenter pour la suite. Néanmoins, il existe un autre type principal de boucle, qui est bien plus utilisé en pratique : la boucle **for**.
 
 Vous l'avez sans doute remarqué, en Java, on doit souvent écrire des boucles dans lesquelles on déclare une ou plusieurs variables avant la boucle, que l'on incrémente ensuite dans la boucle, et dont on vérifie la valeur dans la condition de la boucle. Par exemple,
 
@@ -26,8 +26,8 @@ Vous l'avez sans doute remarqué, en Java, on doit souvent écrire des boucles d
 
         int i = 0;
         while (i <= 5) {
-                System.out.println("Coucou " + i + " fois.");
-                i = i + 1;
+            System.out.println("Coucou " + i + " fois.");
+            i = i + 1;
         }
 
 ou encore
@@ -37,8 +37,8 @@ ou encore
         int i = 10;
         System.out.print("Décollage dans ");
         while (i >= 1) {
-                System.out.print(i + " ");
-                i = i - 1;
+            System.out.print(i + " ");
+            i = i - 1;
         }
         System.out.println();
         System.out.println("Décollage !");
@@ -50,8 +50,8 @@ ou encore
         System.out.println("Combien de tasse de café me faut-il ?");
         int i = 1;
         while (i < 10) {
-                System.out.println(i + " tasses de caffé ?");
-                i = i + 1;
+            System.out.println(i + " tasses de caffé ?");
+            i = i + 1;
         }
         System.out.println("Pfiou, ça fait beaucoup");
 
@@ -62,12 +62,12 @@ Toutes ces boucles comprennent des caractéristiques communes :
 * un certain nombre d'instructions manipulant la variable (par exemple, les différents affichages avec ``System.out.println``) ;
 * le changement de la valeur de la variable à la fin de ces instructions, généralement par un incrémentation ou une décrémentation.
 
-Ce type de boucles est tellement fréquente en pratique (elle est omniprésente dans les tableaux par exemple) que les concepteurs du langage ont créé une structure condensée, la boucle for :
+Ce type de boucles est tellement fréquente en pratique (elle est omniprésente dans les tableaux par exemple) que les concepteurs du langage ont créé une structure condensée, la boucle ``for`` :
 
-.. code-block:: java
+.. code-block:: console
 
         for (<déclarations et initialisation>; <condition>; <incrémentations>) {
-                <code>
+            <code>
         }
 
 Détaillons la manière dont fonctionne cette boucle :
@@ -84,7 +84,7 @@ Comme exemples, réécrivons les exemples ci-dessus à l'aide d'une boucle ``for
 .. code-block:: java
 
         for (int i = 0; i <= 5; i = i + 1) {
-                System.out.println("Coucou " + i + " fois.");
+            System.out.println("Coucou " + i + " fois.");
         }
 
 .. code-block:: java
@@ -92,7 +92,7 @@ Comme exemples, réécrivons les exemples ci-dessus à l'aide d'une boucle ``for
         System.out.print("Décollage dans ");
 
         for (int i = 10; i >= 1; i = i - 1) {
-                System.out.print(i + " ");
+            System.out.print(i + " ");
         }
 
         System.out.println();
@@ -103,7 +103,7 @@ Comme exemples, réécrivons les exemples ci-dessus à l'aide d'une boucle ``for
         System.out.println("Combien de tasse de café me faut-il ?");
 
         for (int i = 1; i < 10; i = i + 1) {
-                System.out.println(i + " tasses de café ?");
+            System.out.println(i + " tasses de café ?");
         }
 
         System.out.println("Pfiou, ça fait beaucoup");
@@ -141,7 +141,7 @@ Le code suivant affiche l'alphabet, de la lettre ``'A'`` à la lettre ``'Z'``.
 .. code-block:: java
 
         for (char ch = 'A'; ch <= 'Z'; ch = ch + 1) {
-                System.out.println(ch);
+            System.out.println(ch);
         }
 
 Le code utilise une particularité du type ``char`` : sa ressemblance avec des entiers. En effet, même si un ``char`` est conçu pour contenir un caractère, que ce soit une lettre, un chiffre ou un idéogramme chinois, il est possible d'effectuer des opérations arithmétiques dessus, notamment des additions. Par exemple, le code suivant
@@ -164,15 +164,14 @@ Un nombre entier est qualifié de *premier* s'il ne possède que deux diviseurs 
         int nombre = 34;
         int nbreDiviseurs = 0;
         for (int diviseurTest = 1; diviseurTest <= nombre; diviseurTest = diviseurTest + 1) {
-                if (nombre % diviseurTest == 0) // si le nombre diviseurTest divise notre nombre
-                {
-                        nbreDiviseurs = nbreDiviseurs + 1;
-                }
+            if (nombre % diviseurTest == 0) // si le nombre diviseurTest divise notre nombre {
+                nbreDiviseurs = nbreDiviseurs + 1;
+            }
         }
         if (nbreDiviseurs == 2) {
-                System.out.println("Le nombre " + nombre + " est premier.");
+            System.out.println("Le nombre " + nombre + " est premier.");
         } else {
-                System.out.println("Le nombre " + nombre + " n'est pas premier.");
+            System.out.println("Le nombre " + nombre + " n'est pas premier.");
         }
 
 Exercice : nombres parfaits
@@ -203,7 +202,7 @@ Boucles ``for`` imbriquées
 
 Pour certains programmes, une boucle ``for`` ne suffit pas. Il faut très souvent utiliser deux ou plusieurs boucles ``for`` imbriquées. Par exemple, imaginons que vous souhaitiez afficher une table de multiplication à l'attention de votre petit frère. Voici un exemple d'une telle table, de 12 lignes et de 20 colonnes :
 
-.. code-block:: java
+.. code-block:: console
 
    1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  17  18  19  20
    2   4   6   8  10  12  14  16  18  20  22  24  26  28  30  32  34  36  38  40
@@ -225,10 +224,10 @@ Les colonnes de la table ne sont pas alignées, mais Voici un code qui affiche u
         int nLignes = 12; // contient le nombre de lignes de la table de multiplication
         int nColonnes = 20; // contient le nombre de colonnes de la table
         for (int i = 1; i <= nLignes; i++) { // parcourt chaque ligne de la table
-                for (int j = 1; j <= nColonnes; j++) { // parcourt chaque colonne
-                        System.out.print((i * j) + " ");
-                }
-                System.out.println();
+            for (int j = 1; j <= nColonnes; j++) { // parcourt chaque colonne
+                System.out.print((i * j) + " ");
+            }
+            System.out.println();
         }
 
 Le programme consiste de deux boucles ``for`` imbriquées. La première boucle parcourt chaque ligne de la table de multiplication, avec comme variable de boucle ``i``. La seconde boucle parcourt chaque colonne avec la variable de boucle ``j``. Après avoir affiché chaque colonne de la table de multiplication (et donc, après être sorti de la seconde boucle ``for``), il est nécessaire d'afficher un retour à la ligne, avec ``System.out.println()``.
