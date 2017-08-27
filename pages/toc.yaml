@@ -52,8 +52,8 @@ CH6_tableaux :
             title : Exercices
         erreurs_frequentes :
             title : Erreurs fréquentes
-chapitre_methodes:
-    title: Chapitre - Les Méthodes
+CH7_methodes:
+    title: Les Méthodes
     content:
         introduction:
             title: "Introduction"
