@@ -24,13 +24,14 @@ Utilitée de la boucle while
 Il vous est à présent possible avec votre background en java de réaliser des calculs ainsi que des comparaisons élémentaires. Néanmoins, il vous est impossible de réaliser ce pour quoi les ordinateurs ont été créés, répéter la même opérations simple en boucle.
 
 
-Ceci nous amène donc à l'utilisation de la boucle la plus simple en java, **la boucle while**. 
+Ceci nous amène donc à l'utilisation de la boucle la plus simple en java, la boucle **while**. 
 
 
 
 Sémantique de la boucle while et do...while
 ===========================================
-.. code-block:: java
+
+.. code-block:: console
 
 	//while
 	while(<condition>)
@@ -42,9 +43,9 @@ Sémantique de la boucle while et do...while
 	do
 	{
 		/*code a executer en boucle.*/
-	}while(<condition>);//faire attention a ce point virgule !!!
+	}while(<condition>); //faire attention a ce point virgule !!!
 
-Ces deux instructions permettent d'exécuter le code contenu dans le block tant que la condition est vrai. Mais pour comprendre la différence entre les deux utilisations de la boucle while, il nous faut comprendre comment un ordinateur exécutera ces deux types de boucle.
+Dans les deux schémas ci-dessus, ``<condition>`` est à remplacer par une condition booléenne telle que vu dans les chapitres précédents. Tant que la condition est vraie, l'ordinateur exécutera le code entre accollades. Pour comprendre la différence entre les deux utilisations de la boucle while, il nous faut comprendre comment un ordinateur exécutera ces deux types de boucle.
 
 
 .. raw:: html
@@ -320,7 +321,7 @@ Ces deux instructions permettent d'exécuter le code contenu dans le block tant 
 	AAAAAAAAAAAAAAAAAAAAAAAAAAAAAICe+f+22Os7HEpP/wAAAABJRU5ErkJggg==" alt="boucle" title="boucle"/>
 	</p>
  
-Dans ce shéma, les flèches correspondent à l'ordre d'exécution du processus. Alors que, les couleurs des flèches indiquent l'ordre d'éxécution du processus suivant la valeur de retour de la condition (vert si vrai, rouge si faux). Maintenant il est facile de voir la différence entre les deux boucles, elle se situe au niveau du test de la condition. C'est pourquoi il est important de remarquer que dans une boucle **do...while**, le code serra exécuté au moins une fois avant de tester la condition alors que pas forcément dans une boucle **while**.
+Dans ce shéma, les flèches correspondent à l'ordre d'exécution du processus. Alors que, les couleurs des flèches indiquent l'ordre d'éxécution du processus suivant la valeur de retour de la condition (vert si vrai, rouge si faux). Maintenant il est facile de voir la différence entre les deux boucles, elle se situe au niveau du test de la condition. C'est pourquoi il est important de remarquer que dans une boucle ``do...while``, le code serra exécuté au moins une fois avant de tester la condition alors que pas forcément dans une boucle ``while``.
 
 
 Question 1. Analyse de code.
@@ -328,7 +329,7 @@ Question 1. Analyse de code.
 
 Quelles boucle while sont valide sémantiquement si les variables a et b sont correctement initialisées?
 
-.. code-block:: java
+.. code-block:: console 
 
     /*1*/
 	while( a = a )
@@ -387,15 +388,15 @@ Avantages et désavantages entre les deux boucles.
 
 Pour comprendre quels sont les avantages et désavantages entres les deux boucles, il est plus facile de travailler avec du pseudo-code. Imaginons un informaticien qui boit du café dans une tasse remplie. Un pseudo-code pour représenter la fonction qui fait boire l'informaticien pourrait être implémentée comme ci-dessous.
 
-.. code-block:: java
+.. code-block:: console 
 	
 	/*
 	*pseudo-code faisant boire un informaticien utilisant une boucle while.
 	*/
 	while(tasse_non_vide())
 	{
-                System.out.println("L'informaticien boit.");
-                System.out.println("La tasse se vide.");
+        System.out.println("L'informaticien boit.");
+        System.out.println("La tasse se vide.");
 	}
 	
 	/*
@@ -403,13 +404,13 @@ Pour comprendre quels sont les avantages et désavantages entres les deux boucle
 	*/
 	do
 	{
-                System.out.println("L'informaticien boit.");
-                System.out.println("La tasse se vide.");
+        System.out.println("L'informaticien boit.");
+        System.out.println("La tasse se vide.");
 	}while(tasse_non_vide());
 
 Nous pouvons remarquer que dans la boucle version ``do...while`` un problème se pose. En effet, un informaticien pourrait boire dans la tasse de café alors qu'elle est vide. Pour remédier à cela, nous pourrions protéger notre boucle avec une condition comme cela :
 
-.. code-block:: java
+.. code-block:: console
 	
 	/*
 	*pseudo-code faisant boire un informaticien utilisant une boucle do...while sans erreur.
@@ -418,57 +419,57 @@ Nous pouvons remarquer que dans la boucle version ``do...while`` un problème se
 	{
 		do
 		{
-                        System.out.println("L'informaticien boit.");
-                        System.out.println("La tasse se vide.");
+            System.out.println("L'informaticien boit.");
+            System.out.println("La tasse se vide.");
 		}while(tasse_non_vide());
 	}
 	
 Ce qui revient à faire une boucle ``while`` et donc une utilisation de la boucle ``do...while`` n'est pas judicieuse dans notre problème.
 
-Par contre, un pseudo-code qui permettrait a notre informatitien de travailler si il a reçut une tasse de café pourrait être implémenter comme si dessous.
+Par contre, un pseudo-code qui permettrait a notre informaticien de travailler si il a reçut une tasse de café pourrait être implémentée comme ci-dessous.
 
-.. code-block:: java
+.. code-block:: console
 	
 	/*
 	*pseudo-code faisant demander une tasse de café pour l'informaticien utilisant une boucle while.
 	*/
 	while(pas_de_tasse_de_cafe())
 	{
-                System.out.println("L'informaticien demande une tasse de café.");
+        System.out.println("L'informaticien demande une tasse de café.");
 	}
-        System.out.println("L'informaticien travaille (ou pas).");
+    System.out.println("L'informaticien travaille (ou pas).");
 	
 	/*
 	*pseudo-code faisant demander une tasse de café pour l'informaticien utilisant une boucle do...while.
 	*/
 	do
 	{
-                System.out.println("L'informaticien demande une tasse de café.");
+        System.out.println("L'informaticien demande une tasse de café.");
 	}while(pas_de_tasse_de_cafe());
-        System.out.println("L'informaticien travaille (ou pas).");
+    System.out.println("L'informaticien travaille (ou pas).");
 
 
 Si le processus ne sait pas si l'informaticien a une tasse de café ou non (typiquement une variable non initialisé), alors notre processus ne saura pas quoi faire au moment de tester la condition dans la boucle ``while`` (Java vous renverra une erreur). Pour remédier à cette erreur nous pouvons réimplémenter le code comme suit.
 
-.. code-block:: java
+.. code-block:: console
 	
 	/*
 	*pseudo-code faisant demander une tasse de café pour l'informaticien utilisant une boucle while sans erreur.
 	*/
 
-        System.out.println("L'informaticien demande une tasse de café.");
+    System.out.println("L'informaticien demande une tasse de café.");
 	while(pas_de_tasse_de_cafe())
 	{
-                System.out.println("L'informaticien demande une tasse de café.");
+        System.out.println("L'informaticien demande une tasse de café.");
 	}
-        System.out.println("L'informaticien travaille (ou pas).");
+    System.out.println("L'informaticien travaille (ou pas).");
 
-Ce bout de code correspond exactement à une boucle ``do...while`` au niveau de l'enchainement du block condition/code à exécuter. Et donc le choix judicieux pour résoudre ce problème est l'utilisation d'une boucle ``do...while``.
+Ce bout de code correspond exactement à une boucle ``do...while`` au niveau de l'enchainement du bloc condition/code à exécuter. Et donc le choix judicieux pour résoudre ce problème est l'utilisation d'une boucle ``do...while``.
 
 
 Une possible implémentation des deux choix les plus judicieux pourrait être.
 
-.. code-block:: java
+.. code-block:: console
 	
 	/*
 	*code faisant boire un informaticien.
@@ -492,7 +493,7 @@ Une possible implémentation des deux choix les plus judicieux pourrait être.
 	}while(tasse == false);
 	travaille();
 
-Dans ce code ``demandeTasse()`` et ``travaille()`` sont des appels de fonction que vous verrez dans le **chapitre sur les méthodes**.
+Dans ce code ``demandeTasse()`` et ``travaille()`` sont des appels de fonction que vous verrez dans le chapitre sur les méthodes.
 
 Question 2. Analyse de situation.
 ---------------------------------
@@ -516,9 +517,9 @@ Quel(s) problème(s) utilise(nt) une boucle do...while par rapport à une boucle
 La boucle infinie.
 ==================
 
-Le problème de la boucle infini est sans doute le problème le plus important lors de la création d'une boucle. Elle survient quand la condition de la boucle ``while`` ne passe jamais à false. Un bel exemple de boucle infinie peut être illustré avec l'exemple ci-dessous.
+Le problème de la boucle infini est sans doute le problème le plus important lors de la création d'une boucle. Elle survient quand la condition de la boucle ``while`` ne passe jamais à ``false``. Un bel exemple de boucle infinie peut être illustré avec l'exemple ci-dessous.
 
-.. code-block:: java
+.. code-block:: console
 	
 	/*
 	*boucle infinie
@@ -532,14 +533,14 @@ Le problème de la boucle infini est sans doute le problème le plus important l
 
 
 	
-Dans ce code le programmeur a oublié d'incrémenter ``i``, et donc la condition sera toujours vrai puisque la variable ``i`` restera à la valeur ``i``. Même si dans certains codes il est utile de créer des boucles infinies, celles)ci ne sont pas à utiliser car elles utilisent du temps CPU et n'avance pas dans leur processus.
+Dans ce code le programmeur a oublié d'incrémenter ``i``, et donc la condition sera toujours vrai puisque la variable ``i`` restera à la valeur ``1``. Même si dans certains codes il est utile de créer des boucles infinies, celles-ci ne sont pas à utiliser car elles utilisent du temps CPU et n'avance pas dans leur processus.
 
 Question 3. Stop me.
 --------------------
 
 Modifiez le code à l'intérieur de la boucle ``while`` a l'aide d'une incrémentation afin de ne pas créer une boucle infinie.
 
-.. code-block:: java
+.. code-block:: console
 	
 	int i = 0;
 	while(i < 10)
