@@ -22,7 +22,8 @@ Jusqu'à présent, nous avons vu la boucle ``while`` (et sa congénère la boucl
 
 Vous l'avez sans doute remarqué, en Java, on doit souvent écrire des boucles dans lesquelles on déclare une ou plusieurs variables avant la boucle, que l'on incrémente ensuite dans la boucle, et dont on vérifie la valeur dans la condition de la boucle. Par exemple,
 
-.. code-block:: java
+.. .. code-block:: java
+.. inginious:: execute_java
 
         int i = 0;
         while (i <= 5) {
@@ -32,7 +33,8 @@ Vous l'avez sans doute remarqué, en Java, on doit souvent écrire des boucles d
 
 ou encore
 
-.. code-block:: java
+.. .. code-block:: java
+.. inginious:: execute_java
 
         int i = 10;
         System.out.print("Décollage dans ");
@@ -50,7 +52,7 @@ ou encore
         System.out.println("Combien de tasse de café me faut-il ?");
         int i = 1;
         while (i < 10) {
-            System.out.println(i + " tasses de caffé ?");
+            System.out.println(i + " tasses de café ?");
             i = i + 1;
         }
         System.out.println("Pfiou, ça fait beaucoup");
@@ -81,13 +83,15 @@ Détaillons la manière dont fonctionne cette boucle :
 
 Comme exemples, réécrivons les exemples ci-dessus à l'aide d'une boucle ``for`` :
 
-.. code-block:: java
+.. .. .. code-block:: java
+.. inginious:: execute_java
 
         for (int i = 0; i <= 5; i = i + 1) {
             System.out.println("Coucou " + i + " fois.");
         }
 
-.. code-block:: java
+.. .. code-block:: java
+.. inginious:: execute_java
 
         System.out.print("Décollage dans ");
 
@@ -110,7 +114,7 @@ Comme exemples, réécrivons les exemples ci-dessus à l'aide d'une boucle ``for
 
 .. tache INGInious : quelle est l'avant-dernière ligne affichée par le programme ?
 
-Pour vérifier que vous ayez bien compris, quelle est l'avant-ernière ligne affichée par le programme ci-dessus ?
+Pour vérifier que vous ayez bien compris, et sans exécuter le code, quelle est l'avant-dernière ligne affichée par le programme ci-dessus ?
 
 .. class:: positive
 
@@ -126,7 +130,7 @@ Pour vérifier que vous ayez bien compris, quelle est l'avant-ernière ligne aff
 
               Est-ce que vous avez compté la ligne de code en dehors de la boucle à la fin ?
 
-Comme vous pouvez le constater, ces boucles sont plus court que les boucles écrites avec un ``while``, et souvent plus lisibles quand on a l'habitude de s'en servir : l'initialisation de la variable de boucle, son incrémentation, et la condition de la boucle sont situées au même endroit, entre les parenthèses du ``for``, au lieu d'être situés à plusieurs endroits de la boucle ; c'est du condensé, en quelque sorte.
+Comme vous pouvez le constater, ces boucles sont plus courtes que les boucles écrites avec un ``while``, et souvent plus lisibles quand on a l'habitude de s'en servir : l'initialisation de la variable de boucle, son incrémentation, et la condition de la boucle sont situées au même endroit, entre les parenthèses du ``for``, au lieu d'être situés à plusieurs endroits de la boucle ; c'est du condensé, en quelque sorte.
 
 Quelques exemples
 -----------------
@@ -138,33 +142,37 @@ Afficher l'alphabet
 
 Le code suivant affiche l'alphabet, de la lettre ``'A'`` à la lettre ``'Z'``.
 
-.. code-block:: java
+.. .. code-block:: java
+.. inginious:: execute_java
 
-        for (char ch = 'A'; ch <= 'Z'; ch = ch + 1) {
+        for (char ch = 'A'; ch <= 'Z'; ch = (char)(ch + 1)) {
             System.out.println(ch);
         }
 
 Le code utilise une particularité du type ``char`` : sa ressemblance avec des entiers. En effet, même si un ``char`` est conçu pour contenir un caractère, que ce soit une lettre, un chiffre ou un idéogramme chinois, il est possible d'effectuer des opérations arithmétiques dessus, notamment des additions. Par exemple, le code suivant
 
-.. code-block:: java
+.. .. code-block:: java
+.. inginious:: execute_java
 
         char a = 'a';
-        char c = a + 2;
+        char c = (char)(a + 2);
         System.out.println(c);
 
-affiche la lettre ``'c'``. Littéralement, ce code signifie de prendre la lettre 'a' décalée de deux caractères dans l'alphabet, c'est-à-dire 'c'. Cette petite astuce nous permet de parcourir tout l'alphabet latin, en commençant à 'A', en terminant à 'Z' et en passant au caractère suivant par ``ch = ch + 1``. (N'essayez pas d'aller plus loin que 'Z' néanmoins, vous trouverez des caractères qui ont relativement peu de sens.)
+affiche la lettre ``'c'``. Littéralement, ce code signifie de prendre la lettre 'a' décalée de deux caractères dans l'alphabet, c'est-à-dire 'c'. Cette petite astuce nous permet de parcourir tout l'alphabet latin, en commençant à 'A', en terminant à 'Z' et en passant au caractère suivant par ``ch = ch + 1``. Essayez de changer le code ci-dessus, en remplaçant par exemple le caractère de départ (``a``), la valeur du décalage (2), ou le signe de ce décalage. N'essayez pas d'aller plus loin que 'Z' néanmoins, vous trouverez des caractères qui ont relativement peu de sens.
 
 Déterminer si un nombre est premier
 '''''''''''''''''''''''''''''''''''
 
 Un nombre entier est qualifié de *premier* s'il ne possède que deux diviseurs entiers différents : 1 et lui-même. Les nombres premiers sont 2, 3, 5, 7, 11, 13, et une infinité d'autres. Pour vérifier qu'un nombre est premier, il suffit de compter son nombre de diviseurs, et de comparer à 2. Le programme suivant permet de vérifier si un nombre est premier
 
-.. code-block:: java
+.. .. code-block:: java
+.. inginious:: execute_java
 
         int nombre = 34;
         int nbreDiviseurs = 0;
         for (int diviseurTest = 1; diviseurTest <= nombre; diviseurTest = diviseurTest + 1) {
-            if (nombre % diviseurTest == 0) // si le nombre diviseurTest divise notre nombre {
+            if (nombre % diviseurTest == 0) // si le nombre diviseurTest divise notre nombre
+            {
                 nbreDiviseurs = nbreDiviseurs + 1;
             }
         }
@@ -217,9 +225,10 @@ Pour certains programmes, une boucle ``for`` ne suffit pas. Il faut très souven
   11  22  33  44  55  66  77  88  99 110 121 132 143 154 165 176 187 198 209 220
   12  24  36  48  60  72  84  96 108 120 132 144 156 168 180 192 204 216 228 240
 
-Les colonnes de la table ne sont pas alignées, mais Voici un code qui affiche une telle table :
+Les colonnes de la table ne sont pas alignées, mais voici un code qui affiche une telle table :
 
-.. code-block:: java
+.. .. code-block:: java
+.. inginious:: execute_java
 
         int nLignes = 12; // contient le nombre de lignes de la table de multiplication
         int nColonnes = 20; // contient le nombre de colonnes de la table
@@ -240,12 +249,17 @@ Lorsqu'on utilise plusieurs boucles imbriquées, il est important de faire atten
 Exercice : les erreurs classiques des boucles ``for``
 '''''''''''''''''''''''''''''''''''''''''''''''''''''
 
-Le programme ci-dessous contient un certain nombre d'erreurs classiques lors de l'utilisation de boucles imbriquées. Pouvez-vous les identifier et les afficher ? Indice : il y en a 5.
+Le programme ci-dessous contient un certain nombre d'erreurs classiques lors de l'utilisation de boucles imbriquées. Pouvez-vous les identifier et les afficher ? Indice : il y en a 6.
 
 .. inginious:: CH4Q3_forforerror
 
         /*
          * Effectue la somme sur chaque ligne des n premiers nombres multiples de 1, 2, 3, ..., m
+         * Par exemple, pour n = 4 et m = 3, affiche
+         *
+         *     Somme des 4 premiers nombres multiples de 1 : 10
+         *     Somme des 4 premiers nombres multiples de 2 : 20
+         *     Somme des 4 premiers nombres multiples de 3 : 30
          */
          //*
          // int n = 17;

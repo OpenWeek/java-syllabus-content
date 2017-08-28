@@ -1,0 +1,1 @@
+Somme des 4 premiers nombres multiples de 1 : 10
