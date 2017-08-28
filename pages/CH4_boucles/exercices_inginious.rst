@@ -52,7 +52,9 @@ Il vous est demandé de réaliser une fonction qui retourne n!. Pour rappel, n! 
 Question 3 : Initiales de mots
 ------------------------------
 
-Ecrivez une boucle ``for`` qui extrait et affiche la première lettre de chaque mot contenu dans une chaine de caractères (``String``) nommée ``input``. Ici, on considère qu'un mot est délimité par des espaces. Par exemple, pour la chaine de caractères "Jean-Didier Legat", le programme affichera "JDL" ; pour la chaine de caractères "J'aime la programmation", il affichera "Jlp". Pour vous aider, vous aurez besoin d'une variable permettant de savoir si vous êtres au début d'un mot (par exemple après avoir rencontré un espace juste avant...). Pour rappel, étant donné une chaine de caractères ``String s = 3bonjour"``, si vous souhaitez accéder à la 3ième lettre de la chaine (ici, 'n') et la mettre dans la variable ``char c``, vous devez écrire ``c = s.charAt(3)``. Pour récupérer la longueur d'une chaine de caractères, vous pouvez utiliser ``int longueur = s.length()``. Utilisez ``System.out.print(c)`` pour afficher un unique caractère ``c`` sans retour à la ligne.
+Ecrivez une boucle ``for`` qui extrait et affiche la première lettre de chaque mot contenu dans une chaine de caractères (``String``) nommée ``input``. Ici, on considère qu'un mot est délimité par des espaces. Par exemple, pour la chaine de caractères "Jean-Didier Legat", le programme affichera "JDL" ; pour la chaine de caractères "J'aime la programmation", il affichera "Jlp". Pour vous aider, vous aurez besoin d'une variable permettant de savoir si vous êtres au début d'un mot (par exemple après avoir rencontré un espace juste avant...).
+
+Pour rappel, étant donné une chaine de caractères ``String s = 3bonjour"``, si vous souhaitez accéder à la 3ième lettre de la chaine (ici, 'n') et la mettre dans la variable ``char c``, vous devez écrire ``c = s.charAt(3)``. Pour récupérer la longueur d'une chaine de caractères, vous pouvez utiliser ``int longueur = s.length()``. Utilisez ``System.out.print(c)`` pour afficher un unique caractère ``c`` sans retour à la ligne.
 
 .. inginious:: CH4Q7_initiales
 
