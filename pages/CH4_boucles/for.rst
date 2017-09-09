@@ -164,7 +164,8 @@ Un nombre entier est qualifié de *premier* s'il ne possède que deux diviseurs 
         int nombre = 34;
         int nbreDiviseurs = 0;
         for (int diviseurTest = 1; diviseurTest <= nombre; diviseurTest = diviseurTest + 1) {
-            if (nombre % diviseurTest == 0) // si le nombre diviseurTest divise notre nombre {
+        /* Si le nombre diviseurTest divise notre nombre */
+            if (nombre % diviseurTest == 0) {
                 nbreDiviseurs = nbreDiviseurs + 1;
             }
         }
