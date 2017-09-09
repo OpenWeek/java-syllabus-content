@@ -45,7 +45,7 @@ Sémantique de la boucle while et do...while
 		/*code a executer en boucle.*/
 	}while(<condition>); //faire attention a ce point virgule !!!
 
-Dans les deux schémas ci-dessus, ``<condition>`` est à remplacer par une condition booléenne telle que vu dans les chapitres précédents. Tant que la condition est vraie, l'ordinateur exécutera le code entre accollades. Pour comprendre la différence entre les deux utilisations de la boucle while, il nous faut comprendre comment un ordinateur exécutera ces deux types de boucle.
+Dans les deux schémas ci-dessus, ``<condition>`` est à remplacer par une condition booléenne telle que vu dans les chapitres précédents. Tant que la condition est vraie, l'ordinateur exécutera le code entre accolades. Pour comprendre la différence entre les deux utilisations de la boucle while, il nous faut comprendre comment un ordinateur exécutera ces deux types de boucle.
 
 
 .. raw:: html
