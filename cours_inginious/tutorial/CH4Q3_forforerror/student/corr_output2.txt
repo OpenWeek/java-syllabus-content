@@ -1,1 +1,0 @@
-Somme des 5 premiers nombres multiples de 0 : 0

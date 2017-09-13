@@ -1,4 +1,3 @@
-Somme des 0 premiers nombres multiples de 0 : 0
 Somme des 0 premiers nombres multiples de 1 : 0
 Somme des 0 premiers nombres multiples de 2 : 0
 Somme des 0 premiers nombres multiples de 3 : 0

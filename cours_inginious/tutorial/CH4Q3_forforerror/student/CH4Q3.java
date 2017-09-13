@@ -130,6 +130,38 @@ public class CH4Q3 {
         }
     }
 
+    @Test
+    public void verifierPrint4() {
+        try {
+            PrintStream ps = new PrintStream("student/output.txt");
+            System.setOut(ps);
+            CH4Q3Stu.printSum(4, 1);
+            ps.close();
+            assertEquals("Votre programme n'affiche pas la bonne sortie", true, filesEquals("student/output.txt", "student/corr_output4.txt"));
+        } catch(IOException e) {
+            e.printStackTrace();
+            fail("Attention, votre programme affiche un résultat trop grand, ou n'a pas pu s'exécuter.");
+        } catch (ArithmeticException e) {
+            fail(str + "Le code est incorrect : il est interdit de diviser par zéro.");
+            e.printStackTrace();
+        } catch(ClassCastException e) {
+            fail(str + "Attention, certaines variables ont été mal castées	!");
+            e.printStackTrace();
+        } catch(StringIndexOutOfBoundsException e) {
+            fail(str + "Attention, vous tentez de lire en dehors des limites d'un String ! (StringIndexOutOfBoundsException)");
+            e.printStackTrace();
+        } catch(ArrayIndexOutOfBoundsException e) {
+            fail(str + "Attention, vous tentez de lire en dehors des limites d'un tableau ! (ArrayIndexOutOfBoundsException)");
+            e.printStackTrace();
+        } catch(NullPointerException e) {
+            fail(str + "Attention, vous faites une opération sur un objet qui vaut null ! Veillez à bien gérer ce cas.");
+            e.printStackTrace();
+        } catch(Exception e) {
+            fail(str + "\n" + e.getMessage());
+            e.printStackTrace();
+        }
+    }
+
     public static boolean filesEquals(String s1, String s2) throws IOException {
         BufferedReader f1 = new BufferedReader(new FileReader(s1));
         BufferedReader f2 = new BufferedReader(new FileReader(s2));
