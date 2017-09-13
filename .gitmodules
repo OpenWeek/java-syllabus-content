@@ -1,0 +1,3 @@
+[submodule "java-syllabus-tasks"]
+	path = java-syllabus-tasks
+	url = https://github.com/OpenWeek/java-syllabus-tasks.git
