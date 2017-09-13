@@ -11,10 +11,10 @@ Une déclaration de variable suit la forme suivante :
 
 .. code-block:: console
 
-  <type-name> <variables-name-or-names>;
+  <type> <nom-ou-noms>;
 
 Lorsque l'ordinateur exécute une déclaration de variable, il réserve un espace mémoire pour cette variable et
-associe le nom de la variable avec cet espace mémoire. *<variables-name-or-names>* est soit un nom de variable
+associe le nom de la variable avec cet espace mémoire. ``<nom-ou-noms>`` est soit un nom de variable
 unique soit une liste de noms de variable ayant le même type séparés par des virgules.
 Il est d'usage de déclarer les variables ensemble si elles ont un lien fort entre elles.
 
@@ -36,19 +36,18 @@ Par exemple :
 
 .. code-block :: java
 
-  double principal; // Amount of money invested.
-  double interestRate; // Rate as a decimal, not percentage.
+  double principal; // Montant d'argent investit.
+  double interestRate; // Taux d'intérêt en décimal, pas en pourcentage
 
-Pour le moment, nous n'utilisons que des variables **variables locales**.
-Elles existent uniquement à l'intérieur du bloc (délimité par des {} )
-dans laquelle elles sont déclarées et sont inaccessibles depuis l'extérieur de ce bloc.
-Une **variable locale** peut être utilisée, après sa déclaration, n'importe où dans ce même bloc.
+Pour le moment, nous n'utilisons que des variables **locales**.
+Elles existent uniquement à l'intérieur d'un bloc délimité par des accolade (``{ /* Code ici */ }``) dans lequel elles sont déclarées. Elles sont innaccessible en depuis l'extérieur de ce bloc.
+Une variable locale peut être utilisée, après sa déclaration, n'importe où dans ce même bloc, même dans un bloc imbriqué dans le bloc. Par exemple, ce bout de code est correcte
 
 Exercices
 *********
 
-Ecrivez un code pour que la variable 'a' prennne la valeur 'b+1' et que la variable 'b' garde sa valeur.
-Les variables a et b ont déjà été déclarées. (la réponse est courte).
+Ecrivez un code pour que la variable ``a`` prennne la valeur ``b+1`` et que la variable ``b`` garde sa valeur.
+Les variables ``a`` et ``b`` ont déjà été déclarées. (la réponse est courte).
 
 .. code-block :: java
 
