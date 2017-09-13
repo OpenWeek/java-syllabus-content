@@ -14,12 +14,12 @@
 Syntaxe des noms de variable
 ============================
 
-Dans les programmes, des chaînes de caractères sont utilisées pour faire référence à différents éléments du langage (par exemple à une variable). Afin d'utiliser
-ces éléments, le programmeur doit connaître les règles pour former ces chaînes de caractères.
+Dans les programmes, des mots sont utilisés pour faire référence à différents éléments du langage (par exemple à une variable). Afin d'utiliser
+ces éléments, le programmeur doit connaître les règles pour écrire ces mots correctement.
 
-Voici les règles à respecter pour créer une chaîne de caractère syntaxiquement correcte:
+Voici les règles à respecter pour créer un nom de variable syntaxiquement correct:
 
-1. Elle doit commencer par une lettre ou un underscore et être composé uniquement de lettres, de chiffres et d'underscores ('underscore' fait référence au caractère '_').
+1. Il doit commencer par une lettre ou un underscore et être composé uniquement de lettres, de chiffres et d'underscores ('underscore' fait référence au caractère '_').
 2. Les espaces ne sont pas autorisés dans les noms.
 
 Les noms suivant sont donc syntaxiquement correctes
@@ -32,11 +32,11 @@ Les noms suivant sont donc syntaxiquement correctes
 
 Ceux-ci par contre ne le sont pas
 
-- ``Hello Wold``
+- ``Hello World``
 - ``_ 1 _``
 
-Les lettres majuscules et miniscules sont considérées comme différentes. Par conséquent les noms ``helloWorld``, ``hELLOwORLD`` et ``HELLOworld`` sont tous des noms
-différents.  
+Les lettres majuscules et miniscules sont considérées comme différentes des minuscules. Par conséquent les noms ``helloWorld``, ``hELLOwORLD`` et ``HELLOworld`` sont tous des noms
+différents.
 
 De plus, en Java certains noms sont réservés pour une utilisation spécifique et ne peuvent donc pas être utilisés comme référence par le programmeur. Parmis ceux-ci, on retrouve notamment
 
@@ -48,9 +48,9 @@ Une liste complète peut être trouvée `ici <https://openclassrooms.com/courses
 
 En Java il existe des conventions de nommage pour les variables. Rien ne vous oblige à suivre ces conventions
 mais les respecter vous évitera sans doute beaucoup de confusion et rendra votre code plus lisible aux yeux des autres programmeurs.
-Par exemple, il est de coutume d'utiliser une lettre majuscule pour commencer le nom d'une classe et une lettre miniscule pour commencer
-le nom d'une variable ou d'une fonction. Une autre convetion concerne les noms composés de plusieurs mots; la règle veut que l'on commence chaque
-mot par une majuscule à part, éventuellement, pour le premier. Par exemple les mots ``interestRate`` ou ``counterOfTransactions`` suivent la convention.
+Par exemple, il est de coutume d'utiliser une lettre majuscule pour commencer le nom d'une classe et une lettre minuscule pour commencer
+le nom d'une variable ou d'une méthode. Une autre convention concerne les noms composés de plusieurs mots; la règle veut que l'on commence chaque
+mot par une majuscule à part. Par exemple les mots ``interestRate`` ou ``counterOfTransactions`` suivent la convention.
 
 ======================================
 Questions : Syntaxe des noms variables

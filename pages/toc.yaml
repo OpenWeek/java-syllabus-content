@@ -8,10 +8,10 @@ CH0_introduction :
 CH1_variables :
     title : Variables
     content :
-        syntax :
-            title : Syntaxe des noms de variable
         affect_decla :
             title : Déclaration et affectation de variable
+        syntax :
+            title : Syntaxe des noms de variable
         types :
             title : Types de variable
         variables_in_programs :

@@ -1,16 +1,21 @@
+
+.. author::
+
+    Fitvoye Florian, Mottet Sébastien, Charlier Gilles
+
 ======================================
 Déclaration et affectation de variable
 ======================================
 
 
-Les programmes de tous les jours utilisent constamment des **variables** stockées en mémoire. Une variable est un nom (chaîne de caractères) qui fait référence à une donnée stockée en mémoire.
+Les programmes de tous les jours utilisent constamment des **variables** stockées en mémoire. Une variable est une zone de la mémoire de l'ordinateur qui contient une valeur. On y fait référence par son nom (un mot que l'on choisit).
 
 La notion de variable est plutot subtile.
 Pour mieux comprendre le fonctionnement des variables, il est nécessaire de distinguer trois notions élémentaires :
 
 - le nom de la variable : nom qui permet de référencer un endroit où un contenu est stocké
-- le contenu de la variable : l'information stockée. Le contenu d'une variable peut être modifié au cours de l'exécution d'un programme.
-- le type de variable (notion expliquée dans la section suivante)
+- le contenu de la variable : l'information stockée (une valeur, comme ``1``, ``42``, ou encore la lettre ``e``). Le contenu d'une variable peut être modifié au cours de l'exécution d'un programme.
+- le type de variable (notion expliquée dans la section suivante), qui permettra à l'ordinateur de savoir si la valeur stockée est un nombre entier ou une lettre par exemple, étant donné qu'il stocke tout sous forme de ``0`` et de ``1``.
 
 Pour déclarer une variable, nous utilisons une **déclaration de variable** qui suit la syntaxe suivante
 
@@ -19,9 +24,9 @@ Pour déclarer une variable, nous utilisons une **déclaration de variable** qui
   <type> <nom>;
 
 
-où ``<type>`` est un type comme expliqué dans la section suivante et ``<nom>`` est une chaîne de caractères qui respècte les règles définies dans la section précédente. Après la déclaration, il y a une variable de type ``<type>`` et référencée par le nom ``<nom>`` en mémoire.
+où ``<type>`` est un type comme expliqué dans `la section sur les types de variables </CH1_variables/types>`_ et ``<nom>`` est un mot qui respècte certaines règles définies dans `la section sur la syntaxe des noms de variables </CH1_variables/syntax>`_. Après la déclaration, il y a une variable de type ``<type>`` et référencée par le nom ``<nom>`` en mémoire.
 
-Une fois la variable déclarée, il faut l'initialiser. Le seul moyen pour initialiser ou modifier le contenu d'une variable, est d'utiliser une **instruction d'affecation**.
+Une fois la variable déclarée, il faut l'*initialiser*. Le seul moyen pour initialiser ou modifier le contenu d'une variable, est d'utiliser une **instruction d'affecation**.
 L'initialisation correspond à la première affectation d'une variable.
 
 L'affectation suit la syntaxe suivante :
@@ -30,16 +35,16 @@ L'affectation suit la syntaxe suivante :
 
   <nom> = <expression>;
 
-Nous verrons plus tard différentes expressions qui peuvent être assignées à une variable. Le cas le plus basique est lorsque l'on assigne à une variable une valeur comme nous le verrons dans les exemples qui suivent.
+``<expression>`` représente la valeur que l'on désire mettre dans la variable. Nous verrons plus tard différentes expressions qui peuvent être assignées à une variable. Le cas le plus basique est lorsque l'on assigne à une variable une valeur écrite à la main comme nous le verrons dans les exemples qui suivent.
 
-De plus, la déclaration et l'affectation peuvent s'effectuer en même temps en suivant la syntaxe suivante :
+De plus, la déclaration et l'affectation peuvent s'effectuer en même temps en une seule instruction en suivant la syntaxe suivante :
 
 .. code-block:: console
 
   <type> <nom> = <expression>;
 
 
-Pour les exemples suivant, il vous faut savoir que le type ``int`` est le type utilisé pour les nombre entiers et ``String`` pour les chaînes de caractères. Voici une illustration des différents concepts évoqués :
+Pour les exemples suivants, il vous faut savoir que le type ``int`` est le type utilisé pour les nombres entiers et ``String`` pour les chaînes de caractères. Voici une illustration des différents concepts évoqués :
 
 
 .. code-block:: java
@@ -69,7 +74,7 @@ QCM : déclaration et affectation
 Question 1 :
 ------------
 
-Laquelle/Lesquelles de ses variables sont mal utilisées ?
+Laquelle/Lesquelles de ces variables sont mal utilisées ?
 
 .. code-block:: java
 
@@ -291,7 +296,3 @@ Quel est la valeur de la variable *b* à la Ligne 3 ?
 .. raw:: html
 
     <div id="checker" class="checker"><h1>Vérifiez vos réponses</h1><input type="submit" value="Vérifier" id="verifier"></div>
-
-.. author::
-
-    Fitvoye Florian, Mottet Sébastien, Charlier Gilles
