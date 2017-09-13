@@ -5,6 +5,9 @@
 Variables dans les programmes
 =============================
 
+.. author::
+
+    Fitvoye Florian, Mottet Sébastien, Charlier Gilles, Michel François
 
 Une variable peut être utilisée par un programme seulement si elle a été préalablement déclarée.
 Une déclaration de variable suit la forme suivante :
@@ -133,7 +136,3 @@ Question 2
 .. raw:: html
 
   <div id="checker" class="checker"><h1>Vérifiez vos réponses</h1><input type="submit" value="Vérifier" id="verifier"></div>
-
-.. author::
-
-    Fitvoye Florian, Mottet Sébastien, Charlier Gilles
