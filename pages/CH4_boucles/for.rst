@@ -18,51 +18,25 @@ La boucle for
 Présentation
 ------------
 
-Jusqu'à présent, nous avons vu la boucle ``while`` (et sa congénère la boucle ``do...while``). Celle-ci permet de réaliser toutes les boucles existantes en pratique, et on pourrait s'en contenter pour la suite. Néanmoins, il existe un autre type principal de boucle, qui est bien plus utilisé en pratique : la boucle **for**.
+Jusqu'à présent, nous avons vu la boucle ``while`` (et sa congénère la boucle ``do...while``). Celle-ci permet de tout réaliser pratique, et on pourrait s'en contenter pour la suite. Néanmoins, il existe un autre type de boucle, qui est bien plus utilisé en pratique, la boucle **for**.
 
 Vous l'avez sans doute remarqué, en Java, on doit souvent écrire des boucles dans lesquelles on déclare une ou plusieurs variables avant la boucle, que l'on incrémente ensuite dans la boucle, et dont on vérifie la valeur dans la condition de la boucle. Par exemple,
 
-.. code-block:: java
+.. inginious:: execute_java
 
-        int i = 0;
-        while (i <= 5) {
-            System.out.println("Coucou " + i + " fois.");
-            i = i + 1;
+        int compteur = 0;
+        while (compteur <= 5) {
+            System.out.println("Le compteur vaut " + compteur);
+            compteur = compteur + 1;
         }
 
-ou encore
+Nous retrouvons donc le schéma suivant (gardez le bien en tête durant tout la durée de la section) :
 
-.. code-block:: java
+1) Initialisation d'une variable (dans l'exemple au dessus, ``compteur``)
+2) Une boucle dont la condition porte sur la variable que l'on vient d'initialiser
+3) Un ensemble d'actions, dont l'incrémentation (ou la décrémentation) de la variable initialisée (très important pour éviter une boucle infinie !)
 
-        int i = 10;
-        System.out.print("Décollage dans ");
-        while (i >= 1) {
-            System.out.print(i + " ");
-            i = i - 1;
-        }
-        System.out.println();
-        System.out.println("Décollage !");
-
-ou encore
-
-.. code-block:: java
-
-        System.out.println("Combien de tasse de café me faut-il ?");
-        int i = 1;
-        while (i < 10) {
-            System.out.println(i + " tasses de caffé ?");
-            i = i + 1;
-        }
-        System.out.println("Pfiou, ça fait beaucoup");
-
-Toutes ces boucles comprennent des caractéristiques communes :
-
-* la déclaration et/ou l'initialisation d'une variable avant d'entrer dans la boucle (par exemple, la variable ``i`` dans chacun des exemples ci-dessus) ;
-* la condition de boucle utilisant cette variable pour déterminer s'il faut sortir de la boucle ou non, généralement par une comparaison ;
-* un certain nombre d'instructions manipulant la variable (par exemple, les différents affichages avec ``System.out.println``) ;
-* le changement de la valeur de la variable à la fin de ces instructions, généralement par un incrémentation ou une décrémentation.
-
-Ce type de boucles est tellement fréquente en pratique (elle est omniprésente dans les tableaux par exemple) que les concepteurs du langage ont créé une structure condensée, la boucle ``for`` :
+Ce type de boucles est tellement fréquente en pratique (par exemple pour itérer sur un tableau) que les concepteurs du langage ont créé une structure condensée, la boucle ``for`` :
 
 .. code-block:: console
 
@@ -79,92 +53,64 @@ Détaillons la manière dont fonctionne cette boucle :
   * elle exécute le ou les instruction(s) contenues dans la section ``<code>``.
   * elle exécute enfin le ou les instructions contenues dans la section ``<incrémentation>`` : ces instructions sont généralement une incrémentation ou une décrémentation d'une variable, mais il est possible de mettre plusieurs incrémentations ou décrémentations, ou de mettre des instructions plus complexes (comme des appels de fonctions).
 
-Comme exemples, réécrivons les exemples ci-dessus à l'aide d'une boucle ``for`` :
+Nous allons réécrire l'exemple précédent avec une boucle ``for``. Comparez les deux codes, exécuter les et modifier les pour bien comprendre le fonctionnement de cette boucle
 
-.. code-block:: java
+.. inginious:: execute_java
 
-        for (int i = 0; i <= 5; i = i + 1) {
-            System.out.println("Coucou " + i + " fois.");
-        }
+    for(int compteur = 0; compteur <= 5; compteur = compteur + 1) {
+        System.out.println("Le compteur vaut " + compteur);
+    }
 
-.. code-block:: java
+Maintenant, voici quelques exemples de code écrit avec des boucle ``while``. Vous pouvez essayez de les réécrire en boucle ``for`` pour vous entrainez (exécutez les deux codes pour comparer ce qui est affiché) :
 
+.. inginious:: execute_java
+
+        int i = 10;
         System.out.print("Décollage dans ");
-
-        for (int i = 10; i >= 1; i = i - 1) {
+        while (i >= 1) {
             System.out.print(i + " ");
+            i = i - 1;
         }
-
         System.out.println();
         System.out.println("Décollage !");
 
-.. code-block:: java
+.. inginious:: execute_java
+
+    // Réécrivez l'exemple du dessus avec une boucle for! 
+
+.. inginious:: execute_java
 
         System.out.println("Combien de tasse de café me faut-il ?");
-
-        for (int i = 1; i < 10; i = i + 1) {
+        int i = 1;
+        while (i < 10) {
             System.out.println(i + " tasses de café ?");
+            i = i + 1;
         }
-
         System.out.println("Pfiou, ça fait beaucoup");
 
-.. tache INGInious : quelle est l'avant-dernière ligne affichée par le programme ?
+.. inginious:: execute_java
 
-Pour vérifier que vous ayez bien compris, quelle est l'avant-ernière ligne affichée par le programme ci-dessus ?
+    // Réécrivez l'exemple du dessus avec une boucle for! 
 
-.. class:: positive
+Comme vous pouvez le constater, ces boucles sont plus courtes que les boucles écrites avec un ``while``, et souvent plus lisibles quand on a l'habitude de s'en servir : l'initialisation de la variable de boucle, son incrémentation, et la condition de la boucle sont situées au même endroit, entre les parenthèses du ``for``, au lieu d'être situés à plusieurs endroits de la boucle.
 
-   - "9 tasses de café ?"
+Plus d'exemples
+---------------
 
-.. class:: negative
-
-   - "10 tasses de café ?"
-
-   - "8 tasses de café ?"
-
-           .. class:: comment-feedback
-
-              Est-ce que vous avez compté la ligne de code en dehors de la boucle à la fin ?
-
-Comme vous pouvez le constater, ces boucles sont plus court que les boucles écrites avec un ``while``, et souvent plus lisibles quand on a l'habitude de s'en servir : l'initialisation de la variable de boucle, son incrémentation, et la condition de la boucle sont situées au même endroit, entre les parenthèses du ``for``, au lieu d'être situés à plusieurs endroits de la boucle ; c'est du condensé, en quelque sorte.
-
-Quelques exemples
------------------
-
-Voyons quelques exemples de boucles construites avec la boucle ``for``.
-
-Afficher l'alphabet
-'''''''''''''''''''
-
-Le code suivant affiche l'alphabet, de la lettre ``'A'`` à la lettre ``'Z'``.
-
-.. code-block:: java
-
-        for (char ch = 'A'; ch <= 'Z'; ch = ch + 1) {
-            System.out.println(ch);
-        }
-
-Le code utilise une particularité du type ``char`` : sa ressemblance avec des entiers. En effet, même si un ``char`` est conçu pour contenir un caractère, que ce soit une lettre, un chiffre ou un idéogramme chinois, il est possible d'effectuer des opérations arithmétiques dessus, notamment des additions. Par exemple, le code suivant
-
-.. code-block:: java
-
-        char a = 'a';
-        char c = a + 2;
-        System.out.println(c);
-
-affiche la lettre ``'c'``. Littéralement, ce code signifie de prendre la lettre 'a' décalée de deux caractères dans l'alphabet, c'est-à-dire 'c'. Cette petite astuce nous permet de parcourir tout l'alphabet latin, en commençant à 'A', en terminant à 'Z' et en passant au caractère suivant par ``ch = ch + 1``. (N'essayez pas d'aller plus loin que 'Z' néanmoins, vous trouverez des caractères qui ont relativement peu de sens.)
+Voyons quelques exemples de boucles construites avec la boucle ``for``. Comme d'habitudes, exécuter et modifier les exemples pour vous entraînez.
 
 Déterminer si un nombre est premier
 '''''''''''''''''''''''''''''''''''
 
-Un nombre entier est qualifié de *premier* s'il ne possède que deux diviseurs entiers différents : 1 et lui-même. Les nombres premiers sont 2, 3, 5, 7, 11, 13, et une infinité d'autres. Pour vérifier qu'un nombre est premier, il suffit de compter son nombre de diviseurs, et de comparer à 2. Le programme suivant permet de vérifier si un nombre est premier
+Un nombre entier est qualifié de *premier* s'il ne possède que deux diviseurs entiers différents : 1 et lui-même. Parmis les nombres premiers, on retrouve 2, 3, 5, 7 , etc. Pour vérifier qu'un nombre est premier, il suffit de compter son nombre de diviseurs, et de comparer à 2. Le programme suivant permet de vérifier si un nombre est premier
 
-.. code-block:: java
+.. inginious:: execute_java
 
         int nombre = 34;
         int nbreDiviseurs = 0;
         for (int diviseurTest = 1; diviseurTest <= nombre; diviseurTest = diviseurTest + 1) {
-        /* Si le nombre diviseurTest divise notre nombre */
+            // L'opération % est appelée "modulo" et donne le reste de la division entière entre deux chiffre
+            // Par exemple 4 % 2 = 0 car 2 divise 4. Par contre, 11 % 2 = 1 car le reste de la division entière entre 11 et 2 vaut 1.
             if (nombre % diviseurTest == 0) {
                 nbreDiviseurs = nbreDiviseurs + 1;
             }
@@ -178,7 +124,7 @@ Un nombre entier est qualifié de *premier* s'il ne possède que deux diviseurs 
 Exercice : nombres parfaits
 ...........................
 
-A vous ! Pour votre première boucle ``for``, vous allez écrire un petit programme qui détermine si un nombre est parfait. Un *nombre parfait* est un nombre naturel dont la somme des `diviseurs stricts`_ est égale au nombre lui-même. Le nombre naturel à vérifier est stocké dans la variable ``n``. Le résultat final, un booléen indiquant si le nombre ``n`` est parfait,  doit être stocké dans la variable ``isPerfect`` à la fin de l'exécution de votre boucle. Pour vous aider, le code permettant de vérifier si un nombre est premier est déjà pré-rempli, à l'exception des paramètres de la boucle ``for``. Faites bien attention à la valeur initiale et finale de la variable de boucle !
+A vous ! Vous allez écrire un petit programme qui détermine si un nombre est parfait. Un nombre parfait est un nombre naturel dont la somme des `diviseurs stricts`_ est égale au nombre lui-même. Le nombre naturel à vérifier est stocké dans la variable ``n``. Le résultat final, un booléen indiquant si le nombre ``n`` est parfait,  doit être stocké dans la variable ``isPerfect`` à la fin de l'exécution de votre boucle. Pour vous aider, le code permettant de vérifier si un nombre est premier est déjà pré-rempli, à l'exception des paramètres de la boucle ``for``. Faites bien attention à la valeur initiale et finale de la variable de boucle !
 
 .. _diviseurs stricts: https://fr.wikipedia.org/wiki/Diviseur_strict
 
@@ -220,7 +166,7 @@ Pour certains programmes, une boucle ``for`` ne suffit pas. Il faut très souven
 
 Les colonnes de la table ne sont pas alignées, mais Voici un code qui affiche une telle table :
 
-.. code-block:: java
+.. inginious:: execute_java 
 
         int nLignes = 12; // contient le nombre de lignes de la table de multiplication
         int nColonnes = 20; // contient le nombre de colonnes de la table
@@ -236,7 +182,7 @@ Le programme consiste de deux boucles ``for`` imbriquées. La première boucle p
 Lorsqu'on utilise plusieurs boucles imbriquées, il est important de faire attention
 
 * aux limites de la boucle for (valeur initiales et finales pour chaque dimension)
-* aux variables de boucle utilisées dans chaque boucle : il est très fréquent (même pour les programmeurs expérimentés ,;-) ) d'inverser deux variables de boucles (généralement nommées ``i`` et ``j`` par habitude), que ce soit dans le code exécuté par les boucles ou dans les conditions utilisées dans la première ligne de l'un des ``for``.
+* aux variables de boucle utilisées dans chaque boucle : il est très fréquent (même pour les programmeurs expérimentés) d'inverser deux variables de boucles (généralement nommées ``i`` et ``j`` par habitude), que ce soit dans le code exécuté par les boucles ou dans les conditions utilisées dans la première ligne de l'un des ``for``.
 
 Exercice : les erreurs classiques des boucles ``for``
 '''''''''''''''''''''''''''''''''''''''''''''''''''''
@@ -262,13 +208,3 @@ Le programme ci-dessous contient un certain nombre d'erreurs classiques lors de 
 .. Un autre exemple de boucles imbriquées TODO
 
 Les boucles imbriquées sont beaucoup utilisées avec les tableaux, que vous verrez dans une prochaine section.
-
-.. Bouton de validation pour les QCM
-
-.. raw:: html
-
-   <div id="checker" class="checker">
-   <h1>Vérifiez vos réponses</h1>
-   <input type="submit" value="Vérifier" id="verifier">
-   </div>
-
