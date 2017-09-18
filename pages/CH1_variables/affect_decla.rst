@@ -37,7 +37,7 @@ L'affectation suit la syntaxe suivante :
 
 ``<expression>`` représente la valeur que l'on désire mettre dans la variable. Nous verrons plus tard différentes expressions qui peuvent être assignées à une variable. Le cas le plus basique est lorsque l'on assigne à une variable une valeur écrite à la main comme nous le verrons dans les exemples qui suivent.
 
-De plus, la déclaration et l'affectation peuvent s'effectuer en même temps en une seule instruction en suivant la syntaxe suivante :
+De plus, la déclaration et l'affectation peuvent s'effectuer en une seule instruction en suivant la syntaxe suivante :
 
 .. code-block:: console
 
