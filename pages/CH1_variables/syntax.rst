@@ -35,7 +35,7 @@ Ceux-ci par contre ne le sont pas
 - ``Hello World``
 - ``_ 1 _``
 
-Les lettres majuscules et miniscules sont considérées comme différentes des minuscules. Par conséquent les noms ``helloWorld``, ``hELLOwORLD`` et ``HELLOworld`` sont tous des noms
+Les lettres majuscules sont considérées comme différentes des minuscules. Par conséquent les noms ``helloWorld``, ``hELLOwORLD`` et ``HELLOworld`` sont tous des noms
 différents.
 
 De plus, en Java certains noms sont réservés pour une utilisation spécifique et ne peuvent donc pas être utilisés comme référence par le programmeur. Parmis ceux-ci, on retrouve notamment
