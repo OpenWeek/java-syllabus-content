@@ -68,4 +68,9 @@ contribuer:
             title: Contribuer au contenu du syllabus
         create_task:
             title: Créer une tâche INGInious
+informations_utiles:
+  title: Information utiles
+  content:
+    comprendre_compilateur:
+      title: Comprendre le compilateur
 #
