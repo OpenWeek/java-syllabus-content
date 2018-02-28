@@ -1,3 +1,6 @@
 [submodule "java-syllabus-tasks"]
 	path = cours_inginious/java-syllabus-tasks
 	url = https://github.com/OpenWeek/java-syllabus-tasks.git
+[submodule "pages"]
+	path = pages
+	url = https://github.com/OpenWeek/java-syllabus-pages
